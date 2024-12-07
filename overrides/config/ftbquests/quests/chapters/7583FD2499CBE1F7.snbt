@@ -1,0 +1,1226 @@
+{
+	id: "7583FD2499CBE1F7"
+	group: "3D8ADA421153B1A3"
+	order_index: 3
+	filename: "7583FD2499CBE1F7"
+	title: "引力学"
+	icon: "ud_world_items:gravito_crystal_icon"
+	subtitle: ["&5引力学说"]
+	default_quest_shape: "rsquare"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "这就是我的开始。"
+			description: [
+				"&7在我出生之前，人类获得了最有效同时又道德上最为可怕的资源——重力水晶。人类科学家在我出生之前就提取了第一批样本。据说，直到今天，它们的本质仍未被确认。有些人认为它们的来源是外星入侵，当时星球遭遇了陨石袭击，目的是摧毁那时存在的种族；而另一些人则坚持认为这些矿物和星球本身的存在是有规律的，认为没有这些水晶，漂浮在宇宙中的这颗巨大岩石根本无法存在。"
+				""
+				"&7对我来说，这些水晶是我们在过去历史中所有罪行的象征。我们将它们作为惩罚和考验，接受了守护者们给予我们的最后机会。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["1515AFCFF653E6B7"]
+			hide: true
+			size: 1.25d
+			id: "0ACD8C77BC7959A0"
+			tasks: [{
+				id: "4D1930F0089A13D3"
+				type: "item"
+				item: "ud_world_items:raw_gravito_crystal"
+			}]
+			rewards: [
+				{
+					id: "5AB9B2C743D9EBE1"
+					type: "item"
+					item: "chemlib:radon"
+				}
+				{
+					id: "588ABC6E96BAEBAF"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			subtitle: "无限宝石"
+			description: [
+				"&7处理过的重力水晶释放出大量的能量浓缩物。它的使用曾经毁灭了我的种族，但现在，作为唯一的生还者，我会不会也走上同样的命运呢？"
+				""
+				"&5要处理水晶，你需要使用之前遇到的特殊结构。拿到已经处理过的材料后，可以在新的配方中使用它。"
+			]
+			dependencies: [
+				"0ACD8C77BC7959A0"
+				"5D83E0645E03BDA9"
+			]
+			hide: true
+			id: "1859340345BB394F"
+			tasks: [{
+				id: "4558895FD6C55DCF"
+				type: "item"
+				item: "ud_world_items:gravito_crystal"
+			}]
+			rewards: [
+				{
+					id: "09D678F6AD1BE4DB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "5F60BE9DC23946C4"
+					type: "item"
+					item: "cyao_lore:note_14"
+				}
+			]
+		}
+		{
+			title: "空间处理器"
+			icon: "ud_world_items:improved_engineering_battery"
+			x: 0.0d
+			y: -1.5d
+			subtitle: "只有一个功能"
+			description: ["&5将能量引导到这个机器中，以处理原始重力水晶。当然，仅仅有能量还不足够，因此作为催化剂，最好使用其中一种化学元素——氡。"]
+			dependencies: ["0ACD8C77BC7959A0"]
+			id: "5D83E0645E03BDA9"
+			tasks: [
+				{
+					id: "7E20C6EE638E2E5A"
+					type: "questsadditions:structure"
+					title: "Обуздайте гравитацию!"
+					name: "spatial_handler"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "5B5003E12972B2E9"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "01873164A6709832"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "7026811EA5523B70"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "596AD0D4669D8B9F"
+					type: "item"
+					item: "ud_world_items:improved_engineering_bricks"
+					count: 6L
+				}
+				{
+					id: "37E0DF7CB628EDFF"
+					type: "item"
+					item: "ud_world_items:improved_engineering_pillar"
+					count: 20L
+				}
+				{
+					id: "318CA45FB6F87CD0"
+					type: "item"
+					item: "ud_world_items:improved_engineering_base_block"
+				}
+				{
+					id: "0B1D4682BEAB4DF7"
+					type: "item"
+					item: "ud_world_items:improved_engineering_lamp"
+					count: 2L
+				}
+				{
+					id: "70FC22E0696369CF"
+					type: "item"
+					item: "minecraft:diamond_block"
+				}
+			]
+			rewards: [
+				{
+					id: "23C1C586DBC36630"
+					type: "item"
+					item: "supplementaries:bomb_blue"
+				}
+				{
+					id: "2E24CD82D1242CFA"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+			]
+		}
+		{
+			title: "高级重力机器"
+			icon: "ud_world_items:advanced_g_c_controller"
+			x: -2.0d
+			y: 1.5d
+			subtitle: "控制宇宙本身"
+			description: ["&5那么，现在你已经走在曾经先祖开辟的道路上。已做之事无法挽回，因此继续沿着心智或灵魂指引的方向前进吧。即使做出了错误的决定，也不会有问题，因为那是你亲自做出的选择。"]
+			dependencies: ["1859340345BB394F"]
+			hide: true
+			id: "34F469B9D85F9B5E"
+			tasks: [{
+				id: "7BA7D1E40BC9226B"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+			rewards: [{
+				id: "1EA35D93F9F71C10"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			title: "高级重力发生器"
+			icon: "ud_world_items:advanced_g_c_battery"
+			x: -4.0d
+			y: 1.5d
+			subtitle: "能量不能太多!"
+			description: [
+				"&7控制引力能量在操作不当时可能是危险的。通过这个发电机，我可以分离出水晶的特定粒子，并将它们引导至特殊的设备进行分解。这个过程将为我提供尽可能多的能量。"
+				""
+				"将重力晶体转化为 FE 能量。"
+			]
+			dependencies: ["34F469B9D85F9B5E"]
+			hide: true
+			id: "51451EFD22815370"
+			tasks: [
+				{
+					id: "083D4FC1E11C369A"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "advanced_gravito_generator"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "20E25657272B2A03"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_controller"
+				}
+				{
+					id: "036395E675CD5975"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_input_block"
+				}
+				{
+					id: "35E2A5E67924EC7C"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_output_block"
+				}
+				{
+					id: "513CF771C612B0FB"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_pillar"
+					count: 12L
+				}
+				{
+					id: "665A1514AD539AA1"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_polished_block"
+					count: 13L
+				}
+				{
+					id: "260DC5C312A1C6EB"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_lamp"
+				}
+				{
+					id: "323DBC25BE3E4296"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_battery"
+					count: 2L
+				}
+				{
+					id: "319C19933B613273"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_heater"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "18C60375D68F418E"
+				type: "item"
+				item: "minecraft:coal_block"
+				count: 6
+			}]
+		}
+		{
+			title: "编制机"
+			icon: "ud_world_items:advanced_g_c_base_block"
+			x: -4.0d
+			y: 3.0d
+			subtitle: "你的壳是什么做的，乌龟？"
+			description: [
+				"&7某些材料在制作装备时相当难以处理。这个装置将用于自动化加工和收集我未来的护甲。这是一个非常精细的过程，只能通过机械来完成。"
+				""
+				"编制机——制作自定义护甲所必需的机械。"
+			]
+			dependencies: ["34F469B9D85F9B5E"]
+			hide: true
+			id: "7574876A039ADC8F"
+			tasks: [
+				{
+					id: "2A44E4FF70193A1E"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "weaver1"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "25694DBC35460152"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_controller"
+				}
+				{
+					id: "08FEF68EAE57E769"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_input_block"
+				}
+				{
+					id: "7F8C998D282AC5D2"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_output_block"
+				}
+				{
+					id: "75F1CB47FEF13B91"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_pillar"
+					count: 16L
+				}
+				{
+					id: "2310DD027B35C57A"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_polished_block"
+					count: 35L
+				}
+				{
+					id: "46CCBCEFE8B3ABE2"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_lamp"
+					count: 2L
+				}
+				{
+					id: "1B48C66829D936E9"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_battery"
+				}
+			]
+			rewards: [
+				{
+					id: "22FE599A27C1DF58"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "230DA19C90A67CDD"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+			]
+		}
+		{
+			title: "次元重力采石场"
+			icon: "ud_world_items:advanced_g_c_drill_on"
+			x: -2.0d
+			y: 3.0d
+			subtitle: "挖，但不完全是挖"
+			description: [
+				"&7现在我突然灵光一现。如果我使用与转换装置所需的相同透镜，结合我世界的能量流会怎么样？我会在输出端得到什么？"
+				""
+				"&5引力矿场通过能量供电，为你开采各种矿石。"
+			]
+			dependencies: ["34F469B9D85F9B5E"]
+			hide: true
+			id: "63B2FAECFCB181B4"
+			tasks: [
+				{
+					id: "6D6B9714091B41E0"
+					type: "questsadditions:structure"
+					title: "建造结构！[点击]"
+					name: "interdimensional_gravity_quarry1"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "3F55EBA2F46F4E72"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_controller"
+				}
+				{
+					id: "3F0F97D4B6769781"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_input_block"
+				}
+				{
+					id: "28F7091E6E9D9444"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_output_block"
+				}
+				{
+					id: "434B8C4C556412F5"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_bricks"
+					count: 24L
+				}
+				{
+					id: "2BE2CB19F388A07B"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_polished_block"
+					count: 48L
+				}
+				{
+					id: "2A86F71FC6B42404"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_base_block"
+					count: 13L
+				}
+				{
+					id: "6432A6B35A38E463"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_lamp"
+					count: 4L
+				}
+				{
+					id: "4D0A2157F9F186B1"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_battery"
+				}
+				{
+					id: "252D1C24BD5D7B2D"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_drill"
+					count: 4L
+				}
+				{
+					id: "69D9CDC718881A41"
+					type: "item"
+					item: "ud_world_items:gravito_crystal_block"
+				}
+			]
+			rewards: [
+				{
+					id: "712DEAC8ADB2A4E2"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "minecraft:fortune"
+							}]
+						}
+					}
+				}
+				{
+					id: "4A7A6FC76DC8B226"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "重力意外工厂"
+			icon: "ud_world_items:advanced_g_c_lamp_on"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "扭蛋游戏"
+			description: ["&7通过掷骰子来决定我的命运是一项有趣的活动，但我可以玩得更大。比如，我可以设置一个独立的多方块结构，让注入的能量在某一特定时刻通过一个未识别的维度透镜，从而使随机物品从空气中生成。最终，物品的列表会有限制，但通过这种方式，我能获得更多有用的物品。"]
+			dependencies: ["34F469B9D85F9B5E"]
+			hide: true
+			id: "5E68F6BF92E7FF92"
+			tasks: [
+				{
+					id: "1874CC54D042A608"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "gravito_randomizer"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "053DD952C85F323C"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_controller"
+				}
+				{
+					id: "5E6535047031F20F"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_input_block"
+				}
+				{
+					id: "10CFE10B9D81064B"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_output_block"
+				}
+				{
+					id: "739FE8E4962686C0"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_pillar"
+					count: 28L
+				}
+				{
+					id: "684FF0221FFE9F4D"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_polished_block"
+					count: 64L
+				}
+				{
+					id: "48E535334196BD93"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_polished_block"
+					count: 22L
+				}
+				{
+					id: "45A2C8BAA57FAF24"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_lamp"
+					count: 4L
+				}
+				{
+					id: "3CCA00DF91868E0D"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_battery"
+				}
+				{
+					id: "3E9DAF9B497DBC9E"
+					type: "item"
+					item: "ud_world_items:gravito_crystal_block"
+				}
+			]
+			rewards: [
+				{
+					id: "77B58A2B5F59A3A7"
+					type: "item"
+					item: "minecraft:name_tag"
+					count: 3
+				}
+				{
+					id: "5D40D845E8A84468"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "虚空重力室"
+			icon: "ud_world_items:advanced_g_c_pillar"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "**通往末地的道路是由善意铺就的。**"
+			description: [
+				"&7前往其他世界的旅程仍然对我来说遥不可及，无论我的发展多么深入。然而，现在至少我已经能够创造一个新的装置，用于将来自我所在维度的物品转换为“末地”中获得的物品。"
+				""
+				"&5在新的多方块结构中，你将能够创造出新的变种和此前无法获得的物品"
+			]
+			dependencies: ["34F469B9D85F9B5E"]
+			hide: true
+			id: "4B8B4CEFA74F0B99"
+			tasks: [
+				{
+					id: "72974A2B062748DE"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "gravito_void_chamber1"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "505F5A383FC4892C"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_controller"
+				}
+				{
+					id: "0F49C2C0E6412A93"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_input_block"
+				}
+				{
+					id: "7984058725B6286D"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_output_block"
+				}
+				{
+					id: "4F9329AA0A447036"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_bricks"
+					count: 32L
+				}
+				{
+					id: "0DD3BC2BD55D2862"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_pillar"
+					count: 18L
+				}
+				{
+					id: "3DE1D7A72310B268"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_polished_block"
+					count: 31L
+				}
+				{
+					id: "3BC093C12C641B61"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_base_block"
+					count: 13L
+				}
+				{
+					id: "10B44095F6144D79"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_battery"
+				}
+			]
+			rewards: [
+				{
+					id: "76A0FCAE7D206F8F"
+					type: "gamestage"
+					title: "&5Новые предметы в Трансмутации"
+					icon: "ud_world_items:gravito_crystal_icon"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "end_shop"
+				}
+				{
+					id: "6D3559A10BBF8F62"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+			]
+		}
+		{
+			title: "高级工程构造器"
+			icon: "ud_world_items:advanced_g_c_input_block"
+			x: -2.0d
+			y: 4.5d
+			subtitle: "创造奇迹"
+			description: [
+				"&7我克服了所有的困难和障碍，终于迎来了这一刻。三个构造器的等级，在每个等级中我都能创造不同的物品。它们不能独立工作，也不会在构建更高级的结构时复制其功能。它们并不完美，但这是我在现有条件下能做到的一切。"
+				""
+				"&5高级工程构造器是制作最优物品的必备工具，包括那些在通过构建过程中所需的物品。它的工作原理与其他机械完全相同，所以使用起来应该不会有问题，应该吧。"
+			]
+			dependencies: ["34F469B9D85F9B5E"]
+			hide: true
+			id: "7CD707355BA6E9EA"
+			tasks: [
+				{
+					id: "4EAC2D30A39BE608"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "advanced_engineering_constructor"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "21BB7DBD37EB5DEB"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_controller"
+				}
+				{
+					id: "389F2075F463C852"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_input_block"
+				}
+				{
+					id: "5267EEF02A4D03B1"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_output_block"
+				}
+				{
+					id: "6A09C9BA5BA7C2E5"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_pillar"
+					count: 24L
+				}
+				{
+					id: "6CAD74657358DA3A"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_polished_block"
+					count: 12L
+				}
+				{
+					id: "66F77227985C1A23"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_base_block"
+					count: 9L
+				}
+				{
+					id: "30378AC4FBB26578"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_lamp"
+					count: 8L
+				}
+				{
+					id: "71B4D26021F0E255"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_battery"
+					count: 4L
+				}
+				{
+					id: "5879035F215A6B73"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_heater"
+				}
+				{
+					id: "5259F1F1F596AE3F"
+					type: "item"
+					item: "ud_world_items:gravito_crystal_block"
+				}
+			]
+			rewards: [
+				{
+					id: "3E9A869B245B0E90"
+					type: "item"
+					item: "ud_world_items:gravito_crystal_block"
+				}
+				{
+					id: "65FCB557BBBAF1A6"
+					type: "item"
+					item: "ars_nouveau:jar_of_light"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			subtitle: "幸运的法布尔"
+			description: ["&7硅的开发起源可以追溯到遥远的过去，那时还没有“炼金术”这个概念，人们也不知道粉碎机的存在。而如今，这种资源的获取只能通过化学方式实现。这是由于最近发生的事件以及用于简单的制造的重要资源的消失所导致的。"]
+			dependencies: ["1859340345BB394F"]
+			hide: true
+			dependency_requirement: "all_started"
+			id: "18EC8A8118F23669"
+			tasks: [{
+				id: "58B7666B00681671"
+				type: "item"
+				item: "refinedstorage:silicon"
+			}]
+			rewards: [
+				{
+					id: "389509F86D75F6BF"
+					type: "item"
+					item: "integrateddynamics:bucket_liquid_chorus"
+				}
+				{
+					id: "68D270E90EBF0C09"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			subtitle: "浓缩的"
+			description: ["&7通过富集过程，我将确保金属在我的信息技术机械中能够可靠地使用。"]
+			dependencies: ["1859340345BB394F"]
+			hide: true
+			id: "5C3DB580862D96BA"
+			tasks: [{
+				id: "5EDFC0FA255B9198"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron"
+			}]
+			rewards: [{
+				id: "2533EDB52E4560CD"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			subtitle: "粘性极强"
+			description: ["&7某些元素的粘性连接。这种材料可以用来连接小部件。"]
+			hide_dependency_lines: true
+			dependencies: ["18EC8A8118F23669"]
+			id: "73299CCFD66A4DA7"
+			tasks: [{
+				id: "1D1052A4A690383B"
+				type: "item"
+				item: "refinedstorage:processor_binding"
+			}]
+			rewards: [
+				{
+					id: "02C14E0262879D42"
+					type: "item"
+					item: "malum:holy_syrup"
+					count: 5
+				}
+				{
+					id: "395CFC37A75B54D7"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			subtitle: "写下妈妈做煎饼的食谱。让我们开始吧。"
+			description: ["&7最复杂技术的开端源于同样精巧的基础部件。处理物品和物质数据需要使用处理器。"]
+			dependencies: [
+				"18EC8A8118F23669"
+				"73299CCFD66A4DA7"
+			]
+			id: "687EB53C22F04A5F"
+			tasks: [{
+				id: "415CECDC16581E6A"
+				type: "item"
+				item: "refinedstorage:raw_basic_processor"
+			}]
+			rewards: [{
+				id: "2386C33BFA590B53"
+				type: "item"
+				item: "create:schematicannon"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.5d
+			subtitle: "最高级别的处理"
+			dependencies: [
+				"18EC8A8118F23669"
+				"73299CCFD66A4DA7"
+			]
+			id: "588B64AFBC5F3720"
+			tasks: [{
+				id: "2D8D92426D46BB9C"
+				type: "item"
+				item: "refinedstorage:raw_improved_processor"
+			}]
+			rewards: [{
+				id: "4DAA1E1C3D7E9224"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.0d
+			subtitle: "我是一个活生生的智慧生命，诞生于信息的海洋。"
+			dependencies: [
+				"18EC8A8118F23669"
+				"73299CCFD66A4DA7"
+			]
+			id: "3136AC035C750A7C"
+			tasks: [{
+				id: "0475ABA18C8536F2"
+				type: "item"
+				item: "refinedstorage:raw_advanced_processor"
+			}]
+			rewards: [{
+				id: "7900207259198224"
+				type: "item"
+				item: "chemlib:aluminum_ingot"
+				count: 4
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.5d
+			subtitle: "机器必须正常工作"
+			description: ["&7微型世界只是迈向最新技术的起点。现在，对我来说尤为重要的是掌握以压缩形式存储物品的机制。我将传输关于资源的数据，从而能够在小型机器节点中存储大量物品。"]
+			dependencies: ["5C3DB580862D96BA"]
+			hide: true
+			id: "7ECBB0041F3E0E29"
+			tasks: [{
+				id: "3AA4755EC03EABBD"
+				type: "item"
+				item: "refinedstorage:machine_casing"
+			}]
+			rewards: [{
+				id: "4D1E86262B83C3DE"
+				type: "item"
+				item: "create_sa:steam_engine"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.0d
+			subtitle: "主要缺陷"
+			description: ["&5不同等级的组件用于在未来完整存储单元中存放不同数量的物品。请明智选择，用什么来填充你的存储系统。"]
+			dependencies: ["18EC8A8118F23669"]
+			hide: true
+			id: "7B1A567B3A93E9A8"
+			tasks: [{
+				id: "3E91410D8CA10C27"
+				type: "item"
+				item: "refinedstorage:1k_storage_part"
+			}]
+			rewards: [
+				{
+					id: "1A17E999B27E486C"
+					type: "item"
+					item: "pipez:improved_upgrade"
+				}
+				{
+					id: "254A3FED3A18A8E5"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			subtitle: "大量数据导致关注度不足"
+			description: ["&7为了直接处理未来的大量数据，我需要一个具备磁盘功能的机械，它将负责加载信息。而存储方块可以胜任这一任务。"]
+			dependencies: [
+				"7B1A567B3A93E9A8"
+				"7ECBB0041F3E0E29"
+			]
+			id: "58FF04C486085443"
+			tasks: [{
+				id: "5F99AA4579E4C924"
+				type: "item"
+				item: "refinedstorage:1k_storage_block"
+			}]
+			rewards: [
+				{
+					id: "49315C42B05744AE"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "2D051DBA6FD4353A"
+					type: "item"
+					item: "refinedstorage:silicon"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -1.5d
+			subtitle: "模板是构建通往独特性之路的基础砖块。"
+			description: ["&5用于后续填充的中间产物"]
+			dependencies: ["5C3DB580862D96BA"]
+			hide: true
+			id: "0F92BE16B81EBD12"
+			tasks: [{
+				id: "1556720721C2B841"
+				type: "item"
+				item: "refinedstorage:pattern"
+			}]
+			rewards: [
+				{
+					id: "404383CE7D1AC26B"
+					type: "item"
+					item: "farmersdelight:pasta_with_mutton_chop"
+				}
+				{
+					id: "270230107AAE561F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -4.5d
+			subtitle: "网络和现实世界是一个整体"
+			description: ["用于显示指定配方的数据"]
+			dependencies: [
+				"0F92BE16B81EBD12"
+				"588B64AFBC5F3720"
+				"7ECBB0041F3E0E29"
+			]
+			hide: true
+			id: "718DC2BD2DFE14F1"
+			tasks: [{
+				id: "3FE0DB9BB7C17546"
+				type: "item"
+				item: "refinedstorage:crafting_monitor"
+			}]
+			rewards: [
+				{
+					id: "0B92399EAA235F12"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "3F55885040FF5262"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "混沌与秩序"
+			x: -4.0d
+			y: -4.5d
+			subtitle: "一枚硬币的两面"
+			description: ["&7就像阴与阳，混沌与秩序在我们已知的历史中一直并肩而行。人类学会了利用元素为自己的种族谋福利。我们曾玩弄这些概念，从未想到过天平的两端可能会不均衡地倾向一方。"]
+			dependencies: ["687EB53C22F04A5F"]
+			hide: true
+			id: "30B82405869E92F1"
+			tasks: [
+				{
+					id: "77AA26DD6EE2E00E"
+					type: "item"
+					item: "refinedstorage:destruction_core"
+				}
+				{
+					id: "5D555BD5C6AC7FEE"
+					type: "item"
+					item: "refinedstorage:construction_core"
+				}
+			]
+			rewards: [
+				{
+					id: "717D2E70447ECDE0"
+					type: "item"
+					item: "ars_nouveau:source_berry_pie"
+					count: 3
+				}
+				{
+					id: "1CD7ED06001C46AE"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			subtitle: "这是我的光盘，里面有..."
+			description: ["&5在此机械中存储你的数据磁盘。"]
+			dependencies: [
+				"7ECBB0041F3E0E29"
+				"3136AC035C750A7C"
+			]
+			hide: true
+			id: "5237B6770B64CD5F"
+			tasks: [{
+				id: "6C7F52CA70331D8E"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+			rewards: [{
+				id: "26BB6B729B888689"
+				type: "item"
+				item: "malum:natural_quartz"
+				count: 18
+			}]
+		}
+		{
+			title: "控制器"
+			x: -6.0d
+			y: -7.5d
+			subtitle: "我不相信我拿不起来的电脑"
+			description: ["&7任何复杂系统的核心都是某种控制器或其类似物。为了让它正常工作，需要为其提供能量，然后将所有其他组件连接到未来的存储系统中。"]
+			dependencies: [
+				"7ECBB0041F3E0E29"
+				"3136AC035C750A7C"
+			]
+			hide: true
+			id: "560D48377E00B36B"
+			tasks: [{
+				id: "568E807C0E238B53"
+				type: "item"
+				title: "控制器"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:controller"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "06549A56ADA264E9"
+					type: "gamestage"
+					title: "&3Новые предметы в Трансмутации"
+					icon: "refinedstorage:fortune_3_upgrade"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "rs_shop"
+				}
+				{
+					id: "2175C597CD94BE73"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+			]
+		}
+		{
+			title: "终端"
+			x: -6.0d
+			y: -4.5d
+			subtitle: "机械人感觉不到疼痛"
+			description: ["&7我可以在终端中存储我的物品。只需安装磁盘驱动器，将存储磁盘放入其中，并通过控制器供能。简单得就像小菜一碟……"]
+			dependencies: [
+				"30B82405869E92F1"
+				"588B64AFBC5F3720"
+				"7ECBB0041F3E0E29"
+			]
+			hide: true
+			id: "3C9DA3D2E96867B5"
+			tasks: [{
+				id: "7B0E888FF72F2FB0"
+				type: "item"
+				title: "终端"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:grid"
+					}
+				}
+			}]
+			rewards: [{
+				id: "23C6A8E590382E8B"
+				type: "item"
+				item: "refinedstorage:quartz_enriched_iron_block"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.0d
+			subtitle: "遥控器"
+			description: ["&5通过无线连接，你将始终能够访问你的存储系统。别忘了给它充电！"]
+			dependencies: [
+				"3C9DA3D2E96867B5"
+				"3136AC035C750A7C"
+			]
+			hide: true
+			id: "250AC8971D13E137"
+			tasks: [{
+				id: "673CFA3603C4CAB8"
+				type: "item"
+				item: "refinedstorage:wireless_grid"
+			}]
+			rewards: [{
+				id: "25A0E24C347508AC"
+				type: "item"
+				item: "plushies:enderman"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			subtitle: "能打破宇宙的结构"
+			description: [
+				"&7让我们看看。引力水晶的尖端、黄铜的底座和几个齿轮。注入初始能量，嗯……完成！"
+				""
+				"&5引力钻能够打破最坚硬的矿石。由于最初注入的能量，它的使用寿命比普通工具更长，而产生的引力场会吸引周围的所有物品。"
+			]
+			dependencies: ["7CD707355BA6E9EA"]
+			hide: true
+			id: "65CA6FBC71E5374E"
+			tasks: [{
+				id: "3559D28246285615"
+				type: "item"
+				item: {
+					id: "drills:gravity_drill"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7A6D5B1ECDC4B470"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "7E2FA48842A7D672"
+					type: "xp"
+					xp: 125
+				}
+			]
+		}
+		{
+			title: "虚空的一部分"
+			x: 2.0d
+			y: 3.0d
+			subtitle: "在不杀死龙的情况下"
+			description: ["&5从另一个维度获取 5 个资源，可以创造更多新物品。"]
+			dependencies: ["4B8B4CEFA74F0B99"]
+			hide: true
+			id: "610D802EB010742A"
+			tasks: [
+				{
+					id: "591F546C9745BDE4"
+					type: "item"
+					item: "minecraft:end_stone"
+				}
+				{
+					id: "1F6FA2C54723E541"
+					type: "item"
+					item: "minecraft:shulker_shell"
+				}
+				{
+					id: "1F5116079A55F04A"
+					type: "item"
+					item: "minecraft:chorus_fruit"
+				}
+				{
+					id: "22E14321EE045DD7"
+					type: "item"
+					item: "minecraft:chorus_flower"
+				}
+			]
+			rewards: [
+				{
+					id: "5D83BE3AD474ECBA"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "009FA7E7DEA2E7D9"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "4E4C1A6A361F0540"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1748955132031137801L
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

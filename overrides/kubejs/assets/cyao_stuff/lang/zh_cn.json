@@ -1,0 +1,32 @@
+{
+  "item.cyao_stuff.axe_head_pattern" : "斧头模板",
+  "item.cyao_stuff.blank_pattern" : "空白模板",
+  "item.cyao_stuff.pickaxe_head_pattern" : "镐头模板",
+  "item.cyao_stuff.shovel_head_pattern" : "铲头模板",
+  "item.cyao_stuff.sword_head_pattern" : "剑头模板",
+
+  "item.cyao_stuff.brass_axe_head" : "黄铜斧头",
+  "item.cyao_stuff.brass_pickaxe_head" : "黄铜镐头",
+  "item.cyao_stuff.brass_shovel_head" : "黄铜铲头",
+  "item.cyao_stuff.brass_sword_head" : "黄铜剑头",
+
+  "item.cyao_stuff.copper_sword_head" : "铜剑头",
+  "item.cyao_stuff.copper_axe_head" : "铜斧头",
+  "item.cyao_stuff.copper_pickaxe_head" : "铜镐头",
+  "item.cyao_stuff.copper_shovel_head" : "铜铲头",
+
+  "item.cyao_stuff.gold_sword_head" : "金剑头",
+  "item.cyao_stuff.gold_axe_head" : "金斧头",
+  "item.cyao_stuff.gold_pickaxe_head" : "金镐头",
+  "item.cyao_stuff.gold_shovel_head" : "金铲头",
+
+  "item.cyao_stuff.iron_sword_head" : "铁剑头",
+  "item.cyao_stuff.iron_axe_head" : "铁斧头",
+  "item.cyao_stuff.iron_pickaxe_head" : "铁镐头",
+  "item.cyao_stuff.iron_shovel_head" : "铁铲头",
+
+  "item.cyao_stuff.zinc_sword_head" : "锌剑头",
+  "item.cyao_stuff.zinc_axe_head" : "锌斧头",
+  "item.cyao_stuff.zinc_pickaxe_head" : "锌镐头",
+  "item.cyao_stuff.zinc_shovel_head" : "锌铲头"
+}

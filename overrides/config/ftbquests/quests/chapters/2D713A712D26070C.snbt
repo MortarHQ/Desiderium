@@ -1,0 +1,367 @@
+{
+	id: "2D713A712D26070C"
+	group: "0CD8708E80919F0C"
+	order_index: 1
+	filename: "2D713A712D26070C"
+	title: "试炼"
+	icon: "ud_world_items:advancement_icon"
+	subtitle: ["&9终结之后"]
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "试炼"
+			icon: "ud_world_items:advancement_icon"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "运气站在你这边！"
+			description: ["&7恭喜！你已经完成了主线剧情，现在可以解锁创造配方和其他新内容！继续探索Desiderium的世界，获得更多有趣的游戏体验！"]
+			dependencies: ["3CE1D7F757D89E7E"]
+			hide: true
+			size: 2.0d
+			id: "0C118804052A65E5"
+			tasks: [{
+				id: "72DD940ACAF89C3C"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+			rewards: [{
+				id: "47BCA2A3216099EC"
+				type: "item"
+				item: {
+					id: "minecraft:dead_bush"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"库斯提克\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "创造便携式终端"
+			icon: {
+				id: "refinedstorage:creative_portable_grid"
+				Count: 1b
+				tag: { }
+			}
+			x: 7.5d
+			y: -3.5d
+			shape: "diamond"
+			subtitle: "最后，一个背包"
+			description: ["我想，如果能拥有一个和飞机一样贵的背包，那该有多好。"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "130E21E4FFA3F5EE"
+			tasks: [{
+				id: "43F3EDA5A80FABF2"
+				type: "item"
+				item: {
+					id: "refinedstorage:creative_portable_grid"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "创造无线终端"
+			icon: "refinedstorage:creative_wireless_grid"
+			x: 4.5d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "就是为了这个吗？"
+			description: ["这种终端无需电源即可运行。仅此而已。"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "4781B094E85AEB29"
+			tasks: [{
+				id: "3CDFA3BAD79AF716"
+				type: "item"
+				item: "refinedstorage:creative_wireless_grid"
+			}]
+		}
+		{
+			title: "创造马达"
+			icon: "create:creative_motor"
+			x: 1.5d
+			y: -5.5d
+			shape: "diamond"
+			subtitle: "永动机"
+			description: ["每个人都梦想拥有一台永动机，但只有你有机会得到它。"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "4CC613D07C3A6C61"
+			tasks: [{
+				id: "001DC8160C65FC98"
+				type: "item"
+				item: "create:creative_motor"
+			}]
+		}
+		{
+			title: "创造液体罐"
+			x: -3.0d
+			y: -5.0d
+			shape: "diamond"
+			subtitle: "无尽的水桶"
+			description: [
+				"这种水箱的主要特点是无需浪费液体来填充！"
+				"简单地说，你往里面倒水，水就会倒进储罐里，并和你在一起！"
+			]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "06C8F5009AC42436"
+			tasks: [{
+				id: "57F3F9FAA4A8658D"
+				type: "item"
+				item: "create:creative_fluid_tank"
+			}]
+		}
+		{
+			title: "创造箱子"
+			icon: "create:creative_crate"
+			x: 0.0d
+			y: -6.0d
+			shape: "diamond"
+			subtitle: "创造项目"
+			description: ["作后，你就可以忘记资源匮乏的问题了，因为只要把任何物品放进盒子里，你就可以得到无限多的相同物品！"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "78BE00437CB87BF3"
+			tasks: [{
+				id: "61B8EEA9EB484E26"
+				type: "item"
+				item: "create:creative_crate"
+			}]
+		}
+		{
+			title: "创造烈焰蛋糕"
+			icon: "create:creative_blaze_cake"
+			x: 3.0d
+			y: -5.0d
+			shape: "diamond"
+			subtitle: "蛋糕是个谎言"
+			description: ["这样的蛋糕永远吃不完，简直就是获得无穷能量的关键。"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "03ED700C2079688A"
+			tasks: [{
+				id: "35FC9C9AB39DED90"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+		{
+			title: "创造储罐"
+			icon: "create_sa:creative_filling_tank"
+			x: -1.5d
+			y: -5.5d
+			shape: "diamond"
+			subtitle: "第一条规则：永远听巴克的话！"
+			description: ["这种储罐可免费补充燃料和水。"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "3F5B4F5BCC84A046"
+			tasks: [{
+				id: "0710293E9114A63D"
+				type: "item"
+				item: "create_sa:creative_filling_tank"
+			}]
+		}
+		{
+			title: "世界编辑"
+			icon: {
+				id: "create:handheld_worldshaper"
+				Count: 1b
+				tag: { }
+			}
+			x: -7.5d
+			y: -3.5d
+			shape: "diamond"
+			subtitle: "现在我在定义现实"
+			description: ["有了它，你就可以按照自己的喜好改变任何世界。"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "4383BEC006E86923"
+			tasks: [{
+				id: "575733C719217D11"
+				type: "item"
+				item: {
+					id: "create:handheld_worldshaper"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "创造能源"
+			icon: "integrateddynamics:energy_battery_creative"
+			x: -4.5d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "蛋糕的直接竞争对手"
+			description: ["无穷无尽的能量现在就掌握在你的手中！"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "6E9DDCEAF39D6C5D"
+			tasks: [{
+				id: "48B8481D290FFC42"
+				type: "item"
+				item: "integrateddynamics:energy_battery_creative"
+			}]
+		}
+		{
+			title: "创造磁盘"
+			icon: {
+				id: "refinedstorage:creative_storage_disk"
+				Count: 1b
+				tag: {
+					Id: [I;
+						-651718007
+						978338336
+						-1161833729
+						-449841015
+					]
+				}
+			}
+			x: 6.0d
+			y: -4.0d
+			shape: "diamond"
+			subtitle: "最终实现无限存储"
+			description: ["一个能够存储无限多电量的电池。这将大大提高移动终端的功能。"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "31D46F65EF080777"
+			tasks: [{
+				id: "3DD04AA8E701B10B"
+				type: "item"
+				item: {
+					id: "refinedstorage:creative_storage_disk"
+					Count: 1b
+					tag: {
+						Id: [I;
+							-651718007
+							978338336
+							-1161833729
+							-449841015
+						]
+					}
+				}
+			}]
+		}
+		{
+			icon: "refinedstorage:creative_controller"
+			x: -6.0d
+			y: -4.0d
+			shape: "diamond"
+			subtitle: "现在，网络将完全自主"
+			description: ["这个控制器永远充满活力。有了它，真是得心应手。"]
+			dependencies: ["65CFE29153CCE0F6"]
+			size: 1.5d
+			id: "09C5CE6F217782AA"
+			tasks: [{
+				id: "16192C3B592A2393"
+				type: "item"
+				item: "refinedstorage:creative_controller"
+			}]
+		}
+		{
+			title: "创造制作器"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftblibrary:textures/icons/editor.png"
+				}
+			}
+			x: 0.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "回去工作..."
+			description: ["要制作创造方块和物品，你需要一个特殊的多方块结构。"]
+			dependencies: ["0C118804052A65E5"]
+			hide: true
+			size: 2.0d
+			id: "65CFE29153CCE0F6"
+			tasks: [
+				{
+					id: "3F37E1C43BB61969"
+					type: "questsadditions:structure"
+					title: "Нажмите, а затем постройте!"
+					name: "creative_constructor"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "089573BA7DEF767E"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_input_block"
+				}
+				{
+					id: "21BD616D590FA771"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_output_block"
+				}
+				{
+					id: "2834202450C475AE"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_pillar"
+					count: 16L
+				}
+				{
+					id: "3FA3C2A9FEA39FF4"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_polished_block"
+					count: 16L
+				}
+				{
+					id: "27739D3C3FDAA72A"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_base_block"
+					count: 2L
+				}
+				{
+					id: "7FABC6CF25021B4C"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_lamp"
+				}
+				{
+					id: "5D7185239CB454EB"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_battery"
+					count: 2L
+				}
+				{
+					id: "1FA2463EB7326153"
+					type: "item"
+					item: "ud_world_items:gravito_crystal_block"
+					count: 16L
+				}
+				{
+					id: "0A532DF1771854C7"
+					type: "item"
+					item: "ud_world_items:advanced_g_c_controller"
+				}
+			]
+			rewards: [{
+				id: "7627CE00A525B3D4"
+				type: "item"
+				item: {
+					id: "ud_world_items:garbage_tube"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"不会有更多的奖励，但你要坚持下去。\"}"
+						}
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

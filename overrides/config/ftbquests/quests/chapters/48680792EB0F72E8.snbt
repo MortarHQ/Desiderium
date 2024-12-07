@@ -1,0 +1,2316 @@
+{
+	id: "48680792EB0F72E8"
+	group: "3D8ADA421153B1A3"
+	order_index: 1
+	filename: "48680792EB0F72E8"
+	title: "工程学"
+	icon: "ud_world_items:copper_gear_icon"
+	subtitle: ["&6技术之峰"]
+	default_quest_shape: "octagon"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "合金工厂"
+			icon: "ud_world_items:andesite_stone_controller"
+			x: -1.0d
+			y: 0.5d
+			subtitle: "工程学的鼎盛时期"
+			description: [
+				"&7这个世界数个世纪以来的主要发展路径一直是工程之道。整整几个时代，人类与他们的创造物——机械并肩而行，为共同进化创造了生存的条件。然而，当人类与其努力的成果到达巅峰时，终结也随之而来。"
+				""
+				"&5在这个任务章节中，你将踏上属于自己的科技制作的学习之路。从简单的机器和结构开始，然后建立自己的工厂和生产线，用于制造必要的资源。"
+				""
+				"首先需要制作的是用于基础材料合成的合金机。在其中，你需要放入安山岩和铁块，以获取至关重要的安山合金。"
+				""
+				"要启动多方块结构，请在控制器上用扳手按下右键。"
+			]
+			dependencies: ["01DE57C1A6DF8965"]
+			hide: true
+			size: 1.25d
+			id: "5AA489BE062F8503"
+			tasks: [
+				{
+					id: "43A65BD9E55B8311"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "andesite_alloy_smelter"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "3C4081A391018313"
+					type: "item"
+					item: "ud_world_items:andesite_stone_controller"
+				}
+				{
+					id: "4C1DEAEFBEC275AB"
+					type: "item"
+					item: "ud_world_items:andesite_stone_bricks"
+					count: 25L
+				}
+			]
+			rewards: [
+				{
+					id: "033E781678EACC40"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+				{
+					id: "504F444752B7B003"
+					type: "item"
+					item: "ud_world_items:meat_tube"
+					count: 2
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			subtitle: "熔融安山岩和金属。"
+			description: ["&7在任何科学团体中，新的发现都会受到对立观点的质疑而不被认可。然而，最终新知识和新方法都会被时代接受，无论其内容多么令人震惊。对所有工程师来说，安山合金的发现曾是这样的一个意外：它拥有令人难以置信的特性——坚固、易于加工，并能塑造成各种形状。这是任何发明家的梦想。"]
+			dependencies: ["5AA489BE062F8503"]
+			hide: true
+			id: "53CD1280526D38BB"
+			tasks: [{
+				id: "2ADBADA8406DA71C"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "4F918E76251872BD"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 3
+			}]
+		}
+		{
+			title: "基本配件"
+			x: 3.0d
+			y: 0.5d
+			subtitle: "扭矩决定胜负！"
+			description: [
+				"&7看似简单却必不可少——这些零件是任何机械装置中最重要的组成部分。或许应该提前多制作一些。"
+				""
+				"&5你可以将由特定木材制作的齿轮转换为标准木材的齿轮，以满足配方需求。"
+			]
+			dependencies: ["53CD1280526D38BB"]
+			hide: true
+			id: "63555EDD0D765ACE"
+			tasks: [
+				{
+					id: "53481EEF2D3BE0A8"
+					type: "item"
+					item: "create:shaft"
+					count: 8L
+				}
+				{
+					id: "733A9A0A0FC5209A"
+					type: "item"
+					title: "Шестерня"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:cogwheels"
+						}
+					}
+				}
+				{
+					id: "327444B38A76940F"
+					type: "item"
+					title: "Большая шестерня"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:large_cogwheels"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4553FBACBC3B2489"
+				type: "item"
+				item: "farmersdelight:egg_sandwich"
+			}]
+		}
+		{
+			title: "合金"
+			x: -1.0d
+			y: -1.0d
+			subtitle: "工程金属"
+			description: [
+				"&7任何自重的工程师都必须不断改进自己的创造物，即使这可能导致农场和工厂内一片混乱。毕竟，众所周知，混乱中迟早会诞生新的秩序，而随后一切又会变得荒诞而不可理喻。至少，有人曾这样对我说过，尽管我现在已经记不起是谁说的了。大概是个非常聪明的人。不过，我自己倒是还没遇到过类似的情况。大概吧……"
+				""
+				"&5任务所需的合金将在你今后研究各种科技和机械结构时成为基础材料。你只能在改良版的合金厂中完整地制作这些合金。"
+			]
+			dependencies: ["5AA489BE062F8503"]
+			hide: true
+			id: "3784BE19F567701C"
+			tasks: [
+				{
+					id: "7319EEA06B1DE07D"
+					type: "item"
+					item: "create:brass_ingot"
+				}
+				{
+					id: "39052150B26725F0"
+					type: "item"
+					item: "alloyed:bronze_ingot"
+				}
+				{
+					id: "5163FC47FFD4D75F"
+					type: "item"
+					item: "alloyed:steel_ingot"
+				}
+			]
+			rewards: [
+				{
+					id: "68D44CEF2E3C57AB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+				{
+					id: "431816E2F00D78ED"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			subtitle: "换挡"
+			description: ["&7通过它，我可以将旋转能量传输到所需的方向。如果稍微修改一下配方，就能得到镜像的版本。甚至已经制作好的齿轮箱也可以在工作台上重新改造。这才只是开始，但我已经为所创造的物品和机械感到兴奋不已。这门科学真是令人惊叹！"]
+			dependencies: ["63555EDD0D765ACE"]
+			id: "511993A024953BCD"
+			tasks: [{
+				id: "458F41EDD9C0C437"
+				type: "item"
+				item: "create:gearbox"
+			}]
+			rewards: [{
+				id: "14164B68D38D7920"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 6
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			subtitle: "转啊转"
+			description: ["利用水流生成旋转能量。将水车放置在3x3的平面内，并向其中一个角落注入水。也可以在任意位置放水，这使得输出能量的数量具有一定的变化。"]
+			dependencies: ["63555EDD0D765ACE"]
+			id: "5C656173A0AD0249"
+			tasks: [{
+				id: "15F148819460E57A"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [
+				{
+					id: "446149FC4D65642A"
+					type: "item"
+					item: "minecraft:bucket"
+				}
+				{
+					id: "10341CB068AEFC8D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			subtitle: "模拟粉碎机"
+			description: ["替代传统的工业破碎机。特别适用于自动化获取沙子、沙砾或其他可加工资源。"]
+			dependencies: ["63555EDD0D765ACE"]
+			id: "551440DA8830F740"
+			tasks: [{
+				id: "0E5E7396DCD25677"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "7E86BA401DD1532E"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 24
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			subtitle: "就像瑞士手表一样好用"
+			description: [
+				"使用该结构进行压制过程，开辟了将材料加工成新型、具有不同用途的新材料的方法。"
+				""
+				"使用该机制非常简单：将锟压机放置好，接入旋转能量，在锟压机下方留一格空气，放入材料（也可以使用置物台），然后就能获得所需的资源。"
+			]
+			dependencies: ["63555EDD0D765ACE"]
+			id: "3003695F3A27EAC0"
+			tasks: [
+				{
+					id: "178C138B44CF6A2A"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "625E7D7A17F6AEC4"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+			rewards: [{
+				id: "4F92E18AA27A4AA6"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			title: "怎样才能统治世界？"
+			x: 5.0d
+			y: 0.5d
+			subtitle: "优化阻碍了进化"
+			description: ["&7说实话，最近我做了一个梦。仿佛我的记忆如海浪般涌来，我再次感受到少年时代的海风。当时我还不知道自己想成为什么样的人，但我总是被发明和创新所吸引。即使那时，我已经能够制造出复杂的东西，用来简化琐碎的事情，比如打扫卫生或其他事情。"]
+			dependencies: ["3003695F3A27EAC0"]
+			hide: true
+			id: "42183D42D22F63DA"
+			tasks: [
+				{
+					id: "1F2C46ED65BF56BA"
+					type: "item"
+					item: "create:propeller"
+				}
+				{
+					id: "31E2EF564B921B40"
+					type: "item"
+					item: "create:whisk"
+				}
+			]
+			rewards: [
+				{
+					id: "1284F32E494526EC"
+					type: "item"
+					item: "minecraft:iron_block"
+				}
+				{
+					id: "16BF9979455C075C"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			subtitle: "烈焰人大牢"
+			description: ["右键点击持有的燃烧室，点击烈焰人，将其放入燃烧室中，从而创造出烈焰人燃烧室。"]
+			dependencies: ["3003695F3A27EAC0"]
+			hide: true
+			id: "10A1A410962ED3E2"
+			tasks: [{
+				id: "401FD472663F2C28"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+			rewards: [{
+				id: "706830A0F92C4DDD"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 7
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.5d
+			subtitle: "记住：火柴不是儿童玩具！"
+			description: ["&7我不敢说我接受并理解古代工程师的方法，但在我的情况下，使用具有无限内在能量储备的生物是为机器提供动力的最佳方式。"]
+			dependencies: ["10A1A410962ED3E2"]
+			hide: true
+			id: "5C96879819D068C8"
+			tasks: [{
+				id: "6FBC82FF980B65AA"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards:  [{
+				id: "62066F6548CC74E5"
+				type: "item"
+				item: "minecraft:blaze_powder"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			subtitle: "拉动摇杆，开玩！"
+			description: ["将资源通过右键点击放入挤压机中，然后站在机械跳跃，直到转换完成。要恢复到初始状态，可以使用红石信号。该机制可以通过漏斗、红石电路或其他方式实现自动化。"]
+			dependencies: ["3003695F3A27EAC0"]
+			hide: true
+			id: "2FCAA20E12DF4EF9"
+			tasks: [{
+				id: "3FB199D51A4ED169"
+				type: "item"
+				item: "integrateddynamics:squeezer"
+			}]
+			rewards: [{
+				id: "77E8E45C6AC770C0"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 3022466149224120138L
+			}]
+		}
+		{
+			title: "烘干池"
+			x: 3.0d
+			y: 3.5d
+			subtitle: "来吧，垃圾堆，加速起来！"
+			description: [
+				"&7任何新的事业都始于小小的成就。这些看似平凡的机械将为我打开通往新科技时代的大门，在那里，机器能够自主完成复杂的任务，无需人类的干预。"
+				""
+				"将资源放入烘干池进行处理。在某些配方中可能需要水或其他液体，可以用水桶右键点击槽来注入液体。"
+			]
+			dependencies: ["3003695F3A27EAC0"]
+			hide: true
+			id: "6873E6A6C5883FB9"
+			tasks: [{
+				id: "68E35670F7DD100D"
+				type: "item"
+				item: "integrateddynamics:drying_basin"
+			}]
+			rewards: [{
+				id: "4EA97320144A99F8"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			title: "机械工作台"
+			x: 8.0d
+			y: 0.5d
+			subtitle: "下次会更好"
+			description: ["&7现在是时候制作一个具有简单自动化原理的机械了。从我的设备到眼前的灾难之境，现在所创造的一切无疑有所不同，甚至不一定是朝着更好的方向发展的，但对我来说，最重要的是尽快找回失传的一部分技艺，并再次赌运尝试。我不确定结果是否能让我满意，但至少这样我可以回报一下自己的内心。"]
+			dependencies: ["0D2F5E21FD7FC6E0"]
+			hide: true
+			id: "56E267010ED17E54"
+			tasks: [{
+				id: "02E226D6A6CC111D"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 21L
+			}]
+			rewards: [
+				{
+					id: "26F6EB4174CDA2BE"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1748955132031137801L
+				}
+				{
+					id: "409BAE05A9B7092F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 2.0d
+			subtitle: "黄铜强化"
+			description: ["&7黄铜合金是一种真正不受控制的发挥其能力到极限的物质。黄铜、青铜以及其他类似的金属，在颠倒的世界中被广泛使用。它们甚至被用来加固建筑物和守卫机器人。可惜的是，大规模的生产技术已经失传，我不得不从零开始调整物流。"]
+			dependencies: ["5C96879819D068C8"]
+			hide: true
+			id: "0D2F5E21FD7FC6E0"
+			tasks: [{
+				id: "2FBF2DB4B3DE77D5"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+			rewards: [{
+				id: "28D40D3E66588550"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			icon: "create:mechanical_mixer"
+			x: 6.0d
+			y: 2.0d
+			subtitle: "两撮琐碎的念头。"
+			description: ["动力搅拌器和锟压机有类似的用途，都可以将一种材料转化为另一种新材料。但动力搅拌器也有其独特的功能——你不仅可以混合材料，还能混合液体，组合配方，获得不同的最终产物。对于动力搅拌器来说，确保在其下方的一个方块位置放置一个工作盆非常重要。"]
+			dependencies: [
+				"42183D42D22F63DA"
+				"3003695F3A27EAC0"
+			]
+			id: "4C96EAD2C1973F2C"
+			tasks: [
+				{
+					id: "1746C2C84282106D"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "55F6297A8FEFE28E"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [
+				{
+					id: "1759B0C53D0A7239"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1250721272784892157L
+				}
+				{
+					id: "31CC870F63B2E53E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "破碎轮"
+			x: 8.0d
+			y: -1.0d
+			subtitle: "每一天对我来说……就像是毫无意义的例行公事。"
+			description: ["&5为每个粉碎轮连接旋转能量的来源，考虑到机械部件必须朝不同方向旋转。资源可以从上方手动放入或通过投掷器放入。成品从下方出来。"]
+			dependencies: ["56E267010ED17E54"]
+			hide: true
+			id: "0500D09E7E44D1F6"
+			tasks: [{
+				id: "19C26D5471E4A3CD"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "1430EA9A629125DD"
+					type: "item"
+					item: "malum:cthonic_gold"
+					count: 3
+				}
+				{
+					id: "215BDC995BE9E98D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			subtitle: "让我们使用Xegonite。"
+			description: [
+				"&7如果我想研究过去世界的遗迹，移动设备确实是必需的。毕竟这里的一切并不简单，我需要那些缺失的信息碎片来拼凑出完整的画面。"
+				""
+				"&5从颠倒世界的矿石中提取Xegonite，然后将其用于机械部件的配方中。之后，你将解锁飞艇的制作。"
+			]
+			dependencies: [
+				"56E267010ED17E54"
+				"08C7F603767255F3"
+			]
+			hide: true
+			id: "6187D18329219C86"
+			tasks: [{
+				id: "3C601509F1F4901D"
+				type: "item"
+				item: "viescraftmachines:machine_parts_mold"
+			}]
+			rewards: [
+				{
+					id: "287170D6E6C8B798"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 8
+				}
+				{
+					id: "7B4A46A29178B9D5"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -2.5d
+			subtitle: "胆小鬼"
+			description: ["将黑曜石通过粉碎轮，可获得用于制作配方的特殊粉末。"]
+			dependencies: ["0500D09E7E44D1F6"]
+			hide: true
+			id: "47D721DA90A55AF8"
+			tasks: [{
+				id: "0E3330E1A34DD54B"
+				type: "item"
+				item: "create:powdered_obsidian"
+			}]
+			rewards: [{
+				id: "06863547D421D767"
+				type: "item"
+				item: "corn_delight:corn_soup"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.5d
+			subtitle: "无论你整多少橡胶，总有一天会用完....."
+			description: [
+				"&7虽然要重建整个文明显然有些操之过急，但仍然可以尝试恢复一些世界在崩溃前的植物群。"
+				""
+				"&5你可以在颠倒世界的环境中种植门瑞欧树，只需努力创造更多的开放的空间。通过采伐获取更多木材并将其加工成门瑞欧，从而绕过最初配方的漫长过程。"
+			]
+			dependencies: ["08C7F603767255F3"]
+			id: "4A112893663B7420"
+			tasks: [{
+				id: "2260FA40A7D87451"
+				type: "item"
+				item: "integrateddynamics:menril_sapling"
+			}]
+			rewards: [
+				{
+					id: "1487862F8D99CDB0"
+					type: "item"
+					item: "integrateddynamics:menril_log"
+					count: 4
+				}
+				{
+					id: "3188BA8944C73F94"
+					type: "item"
+					item: "integrateddynamics:menril_leaves"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "烈焰蛋糕"
+			icon: "create:blaze_cake"
+			x: 10.0d
+			y: -1.0d
+			subtitle: "关键是奶油蛋糕！"
+			description: ["&7名为烈焰人的生物在我手中成为了统一机械结构的一部分。这种做法现在和过去都并不罕见——人类不仅改造了非生命的自然，还将各种生物融入他们的设备中，无论生物基因技术的使用方法看起来多么自私。这带来的收益足够大，以至于显得合理。"]
+			dependencies: ["0500D09E7E44D1F6"]
+			hide: true
+			id: "6E3DDCF3F853EEE9"
+			tasks: [
+				{
+					id: "6108C7DEBE8BFB88"
+					type: "item"
+					item: "create:cinder_flour"
+				}
+				{
+					id: "71686730586A679E"
+					type: "item"
+					item: "create:blaze_cake"
+				}
+			]
+			rewards: [{
+				id: "163D3119FCCF98C0"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			x: 12.0d
+			y: -1.0d
+			subtitle: "- 这是不可能的！- 这是科学！"
+			description: ["&5你可以通过搅拌器首次获得液态门瑞欧。然后需要在烘干池中将其加工成方块。不过，这个方法日后会变得非常不便，因此你将解锁替代的获取方法。"]
+			dependencies: [
+				"6E3DDCF3F853EEE9"
+				"47D721DA90A55AF8"
+			]
+			hide: true
+			id: "08C7F603767255F3"
+			tasks: [{
+				id: "7B85AFE1F10F9F4A"
+				type: "item"
+				item: "integrateddynamics:crystalized_menril_block"
+			}]
+			rewards: [{
+				id: "7FDE3BA27E32C363"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			subtitle: "我直接起飞！"
+			description: ["&7来自 Xegonite 的机械合金将为我的飞艇制造轻质而坚固的部件。"]
+			dependencies: ["6187D18329219C86"]
+			id: "4860C7A1E49D7263"
+			tasks: [{
+				id: "3E63E3B4DEA0221F"
+				type: "item"
+				item: "viescraftmachines:machine_parts"
+			}]
+			rewards: [{
+				id: "42599B7B0F7C49F8"
+				type: "item"
+				item: "create:brass_sheet"
+				count: 6
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			subtitle: "干巴巴，没得商量。"
+			description: ["&7一种非常有营养的植物，但即使是海底生物也不会吃生的，连一片叶子都不爱碰。我都不知道我对这个世界的了解是从哪里来的。"]
+			dependencies: ["6873E6A6C5883FB9"]
+			hide: true
+			id: "36D91B9457E08F3E"
+			tasks: [{
+				id: "49BB5D7FF48CD7E8"
+				type: "item"
+				item: "minecraft:dried_kelp"
+			}]
+			rewards: [{
+				id: "5D354AA1E275669B"
+				type: "item"
+				item: "minecraft:dried_kelp_block"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.5d
+			subtitle: "系紧腰带"
+			description: ["&7正如所料，海带在熔炼后变得非常坚韧。就像口香糖一样，但在生产中，它的用途不亚于作为食物。"]
+			dependencies: ["36D91B9457E08F3E"]
+			id: "638E80592E221BDE"
+			tasks: [{
+				id: "7DE8FBCF14A18E92"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "36CD314DEB07BC07"
+				type: "item"
+				item: "create:builders_tea"
+			}]
+		}
+		{
+			title: "多方块机器"
+			icon: "ud_world_items:copper_gear_icon"
+			x: 4.0d
+			y: 6.5d
+			subtitle: "机器帝国"
+			description: [
+				"&7是时候进入工程制造的新阶段了。现在我将开始开发多方块机制。通过它们，我能够创造一系列独特的物品，自动化资源的开采和生产，并且希望能找到具有控制重力和空间能力的水晶。"
+				""
+				"&5你在整合中的进一步发展和进步将直接依赖于多方块机制的建设。只有通过它们，你才能解锁更多内容，并在剧情上取得进展。"
+				""
+				"要显示结构，左键点击任务，然后将其显示出来，右键点击世界中的位置并开始建造。要转换控制器或输入/输出方块只需要使用扳手，右键点击相应的方块。完成任务后，点击左键以完成机制的创建。"
+				""
+				"&7值得注意的是，即使只有轻微的损坏，扳手在创建结构时也会变得无用。这真是太不方便了……"
+			]
+			dependencies: ["3003695F3A27EAC0"]
+			hide: true
+			size: 1.25d
+			id: "0B9189302064A77A"
+			tasks: [{
+				id: "5E6B3BD072DC0EE2"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+			rewards: [
+				{
+					id: "0AC0336A407B6957"
+					type: "xp"
+					xp: 85
+				}
+				{
+					id: "38BB6F6EDEF76261"
+					type: "item"
+					item: {
+						id: "the_upside_down_world:wrench"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 12.0d
+			y: 3.5d
+			subtitle: "空气动力学是为那些不知道如何制造大功率电机的人准备的"
+			description: ["&7工程师的背包永远是一个“混乱的背包”，这是由一位前沿科技学者提出的定义。当你的工作区看起来像一个垃圾桶，什么都随意丢进去，却什么都找不到时，就会有这样的感受。不过，对于某些人来说，如果你善于定位，并且可以轻松找到特定机器的扳手，这可能会非常方便。"]
+			dependencies: ["4860C7A1E49D7263"]
+			hide: true
+			id: "4155F387C8C86F88"
+			tasks: [{
+				id: "11166CFFB502ED43"
+				type: "item"
+				item: {
+					id: "viescraftmachines:tool_machine_wrench"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "320100136221422E"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 3022466149224120138L
+			}]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			subtitle: "如果有后勤人员，就会发现问题。"
+			description: ["&7要让飞行器运行，至少需要一个上古科技级别的控制台。在这里，绝对离不开电路或芯片。这是一项需要耐心的精细工作，必须集中注意力。"]
+			dependencies: ["4860C7A1E49D7263"]
+			hide: true
+			id: "3AA03EB64381EE47"
+			tasks: [{
+				id: "4FA9B6D2A44FC57D"
+				type: "item"
+				item: "viescraftmachines:circuit_logic"
+			}]
+			rewards: [
+				{
+					id: "3D9FC736841C4CB1"
+					type: "xp"
+					xp: 55
+				}
+				{
+					id: "455F43D3650406DB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 3.5d
+			subtitle: "飞艇船身"
+			description: ["&5手持外壳按下右键以放置飞艇模型。之后，你可以为它安装所需的组件，并最终将飞艇升入空中。"]
+			dependencies: ["3AA03EB64381EE47"]
+			hide: true
+			id: "28A516601B832106"
+			tasks: [{
+				id: "6F0BA3208410FBCE"
+				type: "item"
+				item: "viescraftmachines:machine_chassis_flying"
+			}]
+			rewards: [{
+				id: "1BDB2CEEA66FBC66"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			title: "变量卡"
+			x: 14.0d
+			y: -1.0d
+			subtitle: "真理是存在的"
+			description: ["&7零、一、符号和其他数字定义仍然令我震惊。就在昨天，我们和整个科学界在信息技术方面取得了突破，而今天，我却发现自己身处一个没有智能，没有兄弟姐妹的世界。这不是世界末日，而是一场灾难。包括技术上的突破，现在只有我能够实现。"]
+			dependencies: ["08C7F603767255F3"]
+			hide: true
+			id: "02C173D52A5C9B69"
+			tasks: [{
+				id: "277B151739DFE449"
+				type: "item"
+				item: "integrateddynamics:variable"
+				count: 12L
+			}]
+			rewards: [
+				{
+					id: "2A5EA3D88E55E74C"
+					type: "item"
+					item: "ironchest:gold_to_diamond_chest_upgrade"
+				}
+				{
+					id: "2F81011BB7CE6861"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "变量"
+			x: 14.0d
+			y: -2.5d
+			subtitle: "汽车人，变身"
+			description: ["&5这些部件将帮助你迈出实现机械、农场或其他运行过程计算机化的第一步。它们本身只是未来配方的材料，但它们的制作已经让你对实现全面自动化充满希望。"]
+			dependencies: ["02C173D52A5C9B69"]
+			hide: true
+			id: "56538A78F1A4CDF0"
+			tasks: [
+				{
+					id: "7A10D5D29D5E4FFD"
+					type: "item"
+					item: "integrateddynamics:variable_transformer_input"
+				}
+				{
+					id: "0805197D688E5F5F"
+					type: "item"
+					item: "integrateddynamics:variable_transformer_output"
+				}
+			]
+			rewards: [{
+				id: "7382FDA9F2A45972"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.5d
+			subtitle: "工程学 ABC"
+			description: ["&5从现在开始，你会遇到许多包含模组信息的书籍。当你在研究模组时遇到困难，不妨大胆地参考网络百科或类似的指南书。"]
+			dependencies: ["08C7F603767255F3"]
+			id: "30BDAE50BCDA870D"
+			tasks: [{
+				id: "51AB042357C89F34"
+				type: "item"
+				item: "integrateddynamics:on_the_dynamics_of_integration"
+			}]
+			rewards: [{
+				id: "0893D95853AE9276"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 2s
+							id: "minecraft:feather_falling"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: -1.0d
+			subtitle: "不完美的部分组成完美的整体"
+			description: ["&7试图搞清这一切时头都快炸了。相比之下，在机械工厂里组装齿轮要比编程简单得多。"]
+			dependencies: ["08C7F603767255F3"]
+			hide: true
+			id: "065D324E5444A273"
+			tasks: [{
+				id: "45A39E3F45D7C4F5"
+				type: "item"
+				item: "integrateddynamics:logic_programmer"
+			}]
+			rewards: [{
+				id: "2DB159FD654549F4"
+				type: "item"
+				item: "farmersdelight:mutton_wrap"
+				count: 2
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.5d
+			subtitle: "RF-能量采集"
+			description: ["一个方便的RF能量存储装置，可储存该模组中产生的能量。未来，你可以将FE能量转换为RF能量，从而充分利用来自动态联合的优秀机械。"]
+			dependencies: ["08C7F603767255F3"]
+			id: "29724A4D5CA13080"
+			tasks: [{
+				id: "66DBBD3BCEF646AB"
+				type: "item"
+				item: {
+					id: "integrateddynamics:energy_battery"
+					Count: 1b
+					tag: {
+						energy: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0FDD3AA1B78FD4C7"
+				type: "item"
+				item: "minecraft:redstone_block"
+				count: 3
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.5d
+			subtitle: "反向运行的垃圾管道。"
+			description: ["&7我从未想过，人类——当然也就是代表我——会被迫依赖上古的能量发生器。至少目前这不算太重要，如果很快就能从空气中获取能量，那工业化也就指日可待了。"]
+			dependencies: ["29724A4D5CA13080"]
+			hide: true
+			id: "73BD6D089549305D"
+			tasks: [{
+				id: "739C41F70D546B48"
+				type: "item"
+				item: "integrateddynamics:coal_generator"
+			}]
+			rewards: [{
+				id: "540658B2D8E802B5"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			title: "改进型合金熔炉"
+			icon: "ud_world_items:simple_engineering_bricks"
+			x: 4.0d
+			y: 8.0d
+			subtitle: "你的金属声音最好分解成废料。"
+			description: [
+				"&7只制造安山岩合金和高级的垃圾对我来说不划算。是时候处理其他类型的金属了。我必须制作钢铁或青铜，才能改进我的机制。因为只有这些合金才能驱动可靠且高效的制造和加工机器。合金代表着未来！"
+				""
+				"&5建造改进版的合金工厂来生产钢铁、青铜或黄铜。它也将兼容旧的配方，比如安山岩合金。可以使用常见的燃料来为机制提供动力：煤炭、熔岩和其他可燃资源。"
+			]
+			dependencies: ["0B9189302064A77A"]
+			id: "5588B6E12E04ACF6"
+			tasks: [
+				{
+					id: "0CFBC23245E207BD"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "engineering_alloy_smelter"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "31AE5477488F1F2A"
+					type: "item"
+					item: "ud_world_items:simple_engineering_controller"
+				}
+				{
+					id: "31A8774EDB0AB3F1"
+					type: "item"
+					item: "ud_world_items:simple_engineering_input_block"
+				}
+				{
+					id: "162D1AA4868752C6"
+					type: "item"
+					item: "ud_world_items:simple_engineering_output_block"
+				}
+				{
+					id: "18438404EB1E3BFD"
+					type: "item"
+					item: "createdeco:cast_iron_block"
+				}
+				{
+					id: "0DC263EBF0C8E051"
+					type: "item"
+					item: "ud_world_items:simple_engineering_bricks"
+					count: 13L
+				}
+				{
+					id: "48058B85D1C57F3A"
+					type: "item"
+					item: "ud_world_items:simple_engineering_pillar"
+					count: 5L
+				}
+				{
+					id: "12408A81CEF0B471"
+					type: "item"
+					item: "ud_world_items:simple_engineering_base_block"
+					count: 5L
+				}
+			]
+			rewards: [{
+				id: "499C0757C45E4142"
+				type: "item"
+				item: "kubejs:molter_iron_bucket"
+			}]
+		}
+		{
+			title: "基础工程构造器"
+			icon: "ud_world_items:simple_engineering_controller"
+			x: 8.0d
+			y: 6.5d
+			subtitle: "多功能制造"
+			description: [
+				"&7当工程师使用普通工作台变得不方便时，他会转向机械作业台。当机械作业台对工程师也变得无用时，他便会将目光投向多方块构造器。"
+				""
+				"&5工程构造器的结构是各种熟悉的中小型部件的成功组合，但具备自动化和制造新物品的能力。使用新的作业台，你将解锁以下多方块机制、实用的化学设备以及许多其他推进整合包所需的物品。"
+			]
+			dependencies: ["0B9189302064A77A"]
+			id: "0BD6BD40533CC553"
+			tasks: [
+				{
+					id: "1B698E3A4D29443E"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "engineering_constructor"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "4DD72F8561108D15"
+					type: "item"
+					item: "ud_world_items:simple_engineering_controller"
+				}
+				{
+					id: "6BD3CC2A9A51DAFE"
+					type: "item"
+					item: "ud_world_items:simple_engineering_input_block"
+				}
+				{
+					id: "6543C4560CDD9347"
+					type: "item"
+					item: "ud_world_items:simple_engineering_output_block"
+				}
+				{
+					id: "35337C1BC0BCE85A"
+					type: "item"
+					item: "create:item_vault"
+				}
+				{
+					id: "52B54D0ACF14B487"
+					type: "item"
+					item: "createdeco:copper_sheet_slab"
+					count: 12L
+				}
+				{
+					id: "07C0BCCF40DAE7E4"
+					type: "item"
+					item: "supplementaries:cog_block"
+					count: 16L
+				}
+				{
+					id: "10E244C62D9EF4F1"
+					type: "item"
+					item: "ud_world_items:simple_engineering_bricks"
+					count: 18L
+				}
+				{
+					id: "15B32C8106F57C04"
+					type: "item"
+					item: "ud_world_items:simple_engineering_pillar"
+					count: 16L
+				}
+				{
+					id: "6A0D435674A719F4"
+					type: "item"
+					item: "ud_world_items:simple_engineering_base_block"
+					count: 40L
+				}
+			]
+			rewards: [
+				{
+					id: "38110916F0C5291E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "162B909B5999E6B6"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1748955132031137801L
+				}
+				{
+					id: "7B7D6E51E13E5B67"
+					type: "item"
+					item: "farmersdelight:honey_glazed_ham"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "发电机"
+			icon: "ud_world_items:simple_engineering_base_block"
+			x: 2.0d
+			y: 8.0d
+			subtitle: "我宁愿追逐太阳，也不愿等待太阳。"
+			description: [
+				"&7旋转能量或基础燃料甚至远远不足为多方块机制提供动力。如果一开始我还勉强能依靠煤炭或岩浆桶来维持平衡，那么现在我必须开始通过那些仍在使用的资源来生产纯净能量。"
+				""
+				"&5在发电机中，你可以获取FE能量。只需将所需的资源（如煤炭等）放入输入口或控制器，然后通过管道将获得的能量传输到能量储存装置。"
+			]
+			dependencies: ["0B9189302064A77A"]
+			id: "45A04B52CCF0DC3F"
+			tasks: [
+				{
+					id: "08528863D405B971"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "generator1"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "4EBA035E5B76EB52"
+					type: "item"
+					item: "ud_world_items:simple_engineering_controller"
+				}
+				{
+					id: "417B697560495BE3"
+					type: "item"
+					item: "ud_world_items:simple_engineering_output_block"
+					count: 2L
+				}
+				{
+					id: "7C8F4B9C101CBC11"
+					type: "item"
+					item: "ud_world_items:simple_engineering_bricks"
+					count: 27L
+				}
+				{
+					id: "506364BA1BEE0112"
+					type: "item"
+					item: "ud_world_items:simple_engineering_pillar"
+					count: 12L
+				}
+				{
+					id: "375061F2922F005F"
+					type: "item"
+					item: "ud_world_items:simple_engineering_base_block"
+					count: 8L
+				}
+				{
+					id: "5B85E93E8002E994"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "547F52D2545C0B0F"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 24
+			}]
+		}
+		{
+			title: "生态温室"
+			icon: "ud_world_items:simple_engineering_pillar"
+			x: 6.0d
+			y: 8.0d
+			subtitle: "别墅花园"
+			description: [
+				"&7在第一次灾难后，人们长时间苦苦思索如何在新环境下获取资源。直到一段时间后，首批具备植物种植功能的适应性机器才开始出现。"
+				""
+				"&7在生态温室中，我可以种植树苗，并获得少量素材，例如原木、木棍，以及某些树种特有的额外资源。例如，橡树会掉落苹果。"
+			]
+			dependencies: ["0B9189302064A77A"]
+			id: "060CC46BD603B020"
+			tasks: [
+				{
+					id: "0F7A57BBB93EBB3A"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "greenhouse"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "1913A3B2A67AD3FB"
+					type: "item"
+					item: "ud_world_items:simple_engineering_controller"
+				}
+				{
+					id: "7EB63FE3BD54CF26"
+					type: "item"
+					item: "ud_world_items:simple_engineering_input_block"
+				}
+				{
+					id: "6B1C21B9345560C7"
+					type: "item"
+					item: "ud_world_items:simple_engineering_output_block"
+				}
+				{
+					id: "5349F91C00BD96B9"
+					type: "item"
+					item: "ud_world_items:simple_engineering_pillar"
+					count: 8L
+				}
+				{
+					id: "11F1278521BB4AEA"
+					type: "item"
+					item: "ud_world_items:simple_engineering_base_block"
+					count: 9L
+				}
+				{
+					id: "1187FBA35C7E69DE"
+					type: "item"
+					item: "minecraft:glass"
+					count: 13L
+				}
+				{
+					id: "189893E54793A5E8"
+					type: "item"
+					item: "minecraft:grass_block"
+				}
+			]
+			rewards: [{
+				id: "512F8F3761D7F845"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			subtitle: "我们转过街角，我的房子就不见了"
+			description: [
+				"&7近战武器当然不错，但不应止步于此。我可以制作使用火药弹的远程武器，用来击败远处的敌人。这样，我就能获得优势，并对抗这里成群结队的怪物。"
+				""
+				"在武器工作台上，你可以升级现有的武器，为其安装瞄准镜和其他配件。"
+			]
+			dependencies: ["3784BE19F567701C"]
+			hide: true
+			id: "3B6A1B4F05F911FC"
+			tasks: [{
+				id: "5B2161B77E5A879C"
+				type: "item"
+				item: "alloyedguns:workbench"
+			}]
+			rewards: [{
+				id: "1511831DEBC80183"
+				type: "item"
+				item: "farmersdelight:rice_bale"
+				count: 3
+			}]
+		}
+		{
+			title: "流体管道"
+			x: 4.0d
+			y: 5.0d
+			subtitle: "管道系统"
+			description: ["&5就像在其他需要传输资源的情况下，使用液体时，你必定需要管道。"]
+			dependencies: ["3003695F3A27EAC0"]
+			hide: true
+			id: "531FCFD8E07460A4"
+			tasks: [{
+				id: "300A22A22C7C4027"
+				type: "item"
+				item: "create:fluid_pipe"
+				count: 8L
+			}]
+			rewards: [{
+				id: "452C49101F9D110A"
+				type: "item"
+				item: "createdeco:copper_sheet_metal"
+				count: 3
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.0d
+			subtitle: "蓄水池"
+			description: ["&7流体储罐是一个不错的初始液体储存装置。我可以将多个流体储罐连接起来，以增加容量。如果再安装几个泵和智能管道……"]
+			dependencies: ["531FCFD8E07460A4"]
+			hide: true
+			id: "4B1C01B3793A279F"
+			tasks: [{
+				id: "0F7671DFDB460AC0"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+			rewards: [{
+				id: "4DFA82716C6F9F05"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			x: 8.0d
+			y: 5.0d
+			subtitle: "**扑通**"
+			description: [
+				"向物体或储液罐中注入液体。"
+				"通过管道为注液器供能，将其放置在机器下方相隔一个方块的位置，放置一个工作盆或置物台，并放入物品。配方将自动开始。"
+			]
+			dependencies: ["531FCFD8E07460A4"]
+			id: "6271A4C94EA1C1D4"
+			tasks: [{
+				id: "54C23E670E20FCA7"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [
+				{
+					id: "7C117F5060EE7E8E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "2CACE4A4776B6527"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			subtitle: "轻松吹气"
+			description: ["要制作风扇，先制作扇叶和安山合金框架。然后，用扇叶右键点击安山机壳，将其转化为鼓风机。"]
+			dependencies: ["42183D42D22F63DA"]
+			id: "6CC273BBFFD57818"
+			tasks: [{
+				id: "1A7DC77149B0445E"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "517C09DEDE280340"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			subtitle: "打什么手枪？用智慧碾压他们！"
+			description: ["通过连续装配制作，获得改良版的武器框架，可以制造出更优质的武器。"]
+			dependencies: [
+				"3B6A1B4F05F911FC"
+				"265B5A1ACE8A9D87"
+			]
+			id: "7855499CB74D5F03"
+			tasks: [{
+				id: "16E15921D466C629"
+				type: "item"
+				item: "alloyedguns:basic_gun_kit"
+			}]
+			rewards: [{
+				id: "0223FA494DF848EB"
+				type: "item"
+				item: "paraglider:stamina_vessel"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			subtitle: "即使不开火，这种武器也可以用来敲敌人的脑袋。"
+			description: ["用于制作老式手枪或火枪的简单武器框架。"]
+			dependencies: ["3B6A1B4F05F911FC"]
+			id: "265B5A1ACE8A9D87"
+			tasks: [{
+				id: "1FD0F8E3F62E23ED"
+				type: "item"
+				item: "alloyedguns:crude_gun_kit"
+			}]
+			rewards: [{
+				id: "6A0ED857BD4DBD7C"
+				type: "item"
+				item: "farmersdelight:hamburger"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			subtitle: "你知道战斗的第一条规则吗？在他们开枪之前，先开枪射击他们。"
+			description: ["倒数第二个先进的武器框架，作为制作更高级火器配方所需的材料。"]
+			dependencies: [
+				"3B6A1B4F05F911FC"
+				"7855499CB74D5F03"
+			]
+			id: "2AAB6228176AF5BC"
+			tasks: [{
+				id: "39A8B0ACEFC4C58A"
+				type: "item"
+				item: "alloyedguns:advanced_gun_kit"
+			}]
+			rewards: [
+				{
+					id: "78F30B102E86062F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "6A6AB8F79061C16F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 3.5d
+			subtitle: "而不是一把锤子。"
+			description: [
+				"&7与其他挖矿工具的制作不同，这个工具以其惊人的坚固性和能够在广泛区域内摧毁前方方块的能力而独树一帜。根据实验，它的挖掘极限是3x3方块。当然，这不是古代挖掘者的锤子，但这个工具确实变得更加有用。"
+				""
+				"&5尽管有其优势，这个钻头也有一些缺点。例如，挖掘3x3的代价是挖掘等级。你将无法采集到黄金或红石等级的矿石。"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"5C96879819D068C8"
+				"1515AFCFF653E6B7"
+			]
+			hide: true
+			id: "57874E4880009FBD"
+			tasks: [{
+				id: "3ECCDFCE10BC1170"
+				type: "item"
+				item: {
+					id: "drills:brass_drill"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "42EBA4EEC2F72EE1"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "40893F0137B592D5"
+					type: "item"
+					item: "farmersdelight:mixed_salad"
+				}
+			]
+		}
+		{
+			title: "钢铁矿业"
+			icon: "ud_world_items:iron_gear_icon"
+			x: 10.0d
+			y: 7.5d
+			subtitle: "新时代"
+			description: [
+				"&7钢锭、电池、灯泡。似乎没漏掉什么。我几乎忘记了这种从自己的创造中感受到新鲜感的感觉。曾几何时，我经历过将普通金属转变为合金的过程，也见证了从单方块机制到多方块结构的演变。这样的例子还有很多，但核心是一致的——尽管这样说不太符合伦理，我甚至有点庆幸处于这样的环境中。然而，在一个没有社会存在的情况下，“伦理”这个词听起来可能有些奇怪。除了我，没有人能理解它的意义，而对我来说，它也毫无用处，因为这里唯一的目标就是生存并找到答案。"
+				""
+				"&5钢铁制多方块机制是前代的升级版本。你将解锁新的发电机、熔炉、粉碎机以及其他加工设备。借助它们，你将能够掌控重力流，并提取特殊的能量水晶。"
+			]
+			dependencies: ["0BD6BD40533CC553"]
+			hide: true
+			id: "37D6A16B53B9241B"
+			tasks: [{
+				id: "2356D11BCC1DB5C2"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+			rewards: [
+				{
+					id: "4F7E6DE14B504914"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1748955132031137801L
+				}
+				{
+					id: "7B81824DC3395630"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+				{
+					id: "49059A30DE2059E6"
+					type: "gamestage"
+					title: "&6转化中的新物品"
+					icon: "the_upside_down_world:irongear"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "create_shop"
+				}
+			]
+		}
+		{
+			title: "工程铸造厂"
+			icon: "ud_world_items:improved_engineering_input_block"
+			x: 10.0d
+			y: 9.5d
+			subtitle: "比烤箱更好"
+			description: [
+				"&7通过痛苦的经验，我学会了避免过去犯下的错误。新的熔炼炉将让我实现最大化的产出。一单位原料可以熔炼成两块锭或两份资源。"
+				""
+				"使用铸造厂从粉碎矿石中提取更多锭。在这里也可以熔炼其他一些资源，经过处理后可获得更多的产出。"
+			]
+			dependencies: ["37D6A16B53B9241B"]
+			id: "34CC08335B007798"
+			tasks: [
+				{
+					id: "13A3C4D681548427"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "engineering_foundry"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "37C96D4DF7B6B270"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "359CEA8AB9BF966C"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "2D19A0D7C1A135C0"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "65E1D80DE1FB4939"
+					type: "item"
+					item: "ud_world_items:improved_engineering_bricks"
+					count: 38L
+				}
+				{
+					id: "56F6504A75D0F3BC"
+					type: "item"
+					item: "ud_world_items:improved_engineering_pillar"
+					count: 12L
+				}
+				{
+					id: "6EA10702DA214CBA"
+					type: "item"
+					item: "ud_world_items:improved_engineering_base_block"
+					count: 20L
+				}
+				{
+					id: "4D2DD0BFA7FB6348"
+					type: "item"
+					item: "ud_world_items:improved_engineering_lamp"
+					count: 3L
+				}
+				{
+					id: "10180AD3115BB3DD"
+					type: "item"
+					item: "ud_world_items:improved_engineering_battery"
+				}
+				{
+					id: "5E78AA8F1570499A"
+					type: "item"
+					item: "ud_world_items:improved_engineering_heater"
+				}
+			]
+			rewards: [
+				{
+					id: "4E4434ADA2B07F6A"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1250721272784892157L
+				}
+				{
+					id: "37BCD8670FAEBA34"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "工程破碎机"
+			icon: "ud_world_items:improved_engineering_output_block"
+			x: 10.0d
+			y: 11.0d
+			subtitle: "资源翻倍"
+			description: [
+				"&5这台看似强大的粉碎机为玩家提供了关键功能——将矿石碎片和稀有方块的资源翻倍。"
+				""
+				"通过创建这个多方块机器，你将能够构建一个完整的矿石加工系统，增加输出材料的数量。简直像是一个童话故事！"
+			]
+			dependencies: ["37D6A16B53B9241B"]
+			id: "22AF836269868226"
+			tasks: [
+				{
+					id: "7EC3BE34C723A0D2"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "engineering_crusher"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "78ED281612A02D77"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "331AC07FCFF6A6CF"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "1D3C81F250F3D3FD"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "2EC623866A88C584"
+					type: "item"
+					item: "ud_world_items:improved_engineering_bricks"
+					count: 16L
+				}
+				{
+					id: "1503D6A20EC72FF4"
+					type: "item"
+					item: "ud_world_items:improved_engineering_pillar"
+					count: 8L
+				}
+				{
+					id: "2877CF4D0046A8EB"
+					type: "item"
+					item: "ud_world_items:improved_engineering_base_block"
+					count: 8L
+				}
+				{
+					id: "27D9B3BEA05923AA"
+					type: "item"
+					item: "ud_world_items:improved_engineering_lamp"
+					count: 2L
+				}
+				{
+					id: "369B2FF036FF1C7F"
+					type: "item"
+					item: "ud_world_items:improved_engineering_battery"
+				}
+				{
+					id: "0A2B038E80B5B9F5"
+					type: "item"
+					item: "ud_world_items:improved_engineering_drill"
+				}
+			]
+			rewards: [{
+				id: "5A4A8C938625D697"
+				type: "item"
+				item: "create:ochrum"
+				count: 32
+			}]
+		}
+		{
+			title: "空间钻机"
+			icon: "ud_world_items:improved_engineering_drill_on"
+			x: 8.0d
+			y: 9.5d
+			subtitle: "引力裂缝"
+			description: [
+				"&7如果相信记录，这就是古代的重力水晶采集机制。看起来并不复杂，必须尽快建造它。"
+				""
+				"&7重力水晶本身看起来无害。但人们学会了在材料加工和能量提取中利用它们。正是这些过程成为了两次灾难的根本原因。当然，保持谨慎是必要的。"
+				""
+				"&5完成此任务后，新的任务标签将为你解锁。"
+			]
+			dependencies: ["37D6A16B53B9241B"]
+			id: "1F872A0702C7DC8A"
+			tasks: [
+				{
+					id: "2659C823066C8B72"
+					type: "questsadditions:structure"
+					title: "打破空间！"
+					name: "interdimensional_drill2"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "612F191FEE1F9532"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "075DC5B80432382E"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "115145A6D91C47D7"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "08CA6DC6665BEF9D"
+					type: "item"
+					item: "ud_world_items:improved_engineering_bricks"
+					count: 8L
+				}
+				{
+					id: "0C2A6C2B11E6847B"
+					type: "item"
+					item: "ud_world_items:improved_engineering_pillar"
+					count: 28L
+				}
+				{
+					id: "0460E54C15EF045C"
+					type: "item"
+					item: "ud_world_items:improved_engineering_polished_block"
+					count: 14L
+				}
+				{
+					id: "7C0B7D7EF6A638B7"
+					type: "item"
+					item: "ud_world_items:improved_engineering_lamp"
+					count: 5L
+				}
+				{
+					id: "2098122A28451E59"
+					type: "item"
+					item: "ud_world_items:improved_engineering_battery"
+					count: 2L
+				}
+				{
+					id: "2B9FA7D25C03E179"
+					type: "item"
+					item: "ud_world_items:improved_engineering_drill"
+					count: 23L
+				}
+			]
+			rewards: [{
+				id: "4FF4658EF8E7F110"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			title: "改进的发电机"
+			icon: "ud_world_items:improved_engineering_polished_block"
+			x: 12.0d
+			y: 6.0d
+			subtitle: "向船长们致敬！"
+			description: ["与之前的发电机类似，这个发电机通过吸收各种类型的煤炭及其制成的块来生成能量。"]
+			dependencies: ["37D6A16B53B9241B"]
+			id: "24DED5E0249FE14C"
+			tasks: [
+				{
+					id: "3C311F8EED4487DF"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "improved_generator"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "2EA44D4C8DA1B8AB"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "19410E414042D645"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "2F85C2286B67BDF6"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "676FFFF004B2909B"
+					type: "item"
+					item: "ud_world_items:improved_engineering_bricks"
+					count: 6L
+				}
+				{
+					id: "61CD20E5D8039A22"
+					type: "item"
+					item: "ud_world_items:improved_engineering_pillar"
+					count: 12L
+				}
+				{
+					id: "6CD8974FED8B4E7B"
+					type: "item"
+					item: "ud_world_items:improved_engineering_base_block"
+					count: 20L
+				}
+				{
+					id: "222B857D090DE176"
+					type: "item"
+					item: "ud_world_items:improved_engineering_battery"
+				}
+			]
+			rewards: [
+				{
+					id: "5667B713DC9B4F36"
+					type: "item"
+					item: "minecraft:coal_block"
+				}
+				{
+					id: "4E1160ACFADA68F8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "工程加热器"
+			icon: "ud_world_items:improved_engineering_heater"
+			x: 12.0d
+			y: 7.5d
+			subtitle: "熔岩能源"
+			description: [
+				"通过熔岩、烈焰棒和岩浆生成能量。"
+			]
+			dependencies: ["37D6A16B53B9241B"]
+			id: "0872F14610B361E2"
+			tasks: [
+				{
+					id: "0807136BE99382AC"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "thermal_generator"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "1708130E90C9AB50"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "15556BC2471651D6"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "4DB603B1D3739A8A"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "5766D17EDC4C88FA"
+					type: "item"
+					item: "ud_world_items:improved_engineering_bricks"
+					count: 10L
+				}
+				{
+					id: "6BB9278E6ED094BD"
+					type: "item"
+					item: "ud_world_items:improved_engineering_pillar"
+					count: 12L
+				}
+				{
+					id: "2593BE27760C48ED"
+					type: "item"
+					item: "ud_world_items:improved_engineering_battery"
+				}
+				{
+					id: "1967DAA761F354E9"
+					type: "item"
+					item: "ud_world_items:improved_engineering_heater"
+				}
+			]
+			rewards: [{
+				id: "10C636C735475155"
+				type: "item"
+				item: "minecraft:magma_block"
+				count: 8
+			}]
+		}
+		{
+			title: "生物发电"
+			icon: "ud_world_items:improved_engineering_base_block"
+			x: 14.0d
+			y: 7.5d
+			subtitle: "环保人士不予同意"
+			description: ["利用各种农作物生产FE能量。将种子、蔬菜、水果投入机制中以生成燃料。"]
+			dependencies: ["37D6A16B53B9241B"]
+			id: "199132392708D3CA"
+			tasks: [
+				{
+					id: "3FAB4117F1B7B693"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "biogenerator"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "52C3FD5BFBDFF47E"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "6BAC21BCFE9E47C0"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "61E1C7151C058150"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "28B5B61648FF88B2"
+					type: "item"
+					item: "farmersdelight:rich_soil"
+					count: 9L
+				}
+				{
+					id: "7604EC68B386610F"
+					type: "item"
+					item: "ud_world_items:improved_engineering_pillar"
+					count: 8L
+				}
+				{
+					id: "4AD7EFD284AA3D34"
+					type: "item"
+					item: "ud_world_items:improved_engineering_polished_block"
+					count: 12L
+				}
+				{
+					id: "121CD8CB846C8870"
+					type: "item"
+					item: "ud_world_items:improved_engineering_base_block"
+					count: 6L
+				}
+				{
+					id: "71BB43A2B61B94A3"
+					type: "item"
+					item: "ud_world_items:improved_engineering_battery"
+				}
+				{
+					id: "2D162F99263A8985"
+					type: "item"
+					item: "minecraft:tinted_glass"
+					count: 33L
+				}
+			]
+			rewards: [{
+				id: "143F9D3EF2EEB350"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			title: "炽星燃烧室"
+			icon: "ud_world_items:improved_engineering_bricks"
+			x: 12.0d
+			y: 9.5d
+			subtitle: "地狱之门"
+			description: [
+				"&7我们的文明在巅峰时期，到处都充满了类似的机器。我们曾穿梭于远古世界，从中获取资源，用于发明创造或建筑设计。下界就是这样一个维度，我们的冒险者曾经前往那里采集黄金和稀有木材。而如今，所有传送门都被关闭了，无人负责维持其能量供给，结果导致稀有矿物和资源的获取变得不可能。"
+				""
+				"&7不过，仔细想想，我或许可以制造出一种机械，将我们世界的材料转化为另一个世界的资源。我会利用那个世界的波长，通过钢制棱镜引导它们，将一种物质转化为另一种。这计划可靠得就像瑞士钟表一样精准。"
+			]
+			dependencies: ["37D6A16B53B9241B"]
+			id: "356CF84CC99C56F5"
+			tasks: [
+				{
+					id: "7B3D2415C6623202"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "flaming_star_chamber"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "059F96C4F45E367A"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "36D2439B5732373E"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "0DB75DE1E3D1AC11"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "38F375FFE0284F9D"
+					type: "item"
+					item: "ud_world_items:improved_engineering_pillar"
+					count: 14L
+				}
+				{
+					id: "6E6A3C1381618E55"
+					type: "item"
+					item: "ud_world_items:improved_engineering_polished_block"
+				}
+				{
+					id: "63B8AEB388D3415E"
+					type: "item"
+					item: "ud_world_items:improved_engineering_base_block"
+					count: 31L
+				}
+				{
+					id: "5684DB9FAA106615"
+					type: "item"
+					item: "ud_world_items:improved_engineering_lamp"
+					count: 3L
+				}
+				{
+					id: "79DE0DDBD00C5B39"
+					type: "item"
+					item: "ud_world_items:improved_engineering_battery"
+				}
+				{
+					id: "38CC2AB89F1F5A3B"
+					type: "item"
+					item: "ud_world_items:improved_engineering_heater"
+				}
+			]
+			rewards: [
+				{
+					id: "24F235CCDA3EB53D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "6F56D9F540C142D8"
+					type: "gamestage"
+					title: "&6转化中的新物品"
+					icon: "the_upside_down_world:irongear"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "nether_shop"
+				}
+			]
+		}
+		{
+			title: "改进型工程构造器"
+			icon: "ud_world_items:improved_engineering_controller"
+			x: 6.0d
+			y: 11.5d
+			subtitle: "任何复杂的事情"
+			description: [
+				"&7使用远古技术发明可不简单。到目前为止，我所有的装置不过是一堆金属，根本无法与这个新构造器相比。钢铁外壳，门欧瑞作为导体，几次挥动扳手，轰——一切就绪！"
+				""
+				"&5在完成建造并激活改进版工程构造器后，你将解锁制作更高级物品的配方。新的阶段即将到来！"
+			]
+			dependencies: ["37D6A16B53B9241B"]
+			id: "1515AFCFF653E6B7"
+			tasks: [
+				{
+					id: "35F7299D0CB1400F"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "improved_engineering_constructor"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "62EA240C5F586F22"
+					type: "item"
+					item: "ud_world_items:improved_engineering_controller"
+				}
+				{
+					id: "1FA546013F256BE3"
+					type: "item"
+					item: "ud_world_items:improved_engineering_input_block"
+				}
+				{
+					id: "3C1778F9B1C7082E"
+					type: "item"
+					item: "ud_world_items:improved_engineering_output_block"
+				}
+				{
+					id: "6CD08492C1481888"
+					type: "item"
+					item: "integrateddynamics:crystalized_menril_block"
+					count: 14L
+				}
+				{
+					id: "6BD6B00881209D42"
+					type: "item"
+					item: "alloyed:steel_sheet_metal"
+					count: 12L
+				}
+				{
+					id: "662DA2FF307AB28A"
+					type: "item"
+					item: "ud_world_items:improved_engineering_bricks"
+					count: 64L
+				}
+				{
+					id: "2A8FE8380B370084"
+					type: "item"
+					item: "ud_world_items:improved_engineering_bricks"
+					count: 25L
+				}
+				{
+					id: "7F74CED8C5A4ECCA"
+					type: "item"
+					item: "ud_world_items:improved_engineering_base_block"
+					count: 56L
+				}
+				{
+					id: "5BBCC1303309C803"
+					type: "item"
+					item: "ud_world_items:improved_engineering_battery"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "6962D4A43F6846E9"
+					type: "item"
+					item: "ud_world_items:raw_gravito_crystal"
+					count: 4
+				}
+				{
+					id: "5B320763617B090E"
+					type: "item"
+					item: "farmersdelight:stuffed_pumpkin_block"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 10.0d
+			subtitle: "理解你的渺小"
+			description: [
+				"&7微观世界不是虚幻，而是直接的现实。&7微观世界技术曾是并仍然是我们时代科学的最重要谜题之一。没有人能准确地研究它。许多冒险者在试验阶段就消失了。那时，所有的研究项目都失去了投资者的支持。现在只剩下少量的记录，包含了相关信息。恢复整个研究将非常困难，但只要运气够好，我有可能制造出一台惊人的机器，拥有自己的维度，在那里我将存放..."
+				""
+				"&5压缩空间机械是微观世界的容器，你可以随意控制其中的内容。可以存放及其、生产工厂或个人物品——都无所谓。只要手边有压缩舱和PUS，你始终可以访问这个维度。"
+			]
+			dependencies: ["1515AFCFF653E6B7"]
+			hide: true
+			id: "0F8F5B4EA3B976AF"
+			tasks: [{
+				id: "09AF83F7262C53DC"
+				type: "item"
+				item: "compactmachines:machine_tiny"
+			}]
+			rewards: [
+				{
+					id: "2ABC6049A1362C14"
+					type: "item"
+					item: "create:water_wheel"
+					count: 2
+				}
+				{
+					id: "1A635A697A04BBAB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 10.0d
+			subtitle: "小人国游行"
+			description: ["&5手持PUS，右键点击压缩舱，即可进入你自己的微观世界。"]
+			dependencies: ["1515AFCFF653E6B7"]
+			hide: true
+			id: "254B6D75935EC385"
+			tasks: [{
+				id: "6DDEB6E57EBBE3E1"
+				type: "item"
+				item: "compactmachines:personal_shrinking_device"
+			}]
+			rewards: [
+				{
+					id: "6E14040BCBCE1832"
+					type: "item"
+					item: {
+						id: "create:extendo_grip"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "50C62AD2C899689B"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			subtitle: "有时，科学比艺术更有艺术感"
+			description: ["用于通过筛网处理土壤或沙子。可以获得各种类型的植物资源。"]
+			dependencies: ["551440DA8830F740"]
+			id: "42C85244C8000241"
+			tasks: [{
+				id: "1284CF1BEC198EAA"
+				type: "item"
+				item: "createsifter:sifter"
+			}]
+			rewards: [{
+				id: "5A2CD03D3C6B175C"
+				type: "item"
+				item: {
+					id: "createsifter:string_mesh"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "当镐子消失之时"
+			icon: "create:mechanical_drill"
+			x: 5.0d
+			y: -1.0d
+			subtitle: "不抽烟不喝酒"
+			description: ["&7经常会遇到这样的情况：你完全不知道在当前游戏阶段如何在没有合适工具的情况下获取某种资源。在这种情况下，便携式钻头可以派上用场。你可以将它放在矿石旁，通过使用手柄启动它进行开采。"]
+			dependencies: ["63555EDD0D765ACE"]
+			id: "522F45CD52732F12"
+			tasks: [
+				{
+					id: "17E50F01AC6461A1"
+					type: "item"
+					item: "create:hand_crank"
+				}
+				{
+					id: "6A0844E369F0D6A1"
+					type: "item"
+					item: "create:mechanical_drill"
+				}
+			]
+			rewards: [{
+				id: "1B5646A13478DD6E"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 972870964878479141L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

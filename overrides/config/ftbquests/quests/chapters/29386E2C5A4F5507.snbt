@@ -1,0 +1,345 @@
+{
+	id: "29386E2C5A4F5507"
+	group: "4C9AD1BD11EC2B19"
+	order_index: 0
+	filename: "29386E2C5A4F5507"
+	title: "背景"
+	icon: "ud_world_items:information_icon"
+	subtitle: ["&4基本信息"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "&5关于整合包"
+			icon: {
+				id: "ud_world_items:information_icon"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.0d
+			y: 1.0d
+			subtitle: "Desiderium 就是..."
+			description: [
+				"这是一个包含许多原创设计和新颖开发方法的Minecraft整合包。"
+				"为了提供完整的模组包游戏体验，我们设计了这些任务，引导玩家走上正确的道路。然而，这并不妨碍您自行探索这个世界。"
+				"此外，该项目还具有以下特点：修改的合成配方、自定义物品和生物、剧情内容以及精心设计的后期发展阶段。"
+				""
+				"&o点击“明白了！”以继续了解有关项目的信息。"
+			]
+			id: "6D30548BB7884C99"
+			tasks: [{
+				id: "6695763A86F66E74"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&e剧情"
+			icon: "cyao_lore:note_book"
+			x: -3.5d
+			y: -0.5d
+			subtitle: "整合包说明"
+			description: [
+				"整合包的世界充满了深刻的剧情元素，你可以在游玩整合包和探索维度的过程中逐步了解。在冒险中，你会遇到记录故事的笔记，接下来你的任务是收集散落在颠倒世界中的所有记忆碎片。通过任务中的各种独白和描述，你将深入了解角色的内心世界。"
+				""
+				"&7这中颜色的文本将展现人物的内心状态，从而表现人物的经历和思想。"
+				""
+				"&5这种颜色的文本将展示和描述玩家成长过程中出现的情况。"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "559D895A0A63D615"
+			tasks: [{
+				id: "66E8C41700A30D46"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&3研究台"
+			icon: "cyaoadditions:research_table"
+			x: 1.5d
+			y: -0.5d
+			subtitle: "研究系统"
+			description: [
+				"&5你需要付出汗水和努力，找回被遗忘的世界知识，通过探索和发展找到新方法来替代旧有且不完善的方式。为此，你将用到研究桌！这是一个全新的方块，拥有独特的系统。通过消耗少量资源、时间和思考，你可以解锁所需物品的配方。研究桌将在整合包的整个游玩过程中为你提供帮助。"
+				""
+				"研究桌的操作非常直观和方便。在左上角放入纸张和黑色染料，在左下面板中选择合适的符号，在右侧放入所需材料，而最重要的是，别忘了选择你感兴趣的研究内容！每个阶段会逐步解锁，依次进行。由于资源和知识的限制，你几乎不可能从第一个研究直接跳到第十个研究。"
+				"完成某项技术的研究后，你将解锁相关物品或一系列物品的合成，这些物品将助你在整合包的世界探索中更进一步。"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "6F490984AD2FB362"
+			tasks: [{
+				id: "233AB03A25425F55"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&6定制内容"
+			icon: {
+				id: "ud_world_items:engineers_armor_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: -1.5d
+			subtitle: "这顶帽子太完美了！"
+			description: ["整合包的核心之一是开发者加入的大量自定义内容，为玩家提供了全新的发展路径。你可以制作全新的主题装备，使用原创模组中的装饰性方块，并无限沉浸于既陌生又熟悉的Minecraft氛围中。"]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "760C0C63A778722A"
+			tasks: [{
+				id: "74B5E07EC76EC21A"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&d后期阶段"
+			icon: "ud_world_items:gravito_crystal"
+			x: 1.5d
+			y: 2.5d
+			subtitle: "关于发展"
+			description: [
+				"当你觉得所有的模组都已经研究透彻时，总会突然发现新的科技和物品等待你的探索与制作。"
+				"在整合包的最后阶段，你将遇到新的多方块结构，它们不仅能简化生存过程，还能让你体验到全新的机制和功能。借助这些结构，你将能够制作出整合包中最先进的物品！"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "75A4B0115D4C9978"
+			tasks: [{
+				id: "607CDDE395F89607"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&9移动"
+			icon: "paraglider:paraglider"
+			x: -3.5d
+			y: 2.5d
+			subtitle: "移动方式"
+			description: [
+				"在颠倒世界中成功行动的关键是不断适应环境。因此，玩家可以使用多种移动工具，从抓钩到高级飞艇，应有尽有。"
+				"要解锁新型移动工具的制作，你需要使用研究台。每种移动工具都会在玩家的整合包发展达到特定阶段时逐步解锁。"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "7F8F42D966ABE3DF"
+			tasks: [{
+				id: "3576A2FA36392426"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&2新怪物"
+			icon: "supplementaries:cage"
+			x: -1.0d
+			y: 3.5d
+			subtitle: "各个世界的居民"
+			description: [
+				"颠倒世界中栖息着各种各样的生物，&f它们已经适应了新的生存环境。基本上，这些生物是原版怪物、地牢怪物或人类活动的产物。"
+				"项目的开发者通过加入这些怪物，为全新世界的游戏体验增添了独特的色彩。每个怪物都拥有其独特的特点和机制。"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "1DD59D337C38017F"
+			tasks: [{
+				id: "7FAED99388CEEBF7"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&4机器"
+			icon: {
+				id: "wasteland:shredder_3000"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.0d
+			y: 1.0d
+			subtitle: "如何制作工具"
+			description: [
+				"&5以原版方式制作装备对你来说已是遗忘的知识。你已经无法直接制作复杂的工具，因此不得不想出新的方法来替代。"
+				""
+				"游戏开始时，玩家只能使用Desiderium和普通木材制作的工具。当你进入颠倒世界后，最初只能使用石制工具。只有在研究整合包中的机械动力模组后，才可以制作高于铁等级的工具。"
+				"首先制作一个切石机，在其中用抛光闪长岩雕刻出所需工具的模具。模具本身可以在工作台中制作。然后，在机械动力模组中的动力搅拌器里，将铁或其他材料熔炼成液体。"
+				"接下来，使用注液器将材料液体倒入模具中，得到工具的碎片。将其与木棍结合，完成！简单吧，难度不大，对吧？)"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "4B19D10CE9ADDC96"
+			tasks: [{
+				id: "62C9439E210AAA09"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&b开发人员"
+			icon: "ud_world_items:traveller_case"
+			x: 2.0d
+			y: 1.0d
+			subtitle: "我们是 Saudade 工作室！"
+			description: ["整合包Desiderium由Saudade工作室开发。我们从事Minecraft项目的制作已有三年。发布这款整合包对我们来说是一次重要的里程碑。衷心希望你在游玩我们的作品时能收获满满的乐趣！"]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "1206AB467BFBB680"
+			tasks: [{
+				id: "1A2F67D38FC677FC"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+			rewards: [
+				{
+					id: "0D14C699A44498BD"
+					type: "command"
+					title: "Авторы"
+					icon: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:water_breathing"
+						}
+					}
+					auto: "invisible"
+					command: "/tellraw @p {\"text\":\"由 Saudade studio 制作！我们的社交媒体：\"}"
+					player_command: false
+				}
+				{
+					id: "6DC1EF2EB4307944"
+					type: "command"
+					title: "VK"
+					icon: "seeds:sparkling_water_bottle"
+					auto: "invisible"
+					command: "/tellraw @p {\"text\":\"→ VK 小组\",\"color\":\"&5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://vk.com/saudade_mine\"}}"
+					player_command: false
+				}
+				{
+					id: "55AD62BAB8BBC72E"
+					type: "command"
+					title: "Discord"
+					icon: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_water_breathing"
+						}
+					}
+					auto: "invisible"
+					command: "/tellraw @p {\"text\":\"→  Discord服务器\",\"color\":\"&5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.gg/HSCMrqCNpD\"}}"
+					player_command: false
+				}
+				{
+					id: "6974DA3C7057A3D0"
+					type: "command"
+					title: "Сайт"
+					icon: {
+						id: "minecraft:lingering_potion"
+						Count: 1b
+						tag: {
+							Potion: "cyao_coreworld:desolation_spell"
+						}
+					}
+					auto: "invisible"
+					command: "/tellraw @p {\"text\":\"→ 整合包官方页\",\"color\":\"&5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://desiderium.ru/\"}}"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "&c独特的维度"
+			icon: "cyao_coreworld:corestone_lamp"
+			x: 0.5d
+			y: -1.5d
+			subtitle: "你好！"
+			description: [
+				"&5有三个自定义维度将会替代通常的维度： "
+				"首先-荒原，这是你生存之初的地方。"
+				"其次-颠倒世界，这是你在生存过程中的主要据点。"
+				"最后-星球的核心。最后一个故事地点，主 Boss 将在那里等着你。"
+				""
+				"&5在从荒原前往颠倒世界的旅途中会遇到一些特殊情况。例如，当你采集古代岩石时，可能会被传送回荒原——在这种情况下，请重复之前的操作。如果你在颠倒世界中没有设置重生点的床而退出游戏，重新进入时会回到荒原，此时需要重新执行生存初期的步骤。"
+				""
+				"&5下界和末地已被禁用，你无法进入这些维度。不过，这些维度的资源可以通过中期游戏中的多方块结构机制获取。"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "6A81D7F22E3D383D"
+			tasks: [{
+				id: "4E76161146EF5177"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&a地牢"
+			icon: "cyao_structures:test_orb"
+			x: -2.5d
+			y: 3.5d
+			subtitle: "黑洞尽头的曙光"
+			description: [
+				"游戏中期，你可以挑战自定义地牢，其中包含独特的生物以及箱子和桶中的实用战利品。每个地点都有规定的时间限制，期间你需要尽可能深入地探索。你可以随时返回这些结构，只需再次使用对应的传送球即可。"
+				""
+				"&7哦，对了，我好像忘了说，要进入地牢，你需要先探索并制作记忆构造器——一个特殊的工作台。它可以用来制作传送球，而这些传送球将把你传送到各个地点。"
+				""
+				"&5整合包中总共添加了两种类型的地牢："
+				"门之地牢是巨大的结构，内有全新生物以及该地点的Boss。在这里，你可以找到记忆碎片，记录剧情的唱片，同时还能收集大量有用的战利品。探索这些结构的时间限制为30分钟，时间一到，你将被传送回颠倒世界的起始地点——前哨基地。"
+				"小型地牢是一些规模较小的建筑，战利品较少。它们的作用主要是提供剧情笔记和少量战利品。在这些地点，你只能停留1分钟的现实时间。"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "5E02113465B2F9FA"
+			tasks: [{
+				id: "0CAA5B32C3912FB6"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&1指南针"
+			icon: "supplementaries:globe_sepia"
+			x: -2.5d
+			y: -1.5d
+			subtitle: "而不是小地图"
+			description: [
+				"为了在空间中导航，屏幕顶部的指南针标尺将派上用场。您可以通过按下“I”键在指示器上设置一个标记，之后该标记会显示在罗盘上。"
+				""
+				"如果厌倦了指南针，可以随时在模组设置面板中将其关闭。按下“;”键即可打开设置面板。"
+			]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "643FEB53C96A2A07"
+			tasks: [{
+				id: "36F77C53EA324F82"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+		{
+			title: "&8游戏说明"
+			icon: "create:schematic_and_quill"
+			x: 0.5d
+			y: 3.5d
+			subtitle: "待办事项表"
+			description: ["你还可以为自己编写游戏笔记。要做到这一点，请按\“T\”键打开笔记面板。保存的笔记将放在屏幕右侧，提醒您注意。"]
+			dependencies: ["6D30548BB7884C99"]
+			hide: true
+			id: "100E7227EA4444DB"
+			tasks: [{
+				id: "3F6649A5D55FE48E"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

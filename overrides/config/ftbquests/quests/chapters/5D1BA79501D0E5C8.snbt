@@ -1,0 +1,1617 @@
+{
+	id: "5D1BA79501D0E5C8"
+	group: "3D8ADA421153B1A3"
+	order_index: 2
+	filename: "5D1BA79501D0E5C8"
+	title: "炼金术"
+	icon: "ud_world_items:magic_bottle_icon"
+	subtitle: ["&6宛如魔力"]
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	images: [{
+		x: -1.0d
+		y: -24.5d
+		width: 15.0d
+		height: 10.0d
+		rotation: 0.0d
+		image: "chemlib:textures/painting/periodic_table.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+		dependency: "635FCD7FE3711B7E"
+	}]
+	quests: [
+		{
+			x: 0.0d
+			y: 1.5d
+			shape: "hexagon"
+			subtitle: "等价交换原则"
+			description: [
+				"&7这个世界建立在三大本质之上：工程学、炼金术和引力学。在过去，科学家们将关于这三大本质的所有知识结合在一起，共同推动技术的发展。炼金术是科学活动中最古老的巅峰之一。这门学科赋予人类制造表面看似“魔法”般物品的能力，但实际上，一切都基于等价交换的原则。任何物品都可以被分解为其基本成分，然后用这些成分创造出新的东西。凭借这一简单的概念，人类学会了用铜制造黄金，从空气中提取水。"
+				""
+				"&5也许你也该试试当个炼金术士？"
+				""
+				"给种子注入魔力，然后利用赫斯珀里得斯花园结出果实。"
+			]
+			dependencies: ["4C96EAD2C1973F2C"]
+			hide: true
+			size: 1.25d
+			id: "48EC19A1A322E617"
+			tasks: [{
+				id: "017D6BACD112F6B3"
+				type: "item"
+				item: "occultism:datura_seeds"
+			}]
+			rewards: [{
+				id: "3F78BF048BEA535F"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			title: "佐罗，我们去哪儿？"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "如果心情不好，吃块巧克力吧"
+			description: [
+				"&7释放恶魔之力就等于获得更好的资源，无论这些资源是如何获得的。现在没有人会审判我了，我可以做任何事！"
+				""
+				"&5丢下恶魔之梦果，用任何方式点燃它，并获得灵火。将各种材料投入火中，你将为它们注入一丝黑暗力量，将其转化为某种全新的东西。"
+			]
+			dependencies: ["48EC19A1A322E617"]
+			hide: true
+			id: "23FCE0CB8A6E78C9"
+			tasks: [{
+				id: "15F5FB04363CB782"
+				type: "item"
+				item: "occultism:datura"
+			}]
+			rewards: [{
+				id: "3043830302E7C249"
+				type: "item"
+				item: "occultism:datura_seeds"
+				count: 4
+			}]
+		}
+		{
+			title: "熔炼转换"
+			x: 2.0d
+			y: -1.5d
+			subtitle: "神秘7出了？"
+			description: ["这是一种用于将物品转化为液体的锅。通过使用铁板加固底座，你将能够制作更复杂的配方，例如墨水或液态末影合金。"]
+			dependencies: ["2D02C86E486A3024"]
+			id: "0DAE2E04522FBA64"
+			tasks: [{
+				id: "2D49E651CF0E5946"
+				type: "item"
+				item: "melter:melter"
+			}]
+			rewards: [{
+				id: "7C33958C164F5FE9"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6346408907276309058L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			subtitle: "你知道天空中的星星会在生命逝去的那一刻陨落吗？"
+			description: ["&5通过火找到或转化的石块在各种变换中作为基础资源非常重要。例如，你可以将这种石块研磨成粉末，以便稍后使用。"]
+			dependencies: ["2D02C86E486A3024"]
+			id: "6BCD1C688B7952B6"
+			tasks: [{
+				id: "05702A76C8937365"
+				type: "item"
+				item: "occultism:burnt_otherstone"
+			}]
+			rewards: [
+				{
+					id: "569410E05704F7AA"
+					type: "item"
+					item: "supplementaries:candy"
+					count: 16
+				}
+				{
+					id: "612D4229E34BC463"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -3.0d
+			subtitle: "某人的骨灰 O.o"
+			description: ["点燃灵魂沙，然后将之前获取的粉尘投入其中，以获得灵魂尘，并继续探索神秘的死灵术。"]
+			dependencies: ["6BCD1C688B7952B6"]
+			hide: true
+			id: "3BCB2E5AF00473E6"
+			tasks: [{
+				id: "0E9279261D396B44"
+				type: "item"
+				item: "spirit:soul_powder"
+			}]
+			rewards: [
+				{
+					id: "05D8A96359B3BB38"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+				{
+					id: "36EF0711B46BECCD"
+					type: "item"
+					item: "malum:earthen_spirit"
+					count: 6
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			subtitle: "哦，嘿，罗斯托切克"
+			description: ["一种魔法树木的变种。其叶子和木材对魔法具有极高的敏感性。可以用于制作中。"]
+			dependencies: ["2D02C86E486A3024"]
+			id: "41A805AB0EACC0B5"
+			tasks: [{
+				id: "67A27DAF51967041"
+				type: "item"
+				item: "malum:runewood_sapling"
+			}]
+			rewards: [{
+				id: "4F34DF1A840F747A"
+				type: "item"
+				item: "integrateddynamics:crystalized_menril_block"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			subtitle: "宣讲教义，举行仪式，关心信徒们的需求——信仰便会牢固。"
+			description: ["&7钻石的价值一直是相对的，但并非所有人都这么认为。有些人学会了将它们用于自己的邪恶行为。于是，炼金术士们禁止了碳的转化，以遏制这种行为。"]
+			dependencies: ["2D02C86E486A3024"]
+			id: "3F559EFD1D1E069E"
+			tasks: [{
+				id: "4DDE64319432128F"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+			}]
+			rewards: [{
+				id: "65679CDB9A4F69E7"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			title: "灵魂尘块"
+			x: -6.0d
+			y: -3.0d
+			subtitle: "墓土"
+			dependencies: ["3BCB2E5AF00473E6"]
+			hide: true
+			id: "5D127CFB80304295"
+			tasks: [{
+				id: "5B32C676F7FE2784"
+				type: "item"
+				item: "spirit:soul_powder_block"
+				count: 4L
+			}]
+			rewards: [{
+				id: "70EE65459968BE52"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.5d
+			subtitle: "没有钻石工具时"
+			description: ["&5你将铁锭进行炼金转化，将其熔炼成灵魂钢锭。现在，先进工具的配方对你开放了。"]
+			dependencies: ["5D127CFB80304295"]
+			id: "3810E336E0F2F14F"
+			tasks: [{
+				id: "24F7FF83DBE8C37F"
+				type: "item"
+				item: "spirit:soul_steel_ingot"
+			}]
+			rewards: [{
+				id: "6CCE0F62895A6DC5"
+				type: "item"
+				item: "storagedrawers:obsidian_storage_upgrade"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			subtitle: "只是不要触及灵魂......"
+			description: [
+				"&7即使在最先进的社会中，也会有一些异类。由于一些非凡的个体渴望控制他人的生命，死灵术——复生死者的知识应运而生。类似行为的初期阶段遭到了所有炼金术士的鄙视。那些自命不凡、推崇自己观点的人，最终遭受了迫害。"
+				""
+				"&5或许，他们部分的知识在漫长的岁月中依然留存在人们的脑海中，以及那些黑暗的文献中。利用祖先留下的经验，尝试重建曾经的世界。"
+			]
+			dependencies: ["3BCB2E5AF00473E6"]
+			id: "58785C9351A9BCA6"
+			tasks: [{
+				id: "595C7241543E2EA5"
+				type: "item"
+				item: "spirit:soul_crystal_shard"
+			}]
+			rewards: [{
+				id: "5210A427470AAE4B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.0d
+			subtitle: "仪式的催化剂"
+			description: ["&5你在掌控死灵技术方面取得了不小的进展。接下来，只需弄明白如何利用灵魂水晶。"]
+			dependencies: ["58785C9351A9BCA6"]
+			id: "3D5A277832868F88"
+			tasks: [{
+				id: "2BBA2D2B00D5FBC1"
+				type: "item"
+				item: "spirit:soul_crystal"
+			}]
+			rewards: [
+				{
+					id: "118C57D4A0DD7468"
+					type: "item"
+					item: "farmersdelight:bacon_sandwich"
+				}
+				{
+					id: "471DF0EC4854A658"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			subtitle: "重生世界"
+			description: [
+				"&7在这个无限孤独的世界里，他找到了自己灵魂的真正目的地。"
+				""
+				"&5你创造了一个令人惊叹的装置，能够复兴整个文明！不仅是你这个时代的生物，甚至那些早已埋藏于石下的生命也可以被召唤，只需付出一点努力即可。"
+				""
+				"将祭坛放置在世界中，右键点击将主要资源放入祭坛，然后使用催化剂来启动仪式并召唤生物。"
+			]
+			dependencies: ["3810E336E0F2F14F"]
+			id: "53E5C88139855D5A"
+			tasks: [{
+				id: "19099ACB38AE4C1A"
+				type: "item"
+				item: "summoningrituals:altar"
+			}]
+			rewards: [{
+				id: "39785645DAB1F990"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6346408907276309058L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			subtitle: "矩阵"
+			description: [
+				"&7科学家们总是通过实践来验证他们的理论知识。如果工程师们使用复杂的技术装置，那么炼金术士们则借助古老工艺的帮助。祭坛、熔炼和类似的物品不过是过去的遗物。但总得从某处开始。"
+				""
+				"&5制作灵魂祭坛以掌控死后世界的能量。未来，你可以利用这种能量来打造强化材料和工具。"
+			]
+			dependencies: [
+				"41A805AB0EACC0B5"
+				"3F559EFD1D1E069E"
+			]
+			hide: true
+			id: "78DC497336E21576"
+			tasks: [{
+				id: "7C3DD46E5C75B186"
+				type: "item"
+				item: "malum:spirit_altar"
+			}]
+			rewards: [
+				{
+					id: "123F4DEF5E2F3B08"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "304D33DFFF09DE4C"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -4.5d
+			subtitle: "形式和外表并不重要.... 灵魂才是最重要的"
+			description: ["使用镰刀作为武器，以收集尽可能多的灵魂，供祭坛或其他用途使用。"]
+			hide_dependency_lines: true
+			dependencies: ["41A805AB0EACC0B5"]
+			hide: true
+			id: "604A0223095AF47F"
+			tasks: [{
+				id: "501D0E0FDDC72D2C"
+				type: "item"
+				item: {
+					id: "malum:crude_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "560511DD4DAFCF26"
+					type: "item"
+					item: "occultism:afrit_essence"
+				}
+				{
+					id: "1B016272E517D9D5"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+			]
+		}
+		{
+			title: "唯一的原则是，没有原则"
+			x: -2.0d
+			y: -6.0d
+			subtitle: "杀戮或死亡"
+			description: ["所收集灵魂的种类取决于你击杀的怪物。或许，建造一个刷怪农场来自动化这个过程是个好主意。"]
+			dependencies: ["604A0223095AF47F"]
+			hide: true
+			id: "1457584C451AC543"
+			tasks: [
+				{
+					id: "36E85419B9861F6F"
+					type: "item"
+					item: "malum:sacred_spirit"
+				}
+				{
+					id: "71278D51E3F063B1"
+					type: "item"
+					item: "malum:wicked_spirit"
+				}
+				{
+					id: "2D8827C1D801C217"
+					type: "item"
+					item: "malum:arcane_spirit"
+				}
+				{
+					id: "1F4E13796A9AB2AE"
+					type: "item"
+					item: "malum:eldritch_spirit"
+				}
+				{
+					id: "71400A9635F3FB0C"
+					type: "item"
+					item: "malum:earthen_spirit"
+				}
+				{
+					id: "4F27626A872EEDCD"
+					type: "item"
+					item: "malum:infernal_spirit"
+				}
+				{
+					id: "431B954AA9C10281"
+					type: "item"
+					item: "malum:aerial_spirit"
+				}
+				{
+					id: "04DF345F03D357CA"
+					type: "item"
+					item: "malum:aqueous_spirit"
+				}
+			]
+			rewards: [{
+				id: "403D1C191C2350E1"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6346408907276309058L
+			}]
+		}
+		{
+			title: "拿起一块石头，把多余的部分都切掉。"
+			x: 2.0d
+			y: -4.5d
+			subtitle: "我当了三天的搬砖的"
+			description: ["制作用于该模组合成表的多种魔法石。"]
+			dependencies: ["78DC497336E21576"]
+			hide: true
+			id: "56CB3BF5B2924844"
+			tasks: [
+				{
+					id: "2F51B7B485C9A91A"
+					type: "item"
+					item: "malum:tainted_rock"
+					count: 16L
+				}
+				{
+					id: "0948D76D51877213"
+					type: "item"
+					item: "malum:twisted_rock"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "260CC1BE08D718BE"
+				type: "xp"
+				xp: 75
+			}]
+		}
+		{
+			title: "女巫的灰烬"
+			x: 4.0d
+			y: -6.0d
+			subtitle: "是失败的实验还是新的发现？"
+			dependencies: ["78DC497336E21576"]
+			hide: true
+			id: "3604E4703181B2B5"
+			tasks: [{
+				id: "1214B777D3A6F08B"
+				type: "item"
+				item: "malum:hex_ash"
+				count: 3L
+			}]
+			rewards: [
+				{
+					id: "3ACCCA18E5847A9F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+				{
+					id: "7F91696E84BB4FEA"
+					type: "item"
+					item: "malum:aqueous_spirit"
+					count: 6
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			subtitle: "黄金铺就了追寻真理者的道路。"
+			dependencies: ["78DC497336E21576"]
+			hide: true
+			id: "1D152FB6909DA96B"
+			tasks: [{
+				id: "74C3472906128346"
+				type: "item"
+				item: "malum:hallowed_gold_ingot"
+			}]
+			rewards: [{
+				id: "6181EEB4325066D2"
+				type: "item"
+				item: "createdeco:gold_sheet_metal"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -6.0d
+			subtitle: "类似于魔力钢"
+			dependencies: ["78DC497336E21576"]
+			hide: true
+			id: "70DF76469F587E3B"
+			tasks: [{
+				id: "057B79C44782CE4D"
+				type: "item"
+				item: "malum:soul_stained_steel_ingot"
+			}]
+			rewards: [
+				{
+					id: "410DB68ADAB2AD18"
+					type: "item"
+					item: "malum:block_of_soulstone"
+				}
+				{
+					id: "041A376B31B34DC9"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			subtitle: "方便储存内用品"
+			description: ["稍后，您将学习如何将液态末影珍珠转化为末影珍珠和其他资源。"]
+			dependencies: ["0DAE2E04522FBA64"]
+			hide: true
+			id: "4CF9A4B0E9A7A5A1"
+			tasks: [{
+				id: "4F66C74506EFEC75"
+				type: "item"
+				item: "endertaur:enderium_bucket"
+			}]
+			rewards: [{
+				id: "18C95F87FD46CD35"
+				type: "item"
+				item: "create_sa:heap_of_experience"
+				count: 4
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.5d
+			subtitle: "灵魂的宝库"
+			description: ["一个方便的灵魂储存装置。"]
+			dependencies: [
+				"1D152FB6909DA96B"
+				"604A0223095AF47F"
+			]
+			hide: true
+			id: "2217ED34FC64C47B"
+			tasks: [{
+				id: "66A7AB90C95C7216"
+				type: "item"
+				item: "malum:spirit_jar"
+			}]
+			rewards: [
+				{
+					id: "0717967BAACCB4BF"
+					type: "item"
+					item: "farmersdelight:dumplings"
+				}
+				{
+					id: "2F5C6C2A9D972732"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -7.5d
+			subtitle: "合-合-合-合理。"
+			dependencies: ["1D152FB6909DA96B"]
+			hide: true
+			id: "446F1BE0CD0732DA"
+			tasks: [{
+				id: "40A47F463F35AD94"
+				type: "item"
+				item: "malum:hallowed_spirit_resonator"
+			}]
+			rewards: [{
+				id: "52EAD75428154F58"
+				type: "item"
+				item: "minecraft:smooth_quartz"
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: -7.5d
+			subtitle: "宇宙的秘密掌握在你手中"
+			dependencies: ["70DF76469F587E3B"]
+			id: "43D5033BC68B6134"
+			tasks: [{
+				id: "55E8A3F2E9D6C339"
+				type: "item"
+				item: "malum:stained_spirit_resonator"
+			}]
+			rewards: [{
+				id: "6CA0A836F345AC52"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			title: "鬼魂想与你交流"
+			x: 2.0d
+			y: -7.5d
+			subtitle: "这些指的是什么？"
+			dependencies: ["70DF76469F587E3B"]
+			id: "378CA5C5779F328F"
+			tasks: [
+				{
+					id: "7ECBF0644B257B21"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2DB890245129A144"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6305D520E2B68A80"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "68D6AD79B3430787"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "2D2BFA092DCD8E9B"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "343B6DECDBA99829"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -4.5d
+			subtitle: "魔术的第一法则是永远比别人聪明"
+			description: ["为精华、工具和装备注入灵魂之力，以强化或修复物品。"]
+			dependencies: [
+				"56CB3BF5B2924844"
+				"3604E4703181B2B5"
+			]
+			hide: true
+			id: "2639B566E08E900D"
+			tasks: [{
+				id: "25F9335FFB583625"
+				type: "item"
+				item: "malum:spirit_crucible"
+			}]
+			rewards: [
+				{
+					id: "066C92289BF6F520"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "4B64DED1EC9E5AA2"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "至高树"
+			x: 0.0d
+			y: -9.0d
+			subtitle: "种植自己的魔法森林"
+			description: [
+				"&7在我童年时，常常讨论某些“德鲁伊”，他们在炼金术研究中运用了对自然的知识。他们轻松地驾驭植物和动物，然而一些学者却不喜欢他们，因为他们信仰某些“守护者”。我们这个时代的人普遍对任何形式的宗教表现持负面态度。也不奇怪，当人类自行改变了这个世界时，我们早已忘记了神的旨意。人类曾像神一样。而如今，我们曾经的伟大又剩下了什么呢……"
+			]
+			dependencies: ["78DC497336E21576"]
+			hide: true
+			dependency_requirement: "one_completed"
+			id: "3A53E3641772B4D5"
+			tasks: [
+				{
+					id: "310C4A0B80CCF576"
+					type: "item"
+					item: "ars_nouveau:blue_archwood_sapling"
+				}
+				{
+					id: "4D921CB7CADD3BF3"
+					type: "item"
+					item: "ars_nouveau:purple_archwood_sapling"
+				}
+				{
+					id: "5FF36F335DE53E27"
+					type: "item"
+					item: "ars_nouveau:green_archwood_sapling"
+				}
+				{
+					id: "0BEC38CD0BA1D78E"
+					type: "item"
+					item: "ars_nouveau:red_archwood_sapling"
+				}
+			]
+			rewards: [
+				{
+					id: "73ADBFC2E88B1B4E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "4035D53BF55E6C1B"
+					type: "item"
+					item: "ars_nouveau:worn_notebook"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -10.5d
+			subtitle: "另一个工作台:）"
+			description: ["&7科学家、邪道炼金术士和黑暗巫师们始终有着共同的目标，尽管他们并不理解这一点。当世界遭遇至高文明自私的干涉时，他们都变得平等。未能保护世界，他们也失去了知识。这种魔法工艺品正是人类本性中无个性与无品味的证明。"]
+			dependencies: ["3A53E3641772B4D5"]
+			id: "7AF51C16F4251631"
+			tasks: [{
+				id: "7C073EECBABC666B"
+				type: "item"
+				item: "ars_nouveau:imbuement_chamber"
+			}]
+			rewards: [
+				{
+					id: "0717354AC1D9F2CC"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+				{
+					id: "7716C1D11EE1E8F9"
+					type: "item"
+					item: "occultism:iesnium_dust"
+					count: 8
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -10.5d
+			subtitle: "世间万物都是同一事物的不同表现形式。"
+			dependencies: ["3A53E3641772B4D5"]
+			id: "715184E5412D38DA"
+			tasks: [{
+				id: "0D8B208161D2CD0B"
+				type: "item"
+				item: "ars_nouveau:source_jar"
+			}]
+			rewards: [
+				{
+					id: "3DA72B9C0EE15606"
+					type: "item"
+					item: "ars_nouveau:archwood_planks"
+					count: 16
+				}
+				{
+					id: "07FC018EFB265972"
+					type: "item"
+					item: "farmersdelight:cooked_mutton_chops"
+					count: 2
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -10.5d
+			subtitle: "P.S."
+			description: ["在抄写台上，可以制作一系列符文或咒语。"]
+			dependencies: ["3A53E3641772B4D5"]
+			id: "6456D98D4CB09BB7"
+			tasks: [{
+				id: "2A5C84548D9CC1FE"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+			rewards: [
+				{
+					id: "7892C5949D77D5FA"
+					type: "item"
+					item: "minecraft:writable_book"
+				}
+				{
+					id: "73A29022E3089711"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -10.5d
+			subtitle: "从他身上散发出令人难以置信的力量"
+			description: ["基础魔法材料，用于巫术领域。"]
+			dependencies: ["7AF51C16F4251631"]
+			id: "6E80DFBBE0DCA040"
+			tasks: [{
+				id: "0E6AA44D53752994"
+				type: "item"
+				item: "ars_nouveau:source_gem"
+			}]
+			rewards: [
+				{
+					id: "71ADD14A309F04DF"
+					type: "item"
+					item: "ud_world_items:fruit_berry_tube"
+					count: 3
+				}
+				{
+					id: "5BEF3279F40768C9"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+				{
+					id: "2DA530D5AE86A67D"
+					type: "gamestage"
+					title: "&3Новые предметы в Трансмутации"
+					icon: "ars_nouveau:glyph_self"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "magic_shop"
+				}
+			]
+		}
+		{
+			title: "奥术"
+			x: -6.0d
+			y: -12.0d
+			subtitle: "如果你想改变世界，不要问别人的许可。"
+			dependencies: ["6E80DFBBE0DCA040"]
+			hide: true
+			id: "4C1C62589783A5AA"
+			tasks: [{
+				id: "5EEAC2528612AC36"
+				type: "item"
+				item: "ars_nouveau:arcane_stone"
+				count: 16L
+			}]
+			rewards: [{
+				id: "4295C401936DC062"
+				type: "item"
+				item: "malum:corrupted_resonance"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -13.5d
+			subtitle: "矮人发明了基座"
+			dependencies: ["4C1C62589783A5AA"]
+			hide: true
+			id: "488A36ECA181C0DF"
+			tasks: [{
+				id: "5B14F3C3B817F2DB"
+				type: "item"
+				item: "ars_nouveau:arcane_pedestal"
+			}]
+			rewards: [{
+				id: "22DE3AB3B5C39A80"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2698257103144768531L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -15.0d
+			subtitle: "我爷爷就有一个这样的东西！"
+			description: [
+				"&5一个结构复杂的装置，用于为物品注入魔力。"
+				""
+				"放置基座，并在基座上放置制作道具所需的物品。"
+			]
+			dependencies: ["4C1C62589783A5AA"]
+			hide: true
+			id: "16DCF1C733A16891"
+			tasks: [{
+				id: "6E02A9174412F6F7"
+				type: "item"
+				item: "ars_nouveau:enchanting_apparatus"
+			}]
+			rewards: [
+				{
+					id: "35F8056213C3C16B"
+					type: "item"
+					item: "paraglider:heart_container"
+				}
+				{
+					id: "73C89136855FCA03"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -16.5d
+			subtitle: "充满能量"
+			description: ["将法术装置放置在核心上，以便分配能量用于制造。"]
+			dependencies: ["4C1C62589783A5AA"]
+			hide: true
+			id: "0664CF17B956D797"
+			tasks: [{
+				id: "2EFDFD3E44996020"
+				type: "item"
+				item: "ars_nouveau:arcane_core"
+			}]
+			rewards: [{
+				id: "56F38E42A8A0E9A7"
+				type: "item"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -12.0d
+			subtitle: "炼金术 + 农业"
+			dependencies: ["6E80DFBBE0DCA040"]
+			hide: true
+			id: "281C7BACAF7F4FCF"
+			tasks: [{
+				id: "48633D81348EDF69"
+				type: "item"
+				item: "ars_nouveau:agronomic_sourcelink"
+			}]
+			rewards: [{
+				id: "53885C4A516C94D6"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -13.5d
+			subtitle: "一个简单实用的魔术小工具。"
+			description: ["有助于在储罐和设备之间传输法力。别忘了使用法杖！"]
+			dependencies: ["6E80DFBBE0DCA040"]
+			hide: true
+			id: "1D9D5591AC5C9AF8"
+			tasks: [{
+				id: "5B0332E2CF2740EA"
+				type: "item"
+				item: "ars_nouveau:relay"
+			}]
+			rewards: [{
+				id: "2FEBCEB5B50C1CE0"
+				type: "item"
+				item: "brewinandchewin:strongroot_ale"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -10.5d
+			subtitle: "你是个巫师，哈利"
+			description: [
+				"&7将所有反科学的环境因素汇集成一本书——这也是一种科学。"
+				""
+				"&5《法术书》为你开启了在这个模组中的新发展道路，你将遇到以前未曾探索过的科学领域。"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"3604E4703181B2B5"
+				"3A53E3641772B4D5"
+			]
+			hide: true
+			id: "6D3D98E86386898B"
+			tasks: [{
+				id: "45BF845A91CB96FD"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+			rewards: [
+				{
+					id: "3B382C560D00D9E5"
+					type: "item"
+					item: "ars_nouveau:wilden_horn"
+				}
+				{
+					id: "517C60BCE6F04DEA"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "什么词可以作为 “魔法 ”的反义词？"
+			x: -2.0d
+			y: -12.0d
+			subtitle: "收集精华"
+			description: ["&7很快，这些精华将用于制作配方。那么，为什么不一次性全都制作出来，豪气地一挥而就呢？"]
+			dependencies: [
+				"7AF51C16F4251631"
+				"6E80DFBBE0DCA040"
+			]
+			id: "469FF1C5F6CFC79D"
+			tasks: [
+				{
+					id: "12DEDD63DBCDCFAC"
+					type: "item"
+					item: "ars_nouveau:abjuration_essence"
+				}
+				{
+					id: "0F2ED4CB1696C476"
+					type: "item"
+					item: "ars_nouveau:conjuration_essence"
+				}
+				{
+					id: "1785CA0F6F2A876E"
+					type: "item"
+					item: "ars_nouveau:air_essence"
+				}
+				{
+					id: "50523A1AFC54A899"
+					type: "item"
+					item: "ars_nouveau:earth_essence"
+				}
+				{
+					id: "0490184D236852EA"
+					type: "item"
+					item: "ars_nouveau:fire_essence"
+				}
+				{
+					id: "2C37C4E5C9F6100A"
+					type: "item"
+					item: "ars_nouveau:manipulation_essence"
+				}
+				{
+					id: "55621BB25A018EF1"
+					type: "item"
+					item: "ars_nouveau:water_essence"
+				}
+			]
+			rewards: [
+				{
+					id: "5751FCC19A117EAF"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "2B3593F9158271A6"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -15.0d
+			subtitle: "神奇种子"
+			description: [
+				"&7伟大的蚕丝虫以培育这种植物品种为傲。拥有它，任何魔法师都能变得更强大。将能量注入一块布料，然后用它制作防护装备——为什么以前没有人想到这一点呢？就这样，战斗法师诞生了。当然，没有人会把他们和工程师相提并论，但他们的力量差不多，而在协作时，他们的工作效率是最高的。如果未来我能创造出一种具有抵御各种威胁的魔法纤维就好了……"
+			]
+			dependencies: ["16DCF1C733A16891"]
+			hide: true
+			id: "70DF173382A16092"
+			tasks: [{
+				id: "6AFDEB92E46D9F76"
+				type: "item"
+				item: "ars_nouveau:magebloom_crop"
+			}]
+			rewards: [
+				{
+					id: "68AFC43F784C2813"
+					type: "item"
+					item: "farmersdelight:tomato_seeds"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -15.0d
+			subtitle: "让我们每个人都织出自己的茧，无需问为什么和为了什么。"
+			dependencies: ["70DF173382A16092"]
+			id: "683470345A08CF16"
+			tasks: [{
+				id: "7679EFDB448FBB68"
+				type: "item"
+				item: "ars_nouveau:magebloom_fiber"
+			}]
+			rewards: [{
+				id: "2BE1A6550A6DDD99"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 3022466149224120138L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -15.0d
+			subtitle: "烈焰硬化"
+			dependencies: ["683470345A08CF16"]
+			id: "78EA0EE63890C15A"
+			tasks: [{
+				id: "480F489B266E33B7"
+				type: "item"
+				item: "ars_nouveau:blaze_fiber"
+			}]
+			rewards: [
+				{
+					id: "6389ACDD7E222546"
+					type: "item"
+					item: "viescraftmachines:xegonite_shard"
+					count: 18
+				}
+				{
+					id: "2332A0935A668778"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -15.0d
+			subtitle: "浸泡在虚空中"
+			dependencies: ["78EA0EE63890C15A"]
+			id: "153E2DDCC4A5255D"
+			tasks: [{
+				id: "0E836F206DBBEF1C"
+				type: "item"
+				item: "ars_nouveau:end_fiber"
+			}]
+			rewards: [
+				{
+					id: "2CC413235AA08FCF"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 7
+				}
+			]
+		}
+		{
+			title: "专用套装"
+			x: -2.0d
+			y: -13.5d
+			subtitle: "奉献给..."
+			dependencies: ["683470345A08CF16"]
+			hide: true
+			id: "3EBD643F637AC8E1"
+			tasks: [
+				{
+					id: "7BDE6DAC50EA5080"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "22F19909DD9CDA26"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7174E57AEECE45B3"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6259BC0D62E9F9B2"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "0873F0373A89FFF8"
+					type: "xp"
+					xp: 85
+				}
+				{
+					id: "5C86BB52AAD76BE5"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "罗布的学徒"
+			x: 0.0d
+			y: -13.5d
+			subtitle: "真正的师傅是永远的学徒"
+			dependencies: ["78EA0EE63890C15A"]
+			hide: true
+			id: "493AACA2A708A14E"
+			tasks: [
+				{
+					id: "36BB7C8FF6905E45"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6C45ECF5D1729EBC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4E433443F87B5D09"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "10F7A5C74218947F"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "04AAEF23DA471810"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "6859C9C90A812392"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+			]
+		}
+		{
+			title: "大法师长跑"
+			x: 2.0d
+			y: -13.5d
+			subtitle: "这样一来，就算对上爬行者也不怕了。"
+			description: ["&7这或许是我在炼金术领域的所有科学研究中最出色的作品。奇怪的是，即使缺乏必要的知识或技能，我几乎也可以作为这一领域的科学家。我的同僚们一定会嫉妒我这样的多才多艺。"]
+			dependencies: ["153E2DDCC4A5255D"]
+			hide: true
+			id: "34CC8A39D90CD039"
+			tasks: [
+				{
+					id: "7209D330A183BCDC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "70535E6AA5E74E40"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "07FCCC9E88C48B64"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2F9C007EF1D2C3E1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "70C2F5360DF170A6"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "37115CE7551E2BB9"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1250721272784892157L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -12.0d
+			subtitle: "我不是巫师，我只是在学习....."
+			dependencies: ["6D3D98E86386898B"]
+			hide: true
+			id: "1888ED561CB196BA"
+			tasks: [{
+				id: "08B45C6333C1B593"
+				type: "item"
+				item: "ars_nouveau:apprentice_spell_book"
+			}]
+			rewards: [
+				{
+					id: "7C85832D2804705E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "55DCC934D4ACC647"
+					type: "item"
+					item: "malum:earthen_spirit"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -16.5d
+			subtitle: "我将自己写诗"
+			description: ["可用作魔法卷轴合成表的基础。"]
+			dependencies: ["683470345A08CF16"]
+			hide: true
+			id: "50B165AEFF476596"
+			tasks: [{
+				id: "373BEA742E193C5E"
+				type: "item"
+				item: "ars_nouveau:blank_parchment"
+			}]
+			rewards: [{
+				id: "7D79C2958F2285B9"
+				type: "item"
+				item: "minecraft:paper"
+				count: 24
+			}]
+		}
+		{
+			title: "高级炼金术"
+			icon: "ud_world_items:magic_bottle_icon"
+			x: 4.5d
+			y: -18.5d
+			shape: "hexagon"
+			subtitle: "新阶段"
+			description: [
+				"&7如今，是先进设备登场的时候了。我终于能够在工程技术和炼金术技艺上更进一步。新的装置使我能够将各种物品分解为炼金元素，并通过吸收这些元素创造出新的物品。这是一门复杂的科学，需要时间去掌握。从此，任何界限都无法阻挡我的脚步。"
+				""
+				"所有的机械都有大致相同的使用方式。将物品分解为元素，合成新的元素或物品，制作特殊的炼金粉末，并在这门复杂的工艺中不断进步吧！"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"3784BE19F567701C"
+				"469FF1C5F6CFC79D"
+				"47D721DA90A55AF8"
+			]
+			hide: true
+			size: 1.25d
+			id: "635FCD7FE3711B7E"
+			tasks: [{
+				id: "725A20D955059ED0"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+			rewards: [
+				{
+					id: "1FBF4AFDC4385263"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+				{
+					id: "0A05925CF1056E25"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "alchemistry:alchemistry_book"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -16.5d
+			subtitle: "如果母鸡下的是金蛋，那就不再是养殖业，而是炼金术了。"
+			dependencies: ["635FCD7FE3711B7E"]
+			hide: true
+			id: "1A22C35A46F4691E"
+			tasks: [{
+				id: "7778E1B4E2173221"
+				type: "item"
+				item: "alchemistry:compactor"
+			}]
+			rewards: [
+				{
+					id: "35D739888F010F4A"
+					type: "item"
+					item: "farmersdelight:stuffed_potato"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -16.5d
+			subtitle: "炼金术就是解构、组合和创造任何事物"
+			dependencies: ["635FCD7FE3711B7E"]
+			hide: true
+			id: "3CD4F063FF8E1D19"
+			tasks: [{
+				id: "0F0FDD73ED7FEBC4"
+				type: "item"
+				item: "alchemistry:combiner"
+			}]
+			rewards: [{
+				id: "415666A9B65E5305"
+				type: "item"
+				item: "supplementaries:pancake"
+				count: 8
+			}]
+		}
+		{
+			x: 2.0d
+			y: -18.0d
+			subtitle: "炼金术的真面目"
+			dependencies: ["635FCD7FE3711B7E"]
+			hide: true
+			id: "3AA43E4C8B76F544"
+			tasks: [{
+				id: "4BE289383819AE1A"
+				type: "item"
+				item: "alchemistry:dissolver"
+			}]
+			rewards: [
+				{
+					id: "1F4DCBF584D9DD34"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "64DDBDB565218F20"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -16.5d
+			subtitle: "快速移动工具"
+			description: [
+				"Shift+右键以记录位置。"
+				""
+				"右键 - 移动到之前保存的位置。"
+			]
+			dependencies: ["50B165AEFF476596"]
+			id: "5A852DBEC3925645"
+			tasks: [{
+				id: "40671D4D209F6603"
+				type: "item"
+				item: {
+					id: "ars_nouveau:warp_scroll"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "3CC52CBBAD5C93D8"
+				type: "item"
+				item: "grapplemod:magnetupgradeitem"
+			}]
+		}
+		{
+			title: "我们的内心都有恶魔。"
+			x: 0.0d
+			y: -1.5d
+			subtitle: "天啊，你在这里做什么？"
+			description: [
+				"&5在颠倒世界的深处，藏有充满浓烈恶魔气息的洞窟。为了窥见隐藏的秘密，品尝邪恶之果吧。"
+				""
+				"&5这样的绿洲极为罕见。与之相对的是，通过掌控灵火来获取资源。"
+			]
+			dependencies: ["23FCE0CB8A6E78C9"]
+			id: "2D02C86E486A3024"
+			tasks: [{
+				id: "39F57F204312F3C9"
+				type: "item"
+				item: "occultism:otherstone"
+			}]
+			rewards: [{
+				id: "189EFC89CBF85073"
+				type: "item"
+				item: "occultism:otherworld_sapling"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

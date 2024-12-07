@@ -1,0 +1,15 @@
+{
+	"item.kubejs.empty_sac":"空墨水袋",
+	"item.kubejs.hot_inc_bucket":"墨桶",
+	"item.kubejs.molter_brass_bucket":"熔融黄铜桶",
+	"item.kubejs.molter_copper_bucket":"熔融铜桶",
+	"item.kubejs.molter_gold_bucket":"熔融金桶",
+	"item.kubejs.molter_iron_bucket":"熔融铁桶",
+	"item.kubejs.molter_zinc_bucket":"熔融锌桶",
+	"fluid.kubejs.molter_copper": "熔融铜",
+	"fluid.kubejs.hot_inc":"液体墨水",
+	"fluid.kubejs.molter_brass":"熔融黄铜",
+	"fluid.kubejs.molter_gold":"熔融金",
+	"fluid.kubejs.molter_iron":"熔融铁",
+	"fluid.kubejs.molter_zinc":"熔融锌"
+}

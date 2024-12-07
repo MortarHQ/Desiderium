@@ -1,0 +1,1961 @@
+{
+	id: "64C646F561034ABC"
+	group: "3D8ADA421153B1A3"
+	order_index: 0
+	filename: "64C646F561034ABC"
+	title: "流浪"
+	icon: "ud_world_items:wandering_icon"
+	subtitle: ["&6颠倒的世界"]
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "&m第一颗 &m树"
+			x: 0.0d
+			y: 1.25d
+			subtitle: "新的开始"
+			description: [
+				"&7这是一个你从未见过的世界。难以想象的动物群和植物群，令人着迷的地质构造和壮丽的地貌。同时，这个地方远离表面，被最深的黑暗笼罩。这里仿佛从未有过人类的足迹，但同时，这里曾经是一个完整文明的家园。真让人难以置信。"
+				""
+				"&5就像以前一样，你的生存将从砍伐树木开始。正如人们所说，要致富先撸树！"
+			]
+			dependencies: ["3A34A9DF8765CFAC"]
+			hide: true
+			size: 1.25d
+			id: "14862C0DCF2E1058"
+			tasks: [{
+				id: "5A6DB60110A5E7F4"
+				type: "item"
+				title: "任何的树"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1F6F05181306681F"
+					type: "item"
+					item: "minecraft:oak_planks"
+					count: 16
+				}
+				{
+					id: "30E098005E047D80"
+					type: "item"
+					item: "minecraft:black_dye"
+					count: 4
+				}
+				{
+					id: "015D767A6C0DAA2D"
+					type: "item"
+					item: "minecraft:purple_bed"
+				}
+				{
+					id: "21CDD0BA6EBF91E3"
+					type: "command"
+					title: "别忘了好好睡一觉！"
+					icon: "ars_nouveau:glyph_harm"
+					auto: "invisible"
+					command: "/tellraw @p {\"text\":\"我太累了....也许我应该睡一觉再走?\"}"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "匹诺曹"
+			icon: "farmersdelight:cutting_board"
+			x: -2.0d
+			y: 1.5d
+			subtitle: "一切从这里开始"
+			description: [
+				"&7木材 - 是一种非常实用的材料，能够在不同的场景中发挥作用。需要准备一些初期的设备来去皮，并获取合适的木材材料，以便发明最新的工具。让我给它起个名字..."
+			]
+			dependencies: ["14862C0DCF2E1058"]
+			hide: true
+			id: "5871B4CDAB8FCCD5"
+			tasks: [
+				{
+					id: "2CDA8D3FE4408E1B"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "1724D233CFCA2D3C"
+					type: "item"
+					item: "farmersdelight:tree_bark"
+				}
+				{
+					id: "58F408A8333E5E38"
+					type: "item"
+					item: "farmersdelight:straw"
+				}
+			]
+			rewards: [{
+				id: "368E3195D9E0D7E4"
+				type: "item"
+				item: "farmersdelight:straw_bale"
+			}]
+		}
+		{
+			title: "抓钩"
+			x: -2.0d
+			y: 3.0d
+			subtitle: "抓住**Wooo！**"
+			description: ["&7哦，是的，这正是我需要的！现在我可以在颠倒世界的高地上自由移动，甚至能攀附在陡峭的悬崖上。这个世界的一切都在我掌控之中！"]
+			dependencies: ["5871B4CDAB8FCCD5"]
+			hide: true
+			id: "5BC7F5216EAE9DE9"
+			tasks: [{
+				id: "0EC300DA967F657F"
+				type: "item"
+				item: {
+					id: "grapplemod:grapplinghook"
+					Count: 1b
+					tag: {
+						Damage: 0
+						custom: {
+							doublehook: 0b
+							motor: 0b
+							phaserope: 0b
+							attract: 0b
+							rocket: 0b
+							hookgravity: 1.0d
+							repelforce: 1.0d
+							attractradius: 3.0d
+							pullbackwards: 1b
+							smartmotor: 0b
+							detachonkeyrelease: 0b
+							angle: 20.0d
+							crc32: 2252267022L
+							rocket_vertical_angle: 0.0d
+							rocket_force: 1.0d
+							rocket_refuel_ratio: 15.0d
+							motorwhencrouching: 0b
+							motorwhennotcrouching: 1b
+							motordampener: 0b
+							rocket_active_time: 0.5d
+							throwspeed: 2.0d
+							motoracceleration: 0.2d
+							enderstaff: 0b
+							oneropepull: 0b
+							sneakingverticalthrowangle: 0.0d
+							smartdoublemotor: 1b
+							repel: 0b
+							sneakingangle: 10.0d
+							motormaxspeed: 4.0d
+							playermovementmult: 1.0d
+							reelin: 1b
+							sticky: 0b
+							verticalthrowangle: 0.0d
+							maxlen: 30.0d
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "1BBB2A0F3F5ECAC4"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			title: "石工具"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "石头工具包"
+			description: [
+				"&7现在可以好好放开手脚了！"
+				""
+				"&5要制作石制工具，你需要一个炉子来将圆石炼制成石头，并将其用于合成中。"
+			]
+			dependencies: [
+				"14862C0DCF2E1058"
+				"1AC0418F34C4DDEC"
+			]
+			id: "4E3EAC8FF7E95964"
+			tasks: [
+				{
+					id: "672B1A1EF449F9C9"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2F2C1DD5C28BF647"
+					type: "item"
+					item: {
+						id: "minecraft:stone_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5658C438E1288595"
+					type: "item"
+					item: {
+						id: "minecraft:stone_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "3BBC11597BA8B928"
+					type: "item"
+					item: {
+						id: "minecraft:stone_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6D89179606A9B3E2"
+					type: "item"
+					item: "farmersdelight:kelp_roll_slice"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			subtitle: "施蒂尔茨正在烧火炉。一个小时后，火炉沉没了。"
+			description: ["&7幸运的是，现在我不需要为冶炼资源创建复杂的多方块机制了。新的炉子将会既紧凑又多功能。"]
+			dependencies: ["14862C0DCF2E1058"]
+			id: "1AC0418F34C4DDEC"
+			tasks: [{
+				id: "263A0026D207916D"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [
+				{
+					id: "40D91553593AF84E"
+					type: "item"
+					item: "minecraft:charcoal"
+					count: 3
+				}
+				{
+					id: "0AF26F0E8C37B956"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "矿石"
+			icon: "minecraft:raw_iron"
+			x: 2.0d
+			y: 3.0d
+			subtitle: "你的矿工回家了....."
+			description: ["&5为了进一步发展模组，你一定需要这个世界的基础资源：铁、铜和作为燃料的煤炭。当你解锁新的挖掘等级时，就能获取更多种类的材料。"]
+			dependencies: ["4E3EAC8FF7E95964"]
+			id: "429C1DA473D5A08E"
+			tasks: [
+				{
+					id: "2CA7B31565CF2022"
+					type: "item"
+					title: "煤炭"
+					item: "minecraft:coal"
+					count: 8L
+				}
+				{
+					id: "0CE5784AAD3C97EC"
+					type: "item"
+					title: "粗铁"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:raw_materials/iron"
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "0D4DC615428E2708"
+					type: "item"
+					title: "粗铜"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:raw_materials/copper"
+						}
+					}
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "55EF1BE296F5155B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2698257103144768531L
+			}]
+		}
+		{
+			title: "存储"
+			icon: "minecraft:barrel"
+			x: -4.0d
+			y: 4.5d
+			subtitle: "简单方便"
+			description: ["&7这里也难以评论，这只是目前我能使用的基本储物方式。"]
+			hide_dependency_lines: true
+			dependencies: ["14862C0DCF2E1058"]
+			hide: true
+			id: "63553A01CF18A3E4"
+			tasks: [
+				{
+					id: "2C7477D1CF43C8B5"
+					type: "item"
+					title: "桶"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:barrels"
+						}
+					}
+				}
+				{
+					id: "1B386DED4F80BC2E"
+					type: "item"
+					item: "minecraft:chest"
+				}
+			]
+			rewards: [{
+				id: "5301328A1D33F7BB"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2698257103144768531L
+			}]
+		}
+		{
+			title: "高级存储"
+			icon: "storagedrawers:oak_full_drawers_4"
+			x: -4.0d
+			y: 6.0d
+			subtitle: "一气呵成"
+			description: ["在不同的抽屉里，你可以存储不同种类的资源。放入的资源数量是有限的。可以通过使用升级来增加存储容量。"]
+			dependencies: ["63553A01CF18A3E4"]
+			hide: true
+			id: "1B703162F494F7D1"
+			tasks: [{
+				id: "3CF9775AB20A5E3A"
+				type: "item"
+				title: "任何抽屉"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1C7EE73FB26639E3"
+					type: "item"
+					item: "minecraft:birch_log"
+					count: 8
+				}
+				{
+					id: "3AE733DD5D54F625"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "铁箱子"
+			x: -6.0d
+			y: 10.5d
+			subtitle: "防止铁生锈"
+			hide_dependency_lines: true
+			dependencies: [
+				"429C1DA473D5A08E"
+				"3505363151F5C9BE"
+			]
+			hide: true
+			id: "78E4D1AD22A79A58"
+			tasks: [{
+				id: "7EB06DE905EC6216"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+			rewards: [{
+				id: "5A48DC57B6C69E0A"
+				type: "item"
+				item: "minecraft:raw_iron_block"
+			}]
+		}
+		{
+			title: "装饰"
+			icon: "another_furniture:oak_chair"
+			x: -6.0d
+			y: 4.5d
+			subtitle: "有东西可以坐了"
+			description: ["不错的初始装饰套件，用来装饰自己的小屋。"]
+			hide_dependency_lines: true
+			dependencies: ["14862C0DCF2E1058"]
+			hide: true
+			id: "30346F83CC8C1F0B"
+			tasks: [
+				{
+					id: "1BF13CA0172DBEBC"
+					type: "item"
+					title: "椅子"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "another_furniture:chairs"
+						}
+					}
+				}
+				{
+					id: "408416DE238FDF4A"
+					type: "item"
+					title: "架子"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "another_furniture:shelves"
+						}
+					}
+				}
+				{
+					id: "4A742BCF990AC393"
+					type: "item"
+					title: "桌子"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "another_furniture:tables"
+						}
+					}
+				}
+				{
+					id: "547251540B14E9DF"
+					type: "item"
+					title: "柜子"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "another_furniture:drawers"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1479B75FEED816BC"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2698257103144768531L
+			}]
+		}
+		{
+			title: "各种工作台"
+			icon: "chipped:botanist_workbench"
+			x: -6.0d
+			y: 6.0d
+			subtitle: "凿子模拟器"
+			description: ["每个独立的工作台用于制作不同种类的方块变种。"]
+			hide_dependency_lines: true
+			dependencies: ["14862C0DCF2E1058"]
+			hide: true
+			id: "12A9358C53606CC4"
+			tasks: [
+				{
+					id: "204362A0F0AE0E87"
+					type: "item"
+					item: "chipped:botanist_workbench"
+				}
+				{
+					id: "2BEBC3D4D8486E46"
+					type: "item"
+					item: "chipped:glassblower"
+				}
+				{
+					id: "7465C1620B5F8763"
+					type: "item"
+					item: "chipped:carpenters_table"
+				}
+				{
+					id: "5FEECE85A315DFA4"
+					type: "item"
+					item: "chipped:loom_table"
+				}
+				{
+					id: "496A9E4A213F5591"
+					type: "item"
+					item: "chipped:mason_table"
+				}
+				{
+					id: "044881B2F8BD81BE"
+					type: "item"
+					item: "chipped:alchemy_bench"
+				}
+				{
+					id: "5606A124E71AFDA2"
+					type: "item"
+					item: "chipped:mechanist_workbench"
+				}
+			]
+			rewards: [
+				{
+					id: "796A6E5FA9275597"
+					type: "item"
+					item: "storagedrawers:gold_storage_upgrade"
+				}
+				{
+					id: "49CDDFAF287FB3A7"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+			]
+		}
+		{
+			title: "基础抓钩升级"
+			x: 6.0d
+			y: 6.0d
+			subtitle: "如果你不知道这个东西，就去研究它。"
+			description: ["未来改进钩爪的基础。"]
+			hide_dependency_lines: true
+			dependencies: ["5BC7F5216EAE9DE9"]
+			hide: true
+			id: "29EC79125FAE057D"
+			tasks: [{
+				id: "2B54AFBCF9F364EC"
+				type: "item"
+				item: "grapplemod:baseupgradeitem"
+			}]
+			rewards: [
+				{
+					id: "58E584DE04E33355"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "5104DE4EF820976B"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 7.5d
+			subtitle: "像蝴蝶一样翩翩起舞，像蜜蜂一样惹人怜爱。"
+			description: ["&7一开始简易的滑翔伞就足够了。更何况，有了它，从高处下降以及在世界中移动将变得更加轻松。"]
+			dependencies: ["3003695F3A27EAC0"]
+			hide: true
+			id: "410FC0291E82D284"
+			tasks: [{
+				id: "0B178C77C28DE75B"
+				type: "item"
+				item: "paraglider:paraglider"
+			}]
+			rewards: [
+				{
+					id: "5EB107BB19097D2F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1250721272784892157L
+				}
+				{
+					id: "5918DFF7A4D4C320"
+					type: "item"
+					item: "cyao_lore:note_4"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 9.0d
+			subtitle: "一只脚在这里，另一只脚在那里。"
+			description: ["&7传送石碑几乎在各地都能找到。人们已经习惯了远距离的传送，很少再使用更简单的交通方式了。或许，我也该最终放弃我的那些设备了。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"4CF9A4B0E9A7A5A1"
+				"7C9A227AC62D95C8"
+			]
+			hide: true
+			id: "6C12C25FA7885B6B"
+			tasks: [{
+				id: "6E12F7F3A6304CA3"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+			rewards: [
+				{
+					id: "08E0F27B2253C08A"
+					type: "item"
+					item: "endertaur:enderium_bucket"
+				}
+				{
+					id: "0E284D3549175E81"
+					type: "item"
+					item: "farmersdelight:hamburger"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 9.0d
+			subtitle: "并非所有闪光的都是金子"
+			hide_dependency_lines: true
+			dependencies: [
+				"429C1DA473D5A08E"
+				"78E4D1AD22A79A58"
+			]
+			hide: true
+			id: "51571FBDB890CB52"
+			tasks: [{
+				id: "6A6DDE82E1BA973F"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+			rewards: [
+				{
+					id: "3374BE51A2EF8F8F"
+					type: "item"
+					item: "farmersdelight:bone_broth"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 9.0d
+			subtitle: "像木制的，但更好"
+			description: ["高级种类的箱子拥有更多的存储空间。使用的材料类型决定了箱子的坚固度和可填充量。"]
+			hide_dependency_lines: true
+			dependencies: ["429C1DA473D5A08E"]
+			hide: true
+			id: "3505363151F5C9BE"
+			tasks: [{
+				id: "22F77D784A36992C"
+				type: "item"
+				item: "ironchest:copper_chest"
+			}]
+			rewards: [
+				{
+					id: "39B66F02D3CC1830"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+				{
+					id: "7ACB7BF4FA198792"
+					type: "item"
+					item: "ud_world_items:seed_tube"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 10.5d
+			subtitle: "主打一个面面俱到"
+			hide_dependency_lines: true
+			dependencies: [
+				"429C1DA473D5A08E"
+				"51571FBDB890CB52"
+				"7C9A227AC62D95C8"
+			]
+			hide: true
+			id: "26FC77541993E792"
+			tasks: [{
+				id: "2755D81641EDD154"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+			rewards: [
+				{
+					id: "027FAF7B23DB2198"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "25EBDC08DF65E82D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 4.5d
+			shape: "octagon"
+			subtitle: "安山岩时代"
+			description: [
+				"&7深处矿洞时，我忽然陷入了沉思……如果不是一次，也不是两次，我已经经历过这样的事情了呢？也许将来还会发生类似的事情？为什么我总是忘记一切？过去的是什么，我又将如何面对未来？这些问题让我无法平静，直到我挖掘到了安山岩。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["1AC0418F34C4DDEC"]
+			hide: true
+			size: 1.2d
+			id: "01DE57C1A6DF8965"
+			tasks: [{
+				id: "5143213563E038F4"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+			rewards: [{
+				id: "5206481C37CD1B07"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 8
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			subtitle: "美食佳肴"
+			description: ["&7 在当地洞穴的深处，我能找到一种可食用的胡萝卜。这将是我的第一顿饭。我得说，这是个不错的开始。"]
+			hide_dependency_lines: true
+			dependencies: ["4E3EAC8FF7E95964"]
+			hide: true
+			id: "4005D946F9F00F8A"
+			tasks: [{
+				id: "3521A6B77A3EA9E8"
+				type: "item"
+				item: "miners_delight:cave_carrot"
+			}]
+			rewards: [{
+				id: "6F2C9CF46F8DE936"
+				type: "item"
+				item: "farmersdelight:melon_popsicle"
+			}]
+		}
+		{
+			title: "闪长岩加工"
+			x: 0.0d
+			y: 6.0d
+			subtitle: "最小程度的匠魂"
+			description: [
+				"在这个整合包中，有一个非常有趣的机制——通过将预先从闪长岩中雕刻出来的模具灌注来制作工具。"
+				""
+				"&5那么，为了制作提升挖掘效率的第一批工具，你需要收集一些闪长岩，制作一个空白模板，然后在切石机上雕刻出所需的模具。"
+			]
+			dependencies: ["4E3EAC8FF7E95964"]
+			id: "38B83887C30CEF17"
+			tasks: [
+				{
+					id: "2AE263289EA1BD1B"
+					type: "item"
+					item: "minecraft:diorite"
+					count: 8L
+				}
+				{
+					id: "76BDF8BC9971C7E5"
+					type: "item"
+					item: "cyao_stuff:blank_pattern"
+				}
+			]
+			rewards: [{
+				id: "62CDA3AD50A72D57"
+				type: "item"
+				item: "cyao_stuff:blank_pattern"
+				count: 2
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			subtitle: "切掉一切碍眼的"
+			description: ["&7石匠台应该让我能够制作不同石块的变种，或许我还能掌握它的其他功能。"]
+			dependencies: ["1AC0418F34C4DDEC"]
+			hide: true
+			id: "272C7F151576395B"
+			tasks: [{
+				id: "17AEA6F93AC8C227"
+				type: "item"
+				item: "minecraft:stonecutter"
+			}]
+			rewards: [{
+				id: "6C3B5612EE60EBA8"
+				type: "item"
+				item: "minecraft:stone"
+				count: 24
+			}]
+		}
+		{
+			title: "工具模板"
+			x: 0.0d
+			y: 7.5d
+			subtitle: "都收拾好了吗？"
+			description: ["&5在切石机上，你可以制作工具模板，随后将其放入注液器中，在注液器灌注特定的冶炼材料，从而打造出首批高级工具。"]
+			dependencies: [
+				"272C7F151576395B"
+				"38B83887C30CEF17"
+			]
+			id: "53360587D65C45D1"
+			tasks: [
+				{
+					id: "6E49D1CDAB82B9F8"
+					type: "item"
+					item: "cyao_stuff:axe_head_pattern"
+				}
+				{
+					id: "2D49FC01C5EE1270"
+					type: "item"
+					item: "cyao_stuff:pickaxe_head_pattern"
+				}
+				{
+					id: "2867404ED7BCCF5B"
+					type: "item"
+					item: "cyao_stuff:shovel_head_pattern"
+				}
+			]
+			rewards: [
+				{
+					id: "6E25CF333455984E"
+					type: "item"
+					item: "cyao_stuff:sword_head_pattern"
+				}
+				{
+					id: "03842C13B1EFFCC5"
+					type: "item"
+					item: "ud_world_items:vegetable_tube"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 9.0d
+			subtitle: "制作烈焰粉"
+			description: [
+				"&5在动力搅拌器中使用火药和粉碎的岩浆制作烈焰粉。"
+				""
+				"&5在世界中找到僵尸，用烈焰粉点击鼠标右键召唤烈焰人。然后，你可以将其放入烈焰人燃烧器中。"
+			]
+			dependencies: ["71ABDAB398D3D0A6"]
+			id: "0B49FBF552A0BD1A"
+			tasks: [{
+				id: "5FB37090DC569959"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+			rewards: [
+				{
+					id: "4EE4B1A02C29B7BD"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1748955132031137801L
+				}
+				{
+					id: "03DC5BB76B489F4E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 7.5d
+			subtitle: "房间里的地狱"
+			description: [
+				"&5要制作岩浆，请使用搅拌器：将岩浆倒入其中，再放入圆石。以后这个东西将有助于你在技术过程中发展。"
+				""
+				"&5将它放置在世界中。使用工具鼠标右键击打岩浆块来破坏它，获取粉碎的岩浆。"
+			]
+			dependencies: ["708C13855415261C"]
+			id: "71ABDAB398D3D0A6"
+			tasks: [{
+				id: "40932FB02B4E53EB"
+				type: "item"
+				item: "minecraft:magma_block"
+			}]
+			rewards: [{
+				id: "3DA3E9F80E017F08"
+				type: "item"
+				item: "create_things_and_misc:crushed_magma"
+			}]
+		}
+		{
+			title: "钢铁军械库"
+			x: 0.0d
+			y: 9.0d
+			subtitle: "我亲爱的士兵，你造了什么？"
+			description: ["&7好啊！我终于可以使用改进过的工具了！不知道我现在能用它们开采什么资源？"]
+			dependencies: [
+				"53360587D65C45D1"
+				"0B49FBF552A0BD1A"
+			]
+			id: "3491429455E0844E"
+			tasks: [
+				{
+					id: "32A6BA774F63CC7E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0D2105E0268F53B9"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "04AD8939D836EB1D"
+					type: "item"
+					item: {
+						id: "minecraft:iron_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "76C84ABBCE4B5B1D"
+				type: "item"
+				item: {
+					id: "minecraft:iron_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 9.0d
+			subtitle: "神盾局"
+			description: ["用一只手握住盾牌，同时按下右键，即可挡住怪物的攻击和飞来的射弹物。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"3491429455E0844E"
+				"3003695F3A27EAC0"
+			]
+			hide: true
+			id: "50CFB84870199124"
+			tasks: [{
+				id: "02BA90E262AB529B"
+				type: "item"
+				item: {
+					id: "minecraft:shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "47D7D36E18E6127E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+				{
+					id: "787EDF7D260E66E8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 10.5d
+			subtitle: "点碳成金"
+			description: [
+				"&7我原以为，或许会有一些记忆回到我的脑海，让我明白自己为何身处此地。然而，我的头脑中只有关于这些材料和它们用途的浅显知识。但这一切究竟是为了什么？我仍然没有答案。甚至不知道，答案是否真的存在。"
+				""
+				"&5找不到钻石矿？通过灵魂魔法将绿宝石转化为你需要的宝石！"
+			]
+			dependencies: ["3491429455E0844E"]
+			hide: true
+			id: "7C9A227AC62D95C8"
+			tasks: [{
+				id: "01E405B7BCEF3FDE"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+			rewards: [
+				{
+					id: "0034BE66E54F2FD5"
+					type: "item"
+					item: {
+						id: "supplementaries:flute"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "369F69AF21157074"
+					type: "item"
+					item: "farmersdelight:glow_berry_custard"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 10.5d
+			subtitle: "升职了"
+			description: ["&7当我获得我的第一颗钻石时，不仅了解了这种材料，还明白了如何使用它。用铁打造的工具已经不再能吸引我，因为它们的效率和耐久性已无法满足需求，而用钻石制作类似的工具根本不可能。因此，我不得不寻找替代方案。如果我回到过去，想想在荒原中我如何创造了铁钻头？或许可以依靠旧有的理念，结合新资源，打造出一把全新的钻头？"]
+			dependencies: ["7C9A227AC62D95C8"]
+			id: "56B6238FD19FF99B"
+			tasks: [{
+				id: "6F0C38E6A8F50470"
+				type: "item"
+				item: {
+					id: "drills:diamond_drill"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "67D42790A4273719"
+					type: "item"
+					item: "minecraft:diamond_ore"
+					count: 3
+				}
+				{
+					id: "19D011F2173ACA10"
+					type: "xp"
+					xp: 55
+				}
+				{
+					id: "78FA45182F59EA7C"
+					type: "item"
+					item: "cyao_lore:note_6"
+				}
+			]
+		}
+		{
+			title: "红石粉"
+			x: 4.0d
+			y: 9.0d
+			subtitle: "红色的力量！"
+			description: ["&7红石出乎意料地具有出色的导电性，或许可以用来构建远古机械结构。"]
+			dependencies: ["3491429455E0844E"]
+			hide: true
+			id: "620820CCA387BA42"
+			tasks: [{
+				id: "367EF1A54330E5F1"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "4E9FC28983B68386"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1748955132031137801L
+				}
+				{
+					id: "26CCB70C1C67AC1D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "红石工程"
+			x: 4.0d
+			y: 10.5d
+			subtitle: "微型操作"
+			description: ["微型红石方块和机制对那些希望基于原版自动化打造隐秘物流系统的玩家来说非常有用。"]
+			dependencies: ["620820CCA387BA42"]
+			hide: true
+			id: "2D3FA3F4A198ADE8"
+			tasks: [
+				{
+					id: "1129878CE8EB2B60"
+					type: "item"
+					item: "tinyredstone:redstone_wrench"
+				}
+				{
+					id: "415D4F6D827AE238"
+					type: "item"
+					item: "tinyredstone:block_chopper"
+				}
+				{
+					id: "38A758FFB1BF8663"
+					type: "item"
+					item: "tinyredstone:redstone_panel"
+				}
+			]
+			rewards: [{
+				id: "5948B41A33E79EF2"
+				type: "item"
+				item: "minecraft:redstone_block"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 12.0d
+			subtitle: "附魔还是魔法？"
+			description: ["&7将碳、黑曜石方块和书籍结合在一起，我制造出了一种新机制。从理论上讲，我的发明可能可以用来强化现有的工具。或许，为了获得更好的效果，应该在旁边放置更多书架。"]
+			dependencies: [
+				"7C9A227AC62D95C8"
+				"0A8D69C76439C156"
+			]
+			id: "46A91588323EDA1D"
+			tasks: [{
+				id: "5FC19F07F6A41348"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [{
+				id: "3C5E435778D5E89F"
+				type: "item"
+				item: "minecraft:bookshelf"
+				count: 3
+			}]
+		}
+		{
+			title: "青铜骑士"
+			icon: "minecraft:raw_copper"
+			x: 4.0d
+			y: 4.5d
+			subtitle: "穿过火、水和铜"
+			description: ["&7这盔甲看起来好眼熟 我在哪里见过？"]
+			hide_dependency_lines: true
+			dependencies: [
+				"4E3EAC8FF7E95964"
+				"429C1DA473D5A08E"
+				"3003695F3A27EAC0"
+			]
+			hide: true
+			id: "5C40FE925AE1B69C"
+			tasks: [
+				{
+					id: "523F5BA0767956BA"
+					type: "item"
+					item: {
+						id: "ud_world_items:copper_sheet_armor_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1C7C0460CDD14583"
+					type: "item"
+					item: {
+						id: "ud_world_items:copper_sheet_armor_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4B1D5142134659C2"
+					type: "item"
+					item: {
+						id: "ud_world_items:copper_sheet_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "69EAB353984ABE01"
+					type: "item"
+					item: {
+						id: "ud_world_items:copper_sheet_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "2F2C27D46F9E032E"
+					type: "item"
+					item: {
+						id: "supplementaries:wrench"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0E63C804B141E558"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "钢铁侠"
+			x: 4.0d
+			y: 6.0d
+			subtitle: "铜墙铁壁"
+			description: ["&7以前似乎叫做“骑士装备”。在我认识的世界里，当然没有人穿这种东西。这实在是太不方便了。我们有舒适的斗篷、燕尾服，或者标准的碳纤维或再生材料制成的工作装备。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"429C1DA473D5A08E"
+				"1AC0418F34C4DDEC"
+			]
+			hide: true
+			id: "0FC280587C0D5E95"
+			tasks: [
+				{
+					id: "22DD8A3F7D22972A"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0C76214D538AF868"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "78773E520E448982"
+					type: "item"
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2F84208D9C4EF8F7"
+					type: "item"
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "224FEBCA108091B5"
+				type: "item"
+				item: "create:crushed_iron_ore"
+				count: 7
+			}]
+		}
+		{
+			x: 4.0d
+			y: 13.5d
+			subtitle: "年轻的炼金术士"
+			description: ["&7在这样的环境下，我的生活直接取决于当前的行动。最后一件想做的事情就是去制作各种药水。然而，完全忽视药水酿造显然不明智。未来，拥有带有正面效果的药剂可能会派上用场。"]
+			hide_dependency_lines: true
+			dependencies: ["0B49FBF552A0BD1A"]
+			hide: true
+			id: "1C6082C0250AE5CD"
+			tasks: [{
+				id: "5CF275C3D692BD11"
+				type: "item"
+				item: "minecraft:brewing_stand"
+			}]
+			rewards: [
+				{
+					id: "7D6DE7A0E2ACA794"
+					type: "item"
+					item: "minecraft:experience_bottle"
+					count: 4
+				}
+				{
+					id: "33998D84B56431A8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "你是哪种末影人？"
+			x: 6.0d
+			y: 13.5d
+			subtitle: "说出我的名字"
+			description: ["独立的储存罐和储物箱可以帮助分类物品并优化物流。使用羊毛为箱子或储罐染上特定颜色组合，即可创建独立的存储空间。在容器中分配的颜色将决定存储块或背包的归属。"]
+			hide_dependency_lines: true
+			dependencies: ["0B49FBF552A0BD1A"]
+			hide: true
+			id: "4F4302D2D00C20CD"
+			tasks: [
+				{
+					id: "1125F3C5635023B5"
+					type: "item"
+					item: "enderstorage:ender_chest"
+					match_nbt: false
+				}
+				{
+					id: "36BCD601E55AF07C"
+					type: "item"
+					item: "enderstorage:ender_tank"
+					match_nbt: false
+				}
+				{
+					id: "3404841DDA0A1FA5"
+					type: "item"
+					item: "enderstorage:ender_pouch"
+					match_nbt: false
+				}
+			]
+			rewards: [{
+				id: "4432F302E8D358F0"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			title: "黄蜂猎手"
+			icon: {
+				id: "wasps:swarm_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.0d
+			y: 13.5d
+			subtitle: "黄蜂飞，黄蜂飞"
+			description: [
+				"&7这个世界中生物的生存条件发生了变化。由此能够适应环境的动物和怪物的出现了。黄蜂是飞行生物的一个亚种，能够在接近时攻击敌人。它们遵循群体狩猎的方式。通常生活在树上和高地的蜂巢中。它们是群居的猎手。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["7C9A227AC62D95C8"]
+			hide: true
+			id: "4D52786023774E96"
+			tasks: [{
+				id: "4CD56E8E6F83C389"
+				type: "kill"
+				title: "黄蜂x2"
+				entity: "wasps:wasp"
+				value: 2L
+			}]
+			rewards: [{
+				id: "277DB3219D5E4D63"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 12.0d
+			subtitle: "创世神"
+			description: ["&7人们经常依靠各种发明来适应新的环境，让生活变得更加简单。这种特质我们每个人都拥有，因此需要不断完善自己的装备，才能在严酷的颠倒世界中生存下去。"]
+			dependencies: ["7C9A227AC62D95C8"]
+			id: "04E792896D575B02"
+			tasks: [{
+				id: "70FF7ADAAEDF2B40"
+				type: "item"
+				item: {
+					id: "constructionwand:diamond_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1829F89C3262C33E"
+				type: "xp"
+				xp: 65
+			}]
+		}
+		{
+			x: -2.0d
+			y: 13.5d
+			subtitle: "很容易坠入地狱"
+			description: [
+				"&7内心的声音从未沉默。我清晰地听到某种记忆的回响在我内心深处。它重复着：打破黑曜石，建造传送门框架并用火点燃它。可是，我为什么要这么做？难道是我在炼金术上做得太过了，吸多了蒸汽，现在被幻觉折磨？我得出去呼吸一下新鲜空气，再继续肝。"
+			]
+			dependencies: ["7C9A227AC62D95C8"]
+			hide: true
+			id: "5270E80E56286A44"
+			tasks: [{
+				id: "2298E86C34F0DB8D"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+			}]
+			rewards: [{
+				id: "69A1A86267448F50"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 6346408907276309058L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 10.5d
+			subtitle: "*嗖*，然后你就..."
+			description: ["一根可以在指定方向放置临时方块的法杖。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"620820CCA387BA42"
+				"429C1DA473D5A08E"
+			]
+			hide: true
+			id: "2325E7E93CC6C8D1"
+			tasks: [{
+				id: "4792B66678401559"
+				type: "item"
+				item: "placementutil:temporary_wand"
+			}]
+			rewards: [{
+				id: "6B052368765CDF8C"
+				type: "item"
+				title: "Земля??"
+				item: "minecraft:dirt"
+				count: 32
+			}]
+		}
+		{
+			title: "熔岩农场"
+			x: 2.0d
+			y: 6.0d
+			subtitle: "无限之源"
+			description: [
+				"&7岩浆作为机制和炉子的主要能源，表现得出类拔萃。"
+				""
+				"&5要创建岩浆农场，必须将岩浆放置在地面上，地面下放置滴水石锥，并在下面放置一个锅。随着时间的推移，岩浆会积累在锅中，你可以将其收集到容器里。"
+			]
+			dependencies: [
+				"429C1DA473D5A08E"
+				"1AC0418F34C4DDEC"
+			]
+			id: "708C13855415261C"
+			tasks: [
+				{
+					id: "6230314835B65AD4"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "30B0EEF8C760F02E"
+					type: "item"
+					item: "minecraft:pointed_dripstone"
+				}
+				{
+					id: "02E806F5E6183EE4"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+			]
+			rewards: [{
+				id: "392E8B1416E05340"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			title: "泥巴国王"
+			x: 2.0d
+			y: 10.5d
+			subtitle: "是时候挖掘泥土了"
+			description: [
+				"&5从颠倒世界的表面和内部矿井收集土壤样本，将帮助你理解如何加工资源并获得新资源。"
+				""
+				"&5如果砂砾和沙子还算简单，那么要获缠根泥土，必须用种子右键点击普通土壤进行加工。然后，只需挖掘出现的方块，完成这个任务。"
+			]
+			dependencies: ["2FCAA20E12DF4EF9"]
+			hide: true
+			id: "64ED38968988DD9F"
+			tasks: [
+				{
+					id: "3252C46980836862"
+					type: "item"
+					item: "minecraft:rooted_dirt"
+					count: 12L
+				}
+				{
+					id: "15020F40A7D4276E"
+					type: "item"
+					item: "minecraft:sand"
+					count: 12L
+				}
+				{
+					id: "39D21FC7BE1A1E91"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "600425190825454B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			title: "绿化空间"
+			x: 2.0d
+			y: 12.0d
+			subtitle: "只有科学的方法才是永远不会失败的！"
+			description: ["&7如果我学会更高效地使用挤压机，就一定能够筛选出不同种类的土壤，从中获取一些植物亚种或其他有机物。"]
+			dependencies: ["64ED38968988DD9F"]
+			hide: true
+			id: "0335401EE283B741"
+			tasks: [
+				{
+					id: "1F9E101A06F5104C"
+					type: "item"
+					item: "minecraft:sugar_cane"
+				}
+				{
+					id: "3525D68A1AD95D2A"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+				{
+					id: "794B768CBE86A810"
+					type: "item"
+					item: "minecraft:bamboo"
+				}
+				{
+					id: "1ACBC3DB713EC8D0"
+					type: "item"
+					item: "minecraft:kelp"
+				}
+			]
+			rewards: [{
+				id: "202AA97BF6BDB5C5"
+				type: "item"
+				item: "ud_world_items:seed_tube"
+				count: 3
+			}]
+		}
+		{
+			title: "书呆子"
+			x: 2.0d
+			y: 13.5d
+			subtitle: "知识就是力量"
+			description: ["&7书籍一直是存储和获取信息的可靠方式。然而，曾几何时，它们被机器取代，字母和符号在纸上的价值不再重要。如今，旧世界崩塌，而新世界尚未建成，我必须重走我们种族多世纪的进化和发展道路。或许我可以从书籍开始。"]
+			dependencies: ["0335401EE283B741"]
+			hide: true
+			id: "0A8D69C76439C156"
+			tasks: [{
+				id: "15863B40738744E9"
+				type: "item"
+				item: "minecraft:book"
+			}]
+			rewards: [
+				{
+					id: "356FC471E9051564"
+					type: "item"
+					item: "farmersdelight:canvas"
+					count: 3
+				}
+				{
+					id: "278B111177508760"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 15.0d
+			subtitle: "哦，太上老君！赐我毒药，赐我毒药吧！"
+			description: ["&7如果给我的剑注入蜂毒，它的伤害会提高吗？"]
+			dependencies: [
+				"5270E80E56286A44"
+				"4D52786023774E96"
+			]
+			hide: true
+			id: "2E92181BC78FA823"
+			tasks: [{
+				id: "33A3410192B95012"
+				type: "item"
+				item: {
+					id: "wasps:netherite_venomous_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2919BB669CB05B7C"
+					type: "item"
+					item: "wasps:wasp_honeycomb"
+					count: 3
+				}
+				{
+					id: "5A03C9C98AE69641"
+					type: "xp"
+					xp: 85
+				}
+			]
+		}
+		{
+			title: "炼金术革命"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftbmoney:textures/shop.png"
+				}
+			}
+			x: -6.0d
+			y: 13.5d
+			subtitle: "我以一种东西炼成另一种。"
+			description: [
+				"&5经过长时间的研究和反复试验，你终于在炼金置换方面取得了明确的成果。"
+				""
+				"&5炼金置换基于等价交换的原则。你可以将某些资源换成其他资源，同时保持价值比例的平衡。"
+				""
+				"&5要开始使用，请点击任务界面右上角的炼金石，然后出售一些不需要的资源，在下一页中将获得的货币转换为更有价值的物品。"
+			]
+			dependencies: ["48EC19A1A322E617"]
+			hide: true
+			id: "516671C668727083"
+			tasks: [{
+				id: "3BEE2D1E0B1A0A1E"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+			rewards: [{
+				id: "614AF41F22060401"
+				type: "gamestage"
+				title: "&7开始转换"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "ftbmoney:textures/icon.png"
+					}
+				}
+				auto: "enabled"
+				ignore_reward_blocking: true
+				stage: "shop"
+			}]
+		}
+		{
+			title: "物品运输"
+			x: 6.0d
+			y: 15.0d
+			subtitle: "妈妈咪呀！"
+			description: ["&5为了创建至少简单的物流系统，你一定需要具有最低技术需求的运输装置。而此时，当然是依靠你的创造力来帮助你了。通过这些管道，你终于能够制造出许多有用的物品了。"]
+			dependencies: ["3003695F3A27EAC0"]
+			hide: true
+			id: "73395111D4C46EE6"
+			tasks: [
+				{
+					id: "6FFCD2BD9A0AC541"
+					type: "item"
+					item: "pipez:item_pipe"
+					count: 16L
+				}
+				{
+					id: "32E8E158A272EF25"
+					type: "item"
+					item: "pipez:wrench"
+				}
+			]
+			rewards: [{
+				id: "5D726ADD76FDDA24"
+				type: "item"
+				item: "create:iron_sheet"
+				count: 3
+			}]
+		}
+		{
+			x: 2.0d
+			y: 15.0d
+			subtitle: "主打一个硬实"
+			description: ["&7直接取自火山矿脉的岩石。在这个世界曾经的过去，也存在着如同人类血液一般喷涌着岩浆和熔岩的火山峭壁。然而，随着旧世界的陨灭，许多自然瑰宝也随之消失，只留下人类孤独地面对新生的挑战。颠倒的生活对我们来说犹如一座无形的牢笼，但生存的需求驱使我们自行获取资源，重建生活。"]
+			dependencies: ["71ABDAB398D3D0A6"]
+			hide: true
+			id: "00C530B6A37E3BC4"
+			tasks: [{
+				id: "228C07FF33FA59E3"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
+			rewards: [{
+				id: "04AD7969307383C3"
+				type: "item"
+				item: "supplementaries:candy"
+				count: 7
+			}]
+		}
+		{
+			x: 0.0d
+			y: 15.0d
+			subtitle: "黑暗尽头的曙光"
+			description: ["&7下界之星在多种设备中都展现出了其实用性。只要正确布置稳定器和导能方块，其蕴藏的力量便可轻松激发。"]
+			dependencies: [
+				"00C530B6A37E3BC4"
+				"567B5B5E8A3AAF97"
+			]
+			hide: true
+			id: "3B65445DC78DF8BC"
+			tasks: [{
+				id: "17BE793F5854C79E"
+				type: "item"
+				item: "minecraft:beacon"
+			}]
+			rewards: [
+				{
+					id: "61896055D414EA77"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "281E6BD5B82EC3CB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "6BE660829F806DF1"
+					type: "item"
+					auto: "invisible"
+					item: {
+						id: "bieggos_shovel:bieggos_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 13.5d
+			subtitle: "天上的星星不够多"
+			description: ["&7古老生物的核心？它怎么会出现在我们的世界？难道是某些学者成功解读了火焰之地的铭文吗？这是否意味着我也能最终利用这些失落的科技？看来我需要尽快着手解决这个问题。"]
+			dependencies: [
+				"7C9A227AC62D95C8"
+				"5270E80E56286A44"
+			]
+			hide: true
+			id: "567B5B5E8A3AAF97"
+			tasks: [{
+				id: "45CD6A1F73561F10"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+			rewards: [
+				{
+					id: "5284DA80D6B76F69"
+					type: "item"
+					item: "malum:block_of_soul_stained_steel"
+					count: 3
+				}
+				{
+					id: "6E170D79E656667F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 15.0d
+			subtitle: "美丽的封面"
+			description: [
+				"&7我到处都能找到一些卡片……每一张卡片仿佛都是一段被遗忘已久的历史碎片。上面描绘的人物、生物和物品似乎都想向我传递些什么。"
+				""
+				"&5如果我制作一个能存放所有这些卡片的特殊匣子就更好了。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["3491429455E0844E"]
+			hide: true
+			id: "3520DFC35205F9E5"
+			tasks: [{
+				id: "3CCB8F890F7C4371"
+				type: "item"
+				item: {
+					id: "cyao_collectibles:cardcasket"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 48
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1570FDB6E56BCE43"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "02014B78BC767C06"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 15.0d
+			subtitle: "集于一身"
+			description: [
+				"&7书籍承载了世界上所有的知识，即使它们的创作者和传播者已不复存在。然而，当信息过于庞杂时，就应该认真规划和整理自己的图书馆了。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["0A8D69C76439C156"]
+			hide: true
+			id: "007712A6EA354F12"
+			tasks: [{
+				id: "5D39E009F85F7EA4"
+				type: "item"
+				item: {
+					id: "eccentrictome:tome"
+					Count: 1b
+					tag: {
+						"eccentrictome:mods": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "57C9937F1D61CEDD"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+				{
+					id: "37F7FD8A743CA28C"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "minecraft:frost_walker"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 15.0d
+			subtitle: "妖魔鬼怪快现形！"
+			description: [
+				"&7随着液态末影之眼这一炼金替代品的问世，取代人类眼睛的仪器迅速变得触手可及。这样的一个装置可以替代观察者监控机械运作，在完全没有其他人的情况下，对我来说极其有用。"
+				""
+				"通过这种机制加载的区块将始终处于活动状态，其中的所有进程都无需玩家干预。"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"4CF9A4B0E9A7A5A1"
+				"3491429455E0844E"
+			]
+			hide: true
+			id: "5E7345FA82053562"
+			tasks: [{
+				id: "09132C653467A92F"
+				type: "item"
+				item: "weirdinggadget:weirding_gadget"
+			}]
+			rewards: [
+				{
+					id: "70890CD2BCB6AC7A"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+				{
+					id: "051773DB3E782D6D"
+					type: "item"
+					item: "farmersdelight:pasta_with_mutton_chop"
+				}
+			]
+		}
+		{
+			title: "疼吗？别碰"
+			icon: "ud_world_items:information_icon"
+			x: -3.5d
+			y: 3.0d
+			subtitle: "即使有拐杖也无济于事"
+			description: ["钩子猫可以在隐秘处消失 ！"]
+			dependencies: ["5BC7F5216EAE9DE9"]
+			hide: true
+			id: "07FCF28E9E13DAF2"
+			tasks: [{
+				id: "7C573C35F2C42DB2"
+				type: "checkmark"
+				title: "好吧，我不说了。"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

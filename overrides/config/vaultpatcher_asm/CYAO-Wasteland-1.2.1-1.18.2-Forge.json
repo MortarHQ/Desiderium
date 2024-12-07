@@ -1,0 +1,42 @@
+[
+    {
+        "authors": "老本願",
+        "name": "Wasteland模组汉化",
+        "desc": "VPGS，cc，版权方：paret",
+        "mods": "CYAO-Wasteland-1.2.1-1.18.2-Forge",
+        "dynamic": false
+    },
+    {
+        "t": {
+            "name": "net.saudade.wasteland.procedures.HaikuCommandProcedure"
+        },
+        "p": [
+            {
+                "k": "title @p actionbar \"Лишь погибель ждала за вратами\"",
+                "v": "title @p actionbar \"在大门之外静候的唯有厄运\""
+            }
+        ]
+    },
+	{
+        "t": {
+            "name": "net.saudade.wasteland.procedures.HaikuCommandProcedure$1"
+        },
+        "p": [
+            {
+                "k": "title @p actionbar \"На той стороне\"",
+                "v": "title @p actionbar \"而在门的那一边\""
+            }
+        ]
+    },
+	{
+        "t": {
+            "name": "net.saudade.wasteland.procedures.HaikuCommandProcedure$1$1"
+        },
+        "p": [
+            {
+                "k": "title @p actionbar \"Я всех потерял\"",
+                "v": "title @p actionbar \"我失去了一切\""
+            }
+        ]
+    }
+]

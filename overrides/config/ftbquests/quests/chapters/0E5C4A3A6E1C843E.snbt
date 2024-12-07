@@ -1,0 +1,765 @@
+{
+	id: "0E5C4A3A6E1C843E"
+	group: "3D8ADA421153B1A3"
+	order_index: 4
+	filename: "0E5C4A3A6E1C843E"
+	title: "农业"
+	icon: "ud_world_items:plant_icon"
+	subtitle: ["&6农业"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "赫斯珀里得斯花园"
+			x: 0.0d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "农业的起源"
+			description: [
+				"&7在这个世界里，用传统的方法种植任何农作物几乎是不可能的。这样下去，离饿死也不远了。食物储备所剩无几，必须赶快想出办法。"
+				""
+				"利用你对工程制造的知识，你可以轻松打造出一台完美的装置——赫斯珀里得斯花园。将种子或植物作物放入其中，用水桶或管道供水，最终你将获得数倍的产量。"
+				""
+				"赫斯珀里得斯花园配备了一个方便的界面，左侧是水量条，下方是用于放置水桶或其他水源容器的槽位。底部中央是原料输入槽，顶部则是您可以取出装置产出的结果的地方。"
+				""
+				"除了提供水源，您还需要确保生产骨粉，用作肥料，并将其放入水供应槽中。"
+			]
+			dependencies: [
+				"4005D946F9F00F8A"
+				"3003695F3A27EAC0"
+			]
+			hide: true
+			size: 1.25d
+			id: "040483BB075CA73D"
+			tasks: [{
+				id: "598824A5A0692B82"
+				type: "item"
+				item: "cyao:hesperites_garden"
+			}]
+			rewards: [
+				{
+					id: "3C33A54C125F0D54"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "64F4D087EC939555"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "春天已在我心中萌发。种子在哪里？"
+			x: 2.0d
+			y: 1.5d
+			subtitle: "全部都要！"
+			description: ["&5第一个种子可以通过农场箱子获得，这些箱子是完成任务时的奖励，也可以通过在颠倒的世界中破坏草获得。"]
+			dependencies: ["040483BB075CA73D"]
+			hide: true
+			id: "0B475FB3008B50B4"
+			tasks: [
+				{
+					id: "6A020E4BF53469E1"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+				}
+				{
+					id: "40A1228202746822"
+					type: "item"
+					item: "minecraft:pumpkin_seeds"
+				}
+				{
+					id: "7402002E8E062D39"
+					type: "item"
+					item: "minecraft:melon_seeds"
+				}
+				{
+					id: "3CBEC7EDE06A415F"
+					type: "item"
+					item: "minecraft:beetroot_seeds"
+				}
+				{
+					id: "4DCC92AF512C30FB"
+					type: "item"
+					item: "farmersdelight:cabbage_seeds"
+				}
+				{
+					id: "43A19171F82F6066"
+					type: "item"
+					item: "farmersdelight:tomato_seeds"
+				}
+				{
+					id: "3F9B143673E683A5"
+					type: "item"
+					item: "corn_delight:corn_seeds"
+				}
+			]
+			rewards: [{
+				id: "2A63326012A5FD62"
+				type: "item"
+				item: "minecraft:rooted_dirt"
+				count: 12
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			subtitle: "如果你脑子里一团糟，说明锅里的水已经沸腾了。"
+			description: ["用于储存液体和食物的碗。"]
+			dependencies: ["040483BB075CA73D"]
+			hide: true
+			id: "2993A122F545D653"
+			tasks: [{
+				id: "6C8CA19B372DB15E"
+				type: "item"
+				item: "miners_delight:copper_cup"
+			}]
+			rewards: [{
+				id: "46D8C07DEF2CDA63"
+				type: "item"
+				item: {
+					id: "minecraft:fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			subtitle: "简单烹饪"
+			description: ["与厨房炉灶一样，锅也有一系列独特菜肴的配方，可在不同发展阶段进行制作。"]
+			dependencies: ["040483BB075CA73D"]
+			id: "59E7DAB4795F873C"
+			tasks: [{
+				id: "639DEBAB60D8CACA"
+				type: "item"
+				item: "miners_delight:copper_pot"
+			}]
+			rewards: [{
+				id: "1EBB191192CCF7E2"
+				type: "item"
+				item: "miners_delight:baked_cave_carrot"
+				count: 3
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			subtitle: "原始的火焰"
+			description: ["可用于装饰、烹饪和焚烧异教徒。"]
+			dependencies: ["040483BB075CA73D"]
+			hide: true
+			id: "6D1357AF4E8DFEEF"
+			tasks: [{
+				id: "3D381A915FE55706"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+			rewards: [{
+				id: "01F87F003D1D8FF3"
+				type: "item"
+				item: "minecraft:charcoal"
+				count: 3
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			subtitle: "从中可以获得星辉玉吗？"
+			description: [
+				"&5有不需要的资源吗？将它们加工成渣滓！"
+				""
+				"通过右键点击将任意材料放入垃圾桶，填满它，最后你将得到...垃圾。"
+			]
+			dependencies: ["040483BB075CA73D"]
+			hide: true
+			id: "74FAB49C0F98C0E6"
+			tasks: [{
+				id: "5F70AAD0BD618FC9"
+				type: "item"
+				item: "seeds:trash"
+			}]
+			rewards: [{
+				id: "799BAC2C3A8D1925"
+				type: "item"
+				item: "chipped:carved_pumpkin_19"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			subtitle: "放在炉灶上煎炸，无需燃料"
+			description: ["类似于火炉的功能是厨房炉灶。将最多 9 个物品放上去进行烤制，或者放置平底锅、蒸锅或煎锅开始烹饪。"]
+			dependencies: ["6D1357AF4E8DFEEF"]
+			id: "3D0A8286AD9CECD0"
+			tasks: [{
+				id: "28D15C61D991829B"
+				type: "item"
+				item: "farmersdelight:stove"
+			}]
+			rewards: [
+				{
+					id: "1DEFF2859E04EC0E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1250721272784892157L
+				}
+				{
+					id: "40F46273AA77F4C3"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			subtitle: "吃早饭"
+			description: ["使用锅可以制作高级料理，提供更高的饱腹度。"]
+			dependencies: ["6D1357AF4E8DFEEF"]
+			id: "77A7D617F2413500"
+			tasks: [{
+				id: "6898185A1281D299"
+				type: "item"
+				item: "farmersdelight:cooking_pot"
+			}]
+			rewards: [
+				{
+					id: "190C7818566F7527"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1250721272784892157L
+				}
+				{
+					id: "264B963616D6AFAC"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			subtitle: "煎锅是自由的武器！"
+			description: ["它是一种方便的武器，也是一种有用的煎炸工具。"]
+			dependencies: ["6D1357AF4E8DFEEF"]
+			id: "5028589DA78750BD"
+			tasks: [{
+				id: "4B3A31B668BA5EBD"
+				type: "item"
+				item: {
+					id: "farmersdelight:skillet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "63B58C0A28155929"
+				type: "item"
+				item: "minecraft:clay"
+				count: 4
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			subtitle: "H2O：让它安息吧"
+			description: ["在世界中放置有机肥块并等待。可以通过各种外部因素加速其转变为肥沃土壤的过程。"]
+			dependencies: [
+				"040483BB075CA73D"
+				"5871B4CDAB8FCCD5"
+			]
+			hide: true
+			id: "74437C270F862B79"
+			tasks: [{
+				id: "7E8AA524E55ECDB4"
+				type: "item"
+				item: "farmersdelight:organic_compost"
+			}]
+			rewards: [{
+				id: "6BA8D84A2F94D5FE"
+				type: "item"
+				item: "minecraft:bone_block"
+				count: 4
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			subtitle: "提高植物生长率"
+			description: [
+				"种植在肥沃土壤上的植物生长速度大幅加快。利用该方块可以建造不错的自动农场。"
+				""
+				"&5然而，别忘了你并不擅长制作用于耕地的手动工具。或许应该寻找其他方法来利用这片土壤。"
+			]
+			dependencies: ["74437C270F862B79"]
+			id: "32173F65B848A89A"
+			tasks: [{
+				id: "657606F05EA2C2B8"
+				type: "item"
+				item: "farmersdelight:rich_soil"
+			}]
+			rewards: [{
+				id: "2E8230863CCC5180"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			subtitle: "你可以把它放在窗台上"
+			description: ["肥沃土壤的紧凑容器，可以放置在基地的任意位置。无需耕种，能够直接开始种植放入的植物。"]
+			dependencies: ["32173F65B848A89A"]
+			id: "1BB0C2CB33EFBE37"
+			tasks: [{
+				id: "7D03893B17837871"
+				type: "item"
+				item: "supplementaries:planter_rich"
+			}]
+			rewards: [{
+				id: "394467730ADAACC0"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.0d
+			subtitle: "夏雨倾入夜色庭院的瓶中"
+			description: ["&5你可能已经知道，使用骨粉对植物的生长没有任何帮助。作为替代方案，你应该使用特殊的肥料来种植这些树木。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"3003695F3A27EAC0"
+				"040483BB075CA73D"
+			]
+			hide: true
+			id: "24CFADABD945DEAE"
+			tasks: [{
+				id: "34B6EFEED265A05E"
+				type: "item"
+				item: "create:tree_fertilizer"
+			}]
+			rewards: [{
+				id: "30B7E5701886F4E3"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			title: "&r垃圾"
+			x: 0.0d
+			y: -4.5d
+			subtitle: "垃圾块"
+			description: ["在垃圾桶中加工不同材料时获得的中间材料。之后它将在合金工厂中用于制造垃圾。"]
+			dependencies: ["74FAB49C0F98C0E6"]
+			hide: true
+			id: "3C97435CA394D3C2"
+			tasks: [{
+				id: "66B4244E9E09BBA1"
+				type: "item"
+				item: "seeds:garbages"
+			}]
+			rewards: [{
+				id: "7DFDA3292C04A29D"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 3022466149224120138L
+			}]
+		}
+		{
+			title: "&r垃圾"
+			x: 2.0d
+			y: -4.5d
+			subtitle: "有益的回收利用"
+			description: [
+				"由垃圾和铁矿石合成的合金，垃圾有一个重要的用途——制造修理器。"
+				""
+				"&5你认为垃圾还有什么其他用途？"
+			]
+			dependencies: ["3C97435CA394D3C2"]
+			hide: true
+			id: "25CA71F24B776EE3"
+			tasks: [{
+				id: "716E2BB4578A1DE3"
+				type: "item"
+				item: "seeds:stuff"
+			}]
+			rewards: [
+				{
+					id: "0D2251041697A7CD"
+					type: "item"
+					item: "seeds:stuff"
+				}
+				{
+					id: "7C8EA3280A4B68D2"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "&r小修复器"
+			x: 4.0d
+			y: -4.5d
+			subtitle: "即使你很渺小，也依然能成就伟大。"
+			description: ["恢复器可以修复处于损坏状态的物品。恢复器的大小决定了工具可修复的耐久值。"]
+			dependencies: ["25CA71F24B776EE3"]
+			id: "115F31B033BB8939"
+			tasks: [{
+				id: "7704382B3C0D4176"
+				type: "item"
+				item: {
+					id: "seeds:small_repairer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2C797EA9474A7EAE"
+				type: "item"
+				item: "minecraft:raw_iron"
+				count: 5
+			}]
+		}
+		{
+			title: "&r中修复器"
+			x: 6.0d
+			y: -4.5d
+			subtitle: "黄金分割点"
+			dependencies: ["115F31B033BB8939"]
+			id: "66B271721EC44CB1"
+			tasks: [{
+				id: "231CC9A3AF72EA3A"
+				type: "item"
+				item: {
+					id: "seeds:medium_repairer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "71AEA39941963D3D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+			]
+		}
+		{
+			title: "&r大修复器"
+			x: 6.0d
+			y: -3.0d
+			subtitle: "无穷不是极限"
+			dependencies: ["66B271721EC44CB1"]
+			id: "17D643E474FBDABA"
+			tasks: [{
+				id: "4277AF30A0453450"
+				type: "item"
+				item: {
+					id: "seeds:big_repairer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "03EED73E3B41E3D2"
+					type: "item"
+					item: {
+						id: "create_sa:zinc_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "63B8E02F85D17280"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			title: "出售马铃薯......2017 年收获。50卢布一个"
+			x: 4.0d
+			y: 1.5d
+			subtitle: "一级农民"
+			dependencies: ["0B475FB3008B50B4"]
+			id: "76BB6DF216694AFD"
+			tasks: [
+				{
+					id: "04F10AE761E769CF"
+					type: "item"
+					item: "minecraft:wheat"
+				}
+				{
+					id: "5064431706389125"
+					type: "item"
+					item: "minecraft:pumpkin"
+				}
+				{
+					id: "1A937846297F321F"
+					type: "item"
+					item: "minecraft:melon_slice"
+				}
+				{
+					id: "04BC19A1F6857705"
+					type: "item"
+					item: "minecraft:beetroot"
+				}
+				{
+					id: "7CB18967E459679E"
+					type: "item"
+					item: "farmersdelight:cabbage"
+				}
+				{
+					id: "4A6AE585FF0DB6F2"
+					type: "item"
+					item: "farmersdelight:tomato"
+				}
+				{
+					id: "0C189F7EADD7A4FE"
+					type: "item"
+					item: "corn_delight:corn"
+				}
+			]
+			rewards: [{
+				id: "5F5FD92FD16CF352"
+				type: "xp"
+				xp: 75
+			}]
+		}
+		{
+			icon: "ud_world_items:empty_tube"
+			x: 8.0d
+			y: 1.5d
+			subtitle: "让我们按"
+			description: ["未来管装食品的基础材料，可在锟压机上制作。"]
+			dependencies: ["00D632F1F8E18FC7"]
+			hide: true
+			id: "579D244978A1D003"
+			tasks: [{
+				id: "698F107DDBC5EC94"
+				type: "item"
+				item: "ud_world_items:empty_tube"
+			}]
+			rewards: [
+				{
+					id: "4D5FF794C79F622F"
+					type: "item"
+					item: "farmersdelight:chicken_sandwich"
+				}
+				{
+					id: "505C841DA273B19C"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			subtitle: "谁要吃那个？"
+			dependencies: ["579D244978A1D003"]
+			id: "4259318BF12BE943"
+			tasks: [{
+				id: "11BDF0397A9A86F1"
+				type: "item"
+				item: "ud_world_items:garbage_tube"
+			}]
+			rewards: [{
+				id: "5A2508A1623058C0"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1748955132031137801L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			subtitle: "如果种子无处安放"
+			dependencies: ["579D244978A1D003"]
+			id: "3023987DCABC034B"
+			tasks: [{
+				id: "64D11E7CD6E1010D"
+				type: "item"
+				item: "ud_world_items:seed_tube"
+			}]
+			rewards: [{
+				id: "7F8AB17BD7F0107B"
+				type: "item"
+				item: "minecraft:carrot"
+				count: 12
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			subtitle: "把火药放在火药袋里，把浆果放在浆果袋里。"
+			dependencies: ["579D244978A1D003"]
+			id: "0A9D633B6FB744F7"
+			tasks: [{
+				id: "735C73CB2F848C2D"
+				type: "item"
+				item: "ud_world_items:fruit_berry_tube"
+			}]
+			rewards: [{
+				id: "34F0BBC337109C25"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			subtitle: "蔬菜!"
+			dependencies: ["579D244978A1D003"]
+			id: "6AF0980C888DC2A9"
+			tasks: [{
+				id: "34654BF80D514F9B"
+				type: "item"
+				item: "ud_world_items:vegetable_tube"
+			}]
+			rewards: [{
+				id: "4FA2A1859AE73C4C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1250721272784892157L
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.0d
+			subtitle: "终极幸福"
+			dependencies: ["579D244978A1D003"]
+			id: "6F820F7195B59C3A"
+			tasks: [{
+				id: "44CB7236D3F831F0"
+				type: "item"
+				item: "ud_world_items:meat_tube"
+			}]
+			rewards: [{
+				id: "674FEB38FEE2D95B"
+				type: "item"
+				item: "farmersdelight:cooked_mutton_chops"
+				count: 3
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "肚子不是因为喝啤酒才胖的，而是为了喝啤酒才存在的"
+			dependencies: ["040483BB075CA73D"]
+			hide: true
+			id: "6EFDE69C00690A20"
+			tasks: [{
+				id: "7213EFAC36264A22"
+				type: "item"
+				item: "brewinandchewin:keg"
+			}]
+			rewards: [{
+				id: "4BB8689092C9E71B"
+				type: "item"
+				item: "brewinandchewin:mead"
+			}]
+		}
+		{
+			title: "管装食品厂"
+			icon: "ud_world_items:tube_icon"
+			x: 6.0d
+			y: 1.5d
+			shape: "heart"
+			subtitle: "最美味的食物"
+			description: [
+				"&5并不是食物越多越好。有时，较少的食物更易存储和获取。为了实现这一点，你必须超越自我。那么，如果将工程学和烹饪结合起来，会发生什么呢？"
+				""
+				"管装食品工厂消耗FE能量，并制造出由玩家自行决定填充物的管装食物。你可以通过实验不同的填充物来制作各种类型的管，最终获得最优的食品产品。"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"040483BB075CA73D"
+				"0B9189302064A77A"
+			]
+			hide: true
+			size: 1.25d
+			id: "00D632F1F8E18FC7"
+			tasks: [
+				{
+					id: "1BD171CBD60EA669"
+					type: "questsadditions:structure"
+					title: "建造结构！"
+					name: "tube_factory"
+					hasCustomPicture: false
+					layer: true
+					ignoreState: false
+					rightclick: false
+				}
+				{
+					id: "5B692255BEE2CB52"
+					type: "item"
+					item: "ud_world_items:simple_engineering_controller"
+				}
+				{
+					id: "72F0FAD3FDA7FCE1"
+					type: "item"
+					item: "ud_world_items:simple_engineering_input_block"
+				}
+				{
+					id: "14B81C359290779C"
+					type: "item"
+					item: "ud_world_items:simple_engineering_output_block"
+				}
+				{
+					id: "38147566018F1F54"
+					type: "item"
+					item: "ud_world_items:simple_engineering_bricks"
+					count: 9L
+				}
+				{
+					id: "300F82CA1B92B1D0"
+					type: "item"
+					item: "ud_world_items:simple_engineering_pillar"
+					count: 12L
+				}
+				{
+					id: "32AC15DEF1435FA5"
+					type: "item"
+					item: "ud_world_items:simple_engineering_base_block"
+				}
+			]
+			rewards: [{
+				id: "0D1675D25B0D4123"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

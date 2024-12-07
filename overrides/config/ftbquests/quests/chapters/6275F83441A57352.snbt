@@ -1,0 +1,755 @@
+{
+	id: "6275F83441A57352"
+	group: "0CD8708E80919F0C"
+	order_index: 0
+	filename: "6275F83441A57352"
+	title: "核心"
+	icon: "ud_world_items:core_icon"
+	subtitle: ["&9最终章"]
+	default_quest_shape: "diamond"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "漫长的旅程在呼唤我"
+			icon: "ud_world_items:core_icon"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "我还会回来的"
+			description: ["&7请铭记，改变总是在你最不期待的时候到来。当它降临时，你将无处可逃。唯有适应它，顺应意志与思绪的流动，才能获得内心的平静与宏伟的力量。无论经历什么，你终将化为全新的世界。"]
+			dependencies: ["7CD707355BA6E9EA"]
+			hide: true
+			size: 1.25d
+			id: "45DCC77F434F1E0B"
+			tasks: [{
+				id: "5547A86F3C386DA4"
+				type: "checkmark"
+				title: "明白了！"
+			}]
+			rewards: [
+				{
+					id: "24AB71A581B91472"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "4A126CE667BA15CE"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2698257103144768531L
+				}
+				{
+					id: "2828861F9C3D4B5E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 4036276453185466438L
+				}
+				{
+					id: "2D45285A372F74DC"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+				{
+					id: "7D816B8C21BD21FC"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1748955132031137801L
+				}
+				{
+					id: "6E85A76FFCF58089"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1250721272784892157L
+				}
+				{
+					id: "30F5728EE3A9E63E"
+					type: "item"
+					item: "cyao_lore:note_15"
+				}
+			]
+		}
+		{
+			title: "裂缝"
+			x: 0.0d
+			y: 4.5d
+			subtitle: "在大地与虚空之间"
+			description: [
+				"&7核心……它出现在我的梦中，呼唤着我。仿佛有什么或某个人在刻意引导我靠近它。那一天，我始终无法忘怀。这意味着我的任务清单上还有一项未完成的重要事项。我必须完成自己开始的事情。"
+				""
+				"按下 右键，使用 裂缝 移动到 颠倒世界 的核心区域。"
+			]
+			dependencies: ["45DCC77F434F1E0B"]
+			size: 1.25d
+			id: "51A5745A32265B26"
+			tasks: [{
+				id: "2D52144C3B518C32"
+				type: "item"
+				item: "cyao_coreworld:gravity_breach_orb"
+			}]
+			rewards: [
+				{
+					id: "3AB584A39B543D6B"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 5s
+								id: "minecraft:sharpness"
+							}]
+						}
+					}
+				}
+				{
+					id: "489EC2EE392E68F1"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 4s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "6561A9502511484B"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 4s
+								id: "minecraft:feather_falling"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "重型工程师套装"
+			icon: {
+				id: "ud_world_items:heavy_engineer_armor_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: 1.5d
+			subtitle: "潜入海底"
+			description: [
+				"&7高科技工程师套装，经过引力辐射处理，并由最坚固的布料编织而成。只有穿上它，我才能前往世界的核心，而不会损伤我的身体。曾经我们有宇航服，现在只能满足于应用领域。至少它有效，并且具备所需的功能。只可惜，甚至在这个发明中也有一个缺陷：为了固定盔甲在身体上，需要绑带，没了绑带，部分盔甲会滑落。希望在下潜时不要忘记这一点。"
+				""
+				"&7其实，我可以穿着它潜入颠倒世界的深处，更好地研究分隔维度与核心的地壳。稍后，我还需要制作一件可以让我安全穿越到另一边的物品，避免受到伤害。"
+			]
+			dependencies: ["45DCC77F434F1E0B"]
+			size: 1.25d
+			id: "6D83769A6C0E7A9E"
+			tasks: [
+				{
+					id: "6F790915EDC871B4"
+					type: "item"
+					item: {
+						id: "ud_world_items:heavy_engineer_armor_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "77A8B7EF263FAB14"
+					type: "item"
+					item: {
+						id: "ud_world_items:heavy_engineer_armor_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5BD339AAF4C0EF4D"
+					type: "item"
+					item: {
+						id: "ud_world_items:heavy_engineer_armor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "700C9149F93A064A"
+					type: "item"
+					item: {
+						id: "ud_world_items:heavy_engineer_armor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "66E2B2644CA6B577"
+					type: "item"
+					item: "ud_world_items:engineer_straps"
+				}
+			]
+			rewards: [
+				{
+					id: "318581111BB7893C"
+					type: "item"
+					item: "ud_world_items:gravito_crystal_block"
+					count: 3
+				}
+				{
+					id: "3C7F45A9E7426E92"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			subtitle: "声音！ 上低音号"
+			description: [
+				"&7我第一次在前哨站发现这个装置，当时我回到了颠倒世界。不久后，我自己也成功制造了类似的设备。"
+				""
+				"&7这台不起眼的唱片机却拥有一种奇特的能力——能够重现来自过去的能量流。它可以接收我在这个世界各地找到的秘密光盘。每个这样的唱片或玻璃片上，都记录着我朋友们在第二次灾难前留下的讯息。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["45DCC77F434F1E0B"]
+			id: "08BAA49BF6CD9259"
+			tasks: [{
+				id: "7829EB1AB0890D65"
+				type: "item"
+				item: "steam_gramophone:gramophone_off"
+			}]
+			rewards: [{
+				id: "22E8B0342FA3D602"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 4036276453185466438L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			subtitle: "白色不是一种颜色，而是一种无色"
+			description: [
+				"&7是谁丢下了他？"
+				""
+				"&7当我第一次来到废弃的前哨站时，我开始在箱子和储物柜中寻找食物，看看这里曾经居住的人们是否留下了什么。然后，我找到了这个。白色的光盘。我不知道为什么，但一阵不安的颤栗蔓延在我的皮肤上。仿佛无数只蚂蚁爬上了我，千百次用它们的嘴巴咬我。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["45DCC77F434F1E0B"]
+			id: "7CD0315CFD62EEE7"
+			tasks: [{
+				id: "6C4A950A0DE186EC"
+				type: "item"
+				item: "steam_gramophone:white_disc"
+			}]
+			rewards: [
+				{
+					id: "14CACE65ED237DF9"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "544FB45D42FF36E5"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			subtitle: "遥不可及的梦想"
+			description: ["&7我在世界上留下了自己的印记。我犯了很多错误，但我已经改正了。还有一个问题必须解决。"]
+			hide_dependency_lines: true
+			dependencies: ["45DCC77F434F1E0B"]
+			id: "6B945193ECDBBD6F"
+			tasks: [{
+				id: "2CBCC5B0021127B2"
+				type: "item"
+				item: "steam_gramophone:orange_disc"
+			}]
+			rewards: [{
+				id: "086858D4BF26BBEB"
+				type: "item"
+				item: "alloyed:bronze_sheet"
+				count: 16
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			subtitle: "是什么决定了人类在这个世界上的命运？"
+			description: ["&7这就是堕落之人的声音。可怕的嗓音颤抖，忧伤在耳中回响，留下一道无法治愈的痛苦印记在心中。为什么人们要彼此伤害？难道当时我就不能做出不同的选择吗？如果我们三个人在一起，一切会更容易些。"]
+			hide_dependency_lines: true
+			dependencies: ["45DCC77F434F1E0B"]
+			id: "3879F7C1F251F81B"
+			tasks: [{
+				id: "3C2D2FAD50F506D3"
+				type: "item"
+				item: "steam_gramophone:green_disc"
+			}]
+			rewards: [
+				{
+					id: "2481929784947003"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+				{
+					id: "0A235671B844AAB8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 972870964878479141L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			subtitle: "第三扇大门之谜"
+			description: ["&7我已经很久没听到这个声音了。它唤起了遥远的回忆，那时这个地方刚刚开始建设。时光如此短暂。那时一切看起来都充满希望，繁荣在我们的人们眼中闪烁。可一切在瞬间崩塌。人们的眼睛失去了光辉，空洞无神。"]
+			hide_dependency_lines: true
+			dependencies: ["45DCC77F434F1E0B"]
+			id: "4E95661E4CD09334"
+			tasks: [{
+				id: "6786D52A0DB63B67"
+				type: "item"
+				item: "steam_gramophone:purple_disc"
+			}]
+			rewards: [{
+				id: "681AF258C63AC3B7"
+				type: "item"
+				item: "storagedrawers:diamond_storage_upgrade"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			subtitle: "16使徒"
+			description: [
+				"&7过去、现在与未来的记录。这些文字深深扎根于我心中，现在它们的作者是我。所有人类所经历的痛苦、忧伤和孤独，已经成为我身体与思想的一部分。我活着，因为曾经是他们活着。正是因为他们，我现在才得以呼吸、行走与思考。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["45DCC77F434F1E0B"]
+			id: "040FCA4D39FC4FF5"
+			tasks: [{
+				id: "2E70FFA70F4410BC"
+				type: "item"
+				item: {
+					id: "cyao_lore:note_book_16"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 0
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6EAEA2EEDF9BC4DD"
+					type: "item"
+					item: "minecraft:bookshelf"
+					count: 16
+				}
+				{
+					id: "4D5115C12A1BF3D6"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			title: "工程之门"
+			icon: "the_upside_down_world:irongear"
+			x: -4.0d
+			y: 0.0d
+			subtitle: "齿轮是我们的朋友"
+			description: [
+				"&7谈谈我自己？这对我来说有点复杂，尽管曾经有人从第三人称提到过。如果你想听我个人的看法，那么现在一切比以前更糟，也更好。这怎么可能？嗯，我感受到自己在未来行动中的精神振奋，但物质世界却是残酷的，完全可能再从我身上撕下一块肉。我会为此做好准备，勇敢地接受为自己曾犯下的错误所带来的惩罚。正是怀着这样的心态，我来到这里。曾经的家。"
+				""
+				"&7С кем я вообще говорю..."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"45DCC77F434F1E0B"
+				"129F2769303358D4"
+			]
+			hide: true
+			id: "4F82F5F048C37656"
+			tasks: [{
+				id: "629456887CD1C9AF"
+				type: "item"
+				item: "cyao_structures:iengie_orb"
+			}]
+			rewards: [
+				{
+					id: "2C0BC3355AF7D327"
+					type: "item"
+					item: "create_things_and_misc:blaze_ballon"
+				}
+				{
+					id: "15A8731508CC8396"
+					type: "item"
+					item: "cyao_stuff:blank_pattern"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "引力之门"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "cyaoadditions:textures/item/shard.png"
+				}
+			}
+			x: -4.0d
+			y: 1.5d
+			subtitle: "风力渐强——意味着要努力活下去。"
+			description: ["&7一位科学家的不可侵犯的空中堡垒——塞拉菲姆号。这艘飞艇曾是人们对未来发展的希望堡垒。然而，从这里开始，滋生了引发动乱和绝望的根源。发明并没有决定命运，却预示着我们的终结。某一时刻，这里的最高科学家解雇了所有工作人员，启动了防护机制，专心进行某些研究。我和我的炼金之门的兄弟常常不经意间注视着他。因为我们中的任何人都不确定，究竟是什么引发了灾难，谁打开了潘多拉的盒子，将世界推入混乱。也许我们应该更加信任彼此。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"45DCC77F434F1E0B"
+				"129F2769303358D4"
+			]
+			hide: true
+			id: "3425737F43B20F1D"
+			tasks: [{
+				id: "7C1C83A7A17656E9"
+				type: "item"
+				item: "cyao_structures:gravito_orb"
+			}]
+			rewards: [
+				{
+					id: "07D330C5E3701351"
+					type: "item"
+					item: "paraglider:deku_leaf"
+				}
+				{
+					id: "767D76171BDA15AE"
+					type: "item"
+					item: "paraglider:stamina_vessel"
+				}
+			]
+		}
+		{
+			title: "炼金术之门"
+			icon: "ud_world_items:mechanical_battery"
+			x: -6.0d
+			y: 1.5d
+			subtitle: "我们可以不使用魔法！"
+			description: ["&7这个地方弥漫着外来的恶臭。我已经多年没有离开过工作岗位，甚至不知道其他地方的情况如何。为什么我们断绝了那种维系着我们存在的力量的紧密联系？它到底是怎么坏掉的？曾经住在这里的科学家，在我们离开时看起来十分悲伤。是他在为失去一生的工作感到遗憾吗？还是这只是一个带有一些轻松意味的不幸？"]
+			hide_dependency_lines: true
+			dependencies: [
+				"45DCC77F434F1E0B"
+				"129F2769303358D4"
+			]
+			hide: true
+			id: "24531E9729660779"
+			tasks: [{
+				id: "05A7CD3B91FA9045"
+				type: "item"
+				item: "cyao_structures:alchemito_orb"
+			}]
+			rewards: [
+				{
+					id: "0FE42B2444A0C7BF"
+					type: "item"
+					item: "minecraft:milk_bucket"
+				}
+				{
+					id: "327FAE0FC6A49772"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:regeneration"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "机械爬行者"
+			x: -4.0d
+			y: 4.5d
+			subtitle: "机器之魂强于钢铁"
+			description: ["&7这台机器人……是我亲自设计的。我一部分一部分地思考它的外观和功能。最初，爬行者是为了征服我们世界的新地貌而设计的。稍后，它被赋予了创造其他机器人的机制，以便在重要区域清理危险生物并开始开采矿物或其他资源。现在，甚至有些令人难过，这样的创造物可能轻易地碾压它的发明者。"]
+			hide_dependency_lines: true
+			dependencies: [
+				"45DCC77F434F1E0B"
+				"4F82F5F048C37656"
+			]
+			id: "4AAD5C90124F516A"
+			tasks: [{
+				id: "7438A73D3425E348"
+				type: "kill"
+				title: "摧毁机械爬行者"
+				icon: "the_upside_down_world:mechasencor"
+				entity: "the_upside_down_world:mecha_boss"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "5702ED5AC7093BF8"
+					type: "item"
+					item: "create:precision_mechanism"
+				}
+				{
+					id: "0B005CFC3743ADC6"
+					type: "item"
+					item: "create:brass_block"
+				}
+			]
+		}
+		{
+			title: "炼金之门 Boss"
+			icon: "ud_world_items:gravity_stabilizer"
+			x: -6.0d
+			y: 6.0d
+			subtitle: "魔法不是天生的，而是在痛苦中诞生的。"
+			description: [
+				"&7在灾难来临前逃离的炼金术部门科学家。他将自己的身体和意识放入他自己研发的液体中。但没有时间进行验证。结果，整个身体瞬间溶解。大脑熔化，与混合的内脏和原始溶液形成了人类的“汤”。"
+				""
+				"&7目前，这个生物藏匿在炼金之门的顶层，守护着我需要获取的一个重要发明。我别无选择，只能将其击败，夺取重力稳定器。"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"45DCC77F434F1E0B"
+				"24531E9729660779"
+			]
+			id: "0822181079E05A38"
+			tasks: [{
+				id: "24F860C698D8D9BD"
+				type: "kill"
+				title: "解放天才的灵魂"
+				icon: "ud_world_items:gravity_stabilizer"
+				entity: "alchemy_boss:trapped_genius"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "15AD80BFAA1089F1"
+					type: "item"
+					item: "malum:spirit_pouch"
+				}
+				{
+					id: "164D036D4B7A043B"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 6346408907276309058L
+				}
+			]
+		}
+		{
+			title: "即使是凋零"
+			x: -4.0d
+			y: 6.0d
+			subtitle: "意志薄弱者受苦最深"
+			description: [
+				"&7三头怪物，或称凋零计划——这是由三座炼金之门的科学家联盟进行的特殊实验。每个团队都为其贡献了自己的部分，正因为如此，它成为了塞拉菲姆的备用能源源泉。但该项目被中止，因为最高科学家认为它对他的飞艇构成威胁。因此，它以未完成的形态被遗弃在某个重力之门的角落里。"
+				""
+				"&7如果我试图唤醒这个东西，会发生什么呢？"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"45DCC77F434F1E0B"
+				"3425737F43B20F1D"
+			]
+			id: "135F776791B01756"
+			tasks: [{
+				id: "5AFBC39288FD0AE7"
+				type: "kill"
+				title: "Убить Визера"
+				icon: "minecraft:wither_skeleton_skull"
+				entity: "minecraft:wither"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "2E9754C0C5675AD6"
+					type: "item"
+					title: "Трезубец Посейдона"
+					item: {
+						id: "minecraft:trident"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2B847B2CCE8A1A86"
+					type: "xp"
+					xp: 125
+				}
+			]
+		}
+		{
+			title: "最后一战"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "chipped:textures/block/carved_pumpkin/carved_pumpkin_15.png"
+				}
+			}
+			x: 0.0d
+			y: 6.0d
+			subtitle: "15 分钟的探险"
+			description: ["&7我所寻找的道路引领我走向了一连串的事件。而我全身心地投入其中，留下了比我的足迹更深的痕迹。凭借赋予的力量，我将完成这条初始的旅程，尽管它是违背他人意愿而铺设的。再见了，所有的一切。我将带走你们。"]
+			dependencies: ["51A5745A32265B26"]
+			size: 1.25d
+			id: "3CE1D7F757D89E7E"
+			tasks: [{
+				id: "7315D0F284177F78"
+				type: "kill"
+				title: "???"
+				icon: "cyao_coreworld:coreworld_trophy"
+				entity: "cyao_coreworld:the_reflection"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "1914C0588A7510C6"
+					type: "gamestage"
+					title: "&4转化中的新条目"
+					icon: "cyao_lore:note_book_16"
+					auto: "enabled"
+					ignore_reward_blocking: true
+					stage: "archives"
+				}
+				{
+					id: "1CF7410DD0EC27B9"
+					type: "gamestage"
+					title: "&5发现创造物品"
+					icon: "create_sa:creative_filling_tank"
+					auto: "enabled"
+					ignore_reward_blocking: true
+					stage: "creative_item"
+				}
+				{
+					id: "5BACA324A6DAB923"
+					type: "item"
+					auto: "invisible"
+					item: "cyao_coreworld:coreworld_trophy"
+				}
+			]
+		}
+		{
+			title: "冒险家"
+			x: -6.0d
+			y: 0.0d
+			subtitle: "冒险时间"
+			description: [
+				"&7这些废墟常常让我想起家。大概是因为曾经在这里生活过。它们的状态堪忧，而我自己也想不到别的办法，只能拆解房屋和建筑，寻找将旧材料重新利用的方法。"
+				""
+				"&5造梦者将作为记忆球的制作台，保存着过去的碎片。每个这样的记忆之球将负责将你传送到特定的地点。创建这个工作台，以便访问剧情副本。"
+				""
+				"点击界面右侧的按钮，可以在造梦者中查看球体合成表。"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"429C1DA473D5A08E"
+				"45DCC77F434F1E0B"
+			]
+			hide: true
+			id: "129F2769303358D4"
+			tasks: [{
+				id: "3268B859E1C2CCF9"
+				type: "item"
+				item: "cyao_structures:worktable"
+			}]
+			rewards: [
+				{
+					id: "01F096A483522875"
+					type: "item"
+					item: "farmersdelight:steak_and_potatoes"
+				}
+				{
+					id: "1FFE9B2CF558BB91"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 3022466149224120138L
+				}
+			]
+		}
+		{
+			title: "冒险家之路"
+			icon: "ud_world_items:camera_icon"
+			x: -6.0d
+			y: 3.0d
+			subtitle: "改变神灵的意志是一场赌博。"
+			description: [
+				"&7旅行者的灵魂注定要不断地流浪和探索从未涉足的未知。这些人无法安于现状，因此他们探索我们广袤世界的每个角落。他们的记忆现在被保存在这些记忆球中。"
+				""
+				"&5守护者的记忆球将把你传送到一个随机的小型建筑中，在那里你可以了解更多关于世界的历史，并获得大量有用的资源。"
+			]
+			hide_dependency_lines: true
+			dependencies: ["129F2769303358D4"]
+			hide: true
+			id: "10454D212287744D"
+			tasks: [{
+				id: "29CFFDBA2B24D78F"
+				type: "item"
+				item: "cyao_structures:hrano_orb"
+			}]
+			rewards: [
+				{
+					id: "7569CCBB9A1B39EF"
+					type: "item"
+					item: "cyao_structures:hrano_orb"
+				}
+				{
+					id: "275AED9104046A6F"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "砖块"
+			icon: "ud_world_items:information_icon"
+			x: 1.0d
+			y: 5.0d
+			subtitle: "真糟糕"
+			description: [
+				"团队把整合包弄的乱七八糟"
+				"开发的最后部分几乎没有在服务器上进行过测试，但在测试时，我们发现什么都无法运行..."
+				"这一切也许可以自我修复，但我们完全不知道它将如何表现....."
+				"祝你好运。"
+			]
+			dependencies: ["51A5745A32265B26"]
+			id: "22B2FD60557598FB"
+			tasks: [{
+				id: "60B84951C85A7B95"
+				type: "checkmark"
+				title: "哎呀"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
